@@ -1,0 +1,34 @@
+---
+layout: single
+title: "Today/Tomorrow"
+permalink: /today/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+<p>Here's what's on today and tomorrow. Click on a programme for more details.</p>
+
+<h3>Today</h3>
+<div id="today"></div>
+
+<h3>Tomorrow</h3>
+<div id="tomorrow"></div>
+
+<script type="module" defer>
+  import { progURLs } from "/shows.js";
+  (async () => {
+    const response = await fetch("https://episodes.marlowfm.co.uk:3009/today");
+    const [today, tomorrow] = await response.json();
+    let htmlToday = "<table>";
+    today.forEach(show => {
+      htmlToday += `<tr><td>${new Date(show.start).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</td><td><a href="${progURLs[show.code]}">${show.show}</a><div>${show.with ? "With " + show.with : ""}</div><div>${show.public ? show.public : ""}</div></td></tr>`;
+    });
+    htmlToday += "</table>";
+    document.querySelector("#today").innerHTML = `${htmlToday}`;
+    let htmlTomorrow = "<table>";
+    tomorrow.forEach(show => {
+      htmlTomorrow += `<tr><td>${new Date(show.start).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</td><td><a href="${progURLs[show.code]}">${show.show}</a><div>${show.with ? "With " + show.with : ""}</div><div>${show.public ? show.public : ""}</div></td></tr>`;
+    });
+    htmlTomorrow += "</table>";
+    document.querySelector("#tomorrow").innerHTML = `${htmlTomorrow}`;
+  })();
+</script>

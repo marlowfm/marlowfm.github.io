@@ -1,7 +1,110 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-author_profile: true
+classes: wide
+header:
+  image: /assets/images/marlow-bridge-1280x178.jpg
+  caption: "Photo credit: [**Ashley Buttle**](https://creativecommons.org/licenses/by/2.0/)"
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>Longridge, Quarry Wood Road, Marlow, Bucks, SL7 1RE<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
+
+<style>
+	#now-and-next {
+		line-height: 1.25;
+	}
+
+	#current-show,
+	#next-show {
+		clear: left;
+		margin-bottom: 2%;
+		font-size: 1.5em;
+	}
+
+	#current-info,
+	#next-info {
+		clear: left;
+		margin-bottom: 2%;
+		font-size: 0.75em;
+	}
+
+	#now-playing {
+		margin-bottom: 2%;
+		font-size: 1em;
+	}
+
+	#now-playing img {
+		float: left;
+		padding: 0 2% 2% 0;
+	}
+</style>
+
+<script type="module" defer>
+	import { progURLs } from "/shows.js";
+	let artist = "",
+		title = "",
+		coverArtURL = "";
+	const eventSource1 = new EventSource(
+		"https://episodes.marlowfm.co.uk:3009/sse-json"
+	);
+	eventSource1.onmessage = e => {
+		const data = JSON.parse(e.data);
+		document.querySelector("#current-show").innerHTML = `On now: ${
+			data.currentCode !== "AUT"
+				? '<a href="' +
+				  progURLs[data.currentCode] +
+				  '"><strong>' +
+				  data.currentShow +
+				  "</strong></a>"
+				: "<strong>" + data.currentShow + "</strong>"
+		}${
+			data.currentWith ? " with <strong>" + data.currentWith + "</strong>" : ""
+		}`;
+		data.currentPublic
+			? (document.querySelector("#current-info").innerHTML = data.currentPublic)
+			: (document.querySelector("#current-info").innerHTML = "");
+		document.querySelector("#next-show").innerHTML = `At ${data.nextStart}: ${
+			data.nextCode !== "AUT"
+				? '<a href="' +
+				  progURLs[data.nextCode] +
+				  '"><strong>' +
+				  data.nextShow +
+				  "</strong></a>"
+				: "<strong>" + data.nextShow + "</strong>"
+		}${data.nextWith ? " with <strong>" + data.nextWith + "</strong>" : ""}`;
+		data.nextPublic
+			? (document.querySelector("#next-info").innerHTML = data.nextPublic)
+			: (document.querySelector("#next-info").innerHTML = "");
+	};
+	const eventSource2 = new EventSource(
+		"https://now-playing.marlowfm.co.uk:3002/sse-json"
+	);
+	eventSource2.onmessage = e => {
+		const data = JSON.parse(e.data);
+		if (
+			data.title !== title ||
+			data.artist !== artist ||
+			data.coverArtURL !== coverArtURL
+		) {
+			title = data.title;
+			artist = data.artist;
+			coverArtURL = data.coverArtURL;
+			let nowPlaying = "";
+			if (data.coverArtURL) {
+				nowPlaying += `<img src="${data.coverArtURL}" width="150">`;
+			}
+			if (data.title && data.artist) {
+				nowPlaying += `<span>Playing: <strong>${data.title}</strong> by <strong>${data.artist}</strong><span>`;
+			}
+			document.querySelector("#now-playing").innerHTML = nowPlaying;
+		}
+	};
+</script>
+
+<div id="now-and-next">
+	<div id="current-show"></div>
+	<div id="now-playing"></div>
+	<div id="current-info"></div>
+	<div id="next-show"></div>
+	<div id="next-info"></div>
+</div>
+<br />

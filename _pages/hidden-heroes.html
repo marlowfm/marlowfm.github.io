@@ -1,0 +1,75 @@
+---
+published: false
+layout: single
+classes: wide
+title: "Do you know a Hidden Hero? Nominate them!"
+permalink: /hidden-heroes/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+<p>NEW DEADLINE for nominations: Friday 4th December</p>
+
+<img src="/assets/images/hidden-heroes-logo.jpg" alt="Hidden Heroes logo">
+
+<p>Marlow FM, in partnership with the Town Council and the Chamber of Trade and Commerce, wants to recognise the
+	people in our town who are going the extra mile to help their neighbours and local community, and make Marlow a
+	better place to live, work, and visit during this difficult year.</p>
+
+<p>So many people have made a difference to the lives of others in 2020. Someone who's given up their time to help out
+	their family or friends in need. A business that's come up with innovative ways to support the town during lockdown
+	and beyond. A group that's come together to make sure the most vulnerable are cared for.</p>
+
+<img src="/assets/images/news/hidden-heroes-2020.jpg" alt="Hidden Heroes cartoon" width="50%">
+
+<p>If you know someone in our community who deserves recognition for the things they do, please nominate them below for
+	a Hidden Hero Award. A panel from Marlow FM, the Town Council, and the Chamber will choose the worthy winners.</p>
+
+<p>The deadline for nominations is 4th December. The winners will be announced during a virtual black-tie event live on
+	air in December!</p>
+
+<form id="form">
+	<label for="name">Your name</label>
+	<input type="text" id="name" maxlength="50" required>
+	<label for="email">Your email address</label>
+	<input type="email" id="email" maxlength="75" required>
+	<label for="nominee">The person or organisation you're nominating</label>
+	<input type="text" id="nominee" maxlength="50" required>
+	<label for="contact">Contact details for the nominee</label>
+	<input type="text" id="contact" placeholder="Please give their phone number and email address if possible" maxlength="100" required>
+	<label for="reason">Why you're nominating them</label>
+	<textarea id="reason" rows="4" placeholder="Please give as much detail as you can" maxlength="750" required></textarea>
+	<label>Happy to hear from us by email? <input type="checkbox" id="marketing" style="display: inline;" checked></label>
+	<button type="submit" class="btn btn--inverse btn--large">Submit</button>
+</form>
+<div id="thanks"></div>
+
+<script defer>
+	document.querySelector("#form").onsubmit = async e => {
+		e.preventDefault();
+		try {
+			await fetch("https://form.marlowfm.co.uk:3011/create", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name: document.querySelector("#name").value,
+					email: document.querySelector("#email").value,
+					nominee: document.querySelector("#nominee").value,
+					contact: document.querySelector("#contact").value,
+					reason: document.querySelector("#reason").value,
+					marketing: document.querySelector("#marketing").checked
+				})
+			});
+			document.querySelector("#thanks").innerHTML =
+				`<p>Thank you for nominating ${document.querySelector("#nominee").value.toUpperCase()}</p>`;
+			document.querySelector("#name").value = "";
+			document.querySelector("#email").value = "";
+			document.querySelector("#nominee").value = "";
+			document.querySelector("#contact").value = "";
+			document.querySelector("#reason").value = "";
+		} catch (error) {
+			console.error(error);
+		}
+	};
+</script>

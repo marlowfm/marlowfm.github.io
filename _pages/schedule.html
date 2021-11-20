@@ -1,0 +1,875 @@
+---
+layout: single
+title: "Schedule"
+permalink: /schedule/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+
+<style>
+	:root {
+		--background-weekday-dark: skyblue;
+		--background-weekday-light: lightblue;
+		--background-weekend-dark: springgreen;
+		--background-weekend-light: lightgreen;
+		--background-weeknight-dark: orchid;
+		--background-weeknight-light: plum;
+		--background-jukebox: darkgrey;
+	}
+
+	.schedule-container {
+		font-size: 14px;
+		line-height: 1.2em;
+		font-weight: normal;
+		display: grid;
+		grid-gap: 2px;
+		grid-template-rows: 25px repeat(44, 30px);
+		grid-template-columns: 80px repeat(7, 100px);
+		grid-template-areas:
+			". d1 d2 d3 d4 d5 d6 d7"
+			"t0700 brk1 brk2 brk3 brk4 brk5 . ."
+			". brk1 brk2 brk3 brk4 brk5 . ."
+			"t0800 brk1 brk2 brk3 brk4 brk5 sat fm2"
+			". brk1 brk2 brk3 brk4 brk5 sat fm2"
+			"t0900 box11 box21 box31 box41 box51 sat fm2"
+			". box11 box21 box31 box41 box51 sat fm2"
+			"t1000 mmm1 mmm2 mmm3 mmm4 mmm5 rcs ser"
+			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs ser"
+			"t1100 mmm1 mmm2 mmm3 mmm4 mmm5 rcs chr7"
+			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs chr7"
+			"t1200 els1 els2 els3 els4 els5 box6 acz"
+			". els1 els2 els3 els4 els5 box6 acz"
+			"t1300 els1 els2 els3 els4 els5 hrt acz"
+			". els1 els2 els3 els4 els5 hrt acz"
+			"t1400 chr1 zcn zin zbs chr5 hrt spt"
+			". chr1 zcn zin zbs chr5 hrt spt"
+			"t1500 ag6 ag7 ag8 ag9 agx hrt spt"
+			". ag6 ag7 ag8 ag9 agx hrt spt"
+			"t1600 ag6 ag7 ag8 ag9 agx wfs som"
+			". ag6 ag7 ag8 ag9 agx wfs som"
+			"t1700 drv1 drv2 drv3 drv4 drv5 wfs som"
+			". drv1 drv2 drv3 drv4 drv5 wfs som"
+			"t1800 drv1 drv2 drv3 drv4 drv5 mtm stm"
+			". drv1 drv2 drv3 drv4 drv5 mtm stm"
+			"t1900 eco nms r80 pfm rck mtm stm"
+			". eco nms r80 pfm rck mtm stm"
+			"t2000 eco nms r80 pfm rck kev sss"
+			". eco nms r80 pfm rck kev sss"
+			"t2100 ita fmt gap sfs rem kev sss"
+			". ita fmt gap sfs rem kev sss"
+			"t2200 stm2 fmt gap sfs rem kev rdr"
+			". stm2 fmt gap sfs rem kev rdr"
+			"t2300 stm2 juk2 juk3 caf rem apz rdr"
+			". stm2 juk2 juk3 caf rem apz rdr"
+			"t0000 juk1 juk2 juk3 juk4 aft apz juk7"
+			". juk1 juk2 juk3 juk4 aft apz juk7"
+			"t0100 juk1 juk2 juk3 juk4 aft juk6 juk7"
+			". juk1 juk2 juk3 juk4 aft juk6 juk7"
+			"t0200 juk1 juk2 juk3 juk4 hwx juk6 juk7"
+			". juk1 juk2 juk3 juk4 hwx juk6 juk7"
+			"t0300 juk1 juk2 juk3 juk4 hwx juk6 juk7"
+			". juk1 juk2 juk3 juk4 hwx juk6 juk7"
+			"t0400 juk1 juk2 juk3 juk4 juk5 juk6 juk7"
+			". juk1 juk2 juk3 juk4 juk5 juk6 juk7";
+	}
+
+	.d1 {
+		grid-area: d1;
+	}
+
+	.d2 {
+		grid-area: d2;
+	}
+
+	.d3 {
+		grid-area: d3;
+	}
+
+	.d4 {
+		grid-area: d4;
+	}
+
+	.d5 {
+		grid-area: d5;
+	}
+
+	.d6 {
+		grid-area: d6;
+	}
+
+	.d7 {
+		grid-area: d7;
+	}
+
+	.t0700 {
+		grid-area: t0700;
+		text-align: center;
+	}
+
+	.t0800 {
+		grid-area: t0800;
+		text-align: center;
+	}
+
+	.t0900 {
+		grid-area: t0900;
+		text-align: center;
+	}
+
+	.t1000 {
+		grid-area: t1000;
+		text-align: center;
+	}
+
+	.t1100 {
+		grid-area: t1100;
+		text-align: center;
+	}
+
+	.t1200 {
+		grid-area: t1200;
+		text-align: center;
+	}
+
+	.t1300 {
+		grid-area: t1300;
+		text-align: center;
+	}
+
+	.t1400 {
+		grid-area: t1400;
+		text-align: center;
+	}
+
+	.t1500 {
+		grid-area: t1500;
+		text-align: center;
+	}
+
+	.t1600 {
+		grid-area: t1600;
+		text-align: center;
+	}
+
+	.t1700 {
+		grid-area: t1700;
+		text-align: center;
+	}
+
+	.t1800 {
+		grid-area: t1800;
+		text-align: center;
+	}
+
+	.t1900 {
+		grid-area: t1900;
+		text-align: center;
+	}
+
+	.t2000 {
+		grid-area: t2000;
+		text-align: center;
+	}
+
+	.t2100 {
+		grid-area: t2100;
+		text-align: center;
+	}
+
+	.t2200 {
+		grid-area: t2200;
+		text-align: center;
+	}
+
+	.t2300 {
+		grid-area: t2300;
+		text-align: center;
+	}
+
+	.t0000 {
+		grid-area: t0000;
+		text-align: center;
+	}
+
+	.t0100 {
+		grid-area: t0100;
+		text-align: center;
+	}
+
+	.t0200 {
+		grid-area: t0200;
+		text-align: center;
+	}
+
+	.t0300 {
+		grid-area: t0300;
+		text-align: center;
+	}
+
+	.t0400 {
+		grid-area: t0400;
+		text-align: center;
+	}
+
+	.brk1 {
+		grid-area: brk1;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.brk2 {
+		grid-area: brk2;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.brk3 {
+		grid-area: brk3;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.brk4 {
+		grid-area: brk4;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.brk5 {
+		grid-area: brk5;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.sat {
+		grid-area: sat;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.fm2 {
+		grid-area: fm2;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.box11 {
+		grid-area: box11;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.box21 {
+		grid-area: box21;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.box31 {
+		grid-area: box31;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.box41 {
+		grid-area: box41;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.box51 {
+		grid-area: box51;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.ser {
+		grid-area: ser;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.mmm1 {
+		grid-area: mmm1;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.mmm2 {
+		grid-area: mmm2;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.mmm3 {
+		grid-area: mmm3;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.mmm4 {
+		grid-area: mmm4;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.mmm5 {
+		grid-area: mmm5;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.rcs {
+		grid-area: rcs;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.chr7 {
+		grid-area: chr7;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.chr1 {
+		grid-area: chr1;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.zcn {
+		grid-area: zcn;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.zin {
+		grid-area: zin;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.zbs {
+		grid-area: zbs;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.chr5 {
+		grid-area: chr5;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.box6 {
+		grid-area: box6;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.acz {
+		grid-area: acz;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.els1 {
+		grid-area: els1;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.els2 {
+		grid-area: els2;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.els3 {
+		grid-area: els3;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.els4 {
+		grid-area: els4;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.els5 {
+		grid-area: els5;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.spt {
+		grid-area: spt;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.hrt {
+		grid-area: hrt;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.cls {
+		grid-area: cls;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.ag6 {
+		grid-area: ag6;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.ag7 {
+		grid-area: ag7;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.ag8 {
+		grid-area: ag8;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.ag9 {
+		grid-area: ag9;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.agx {
+		grid-area: agx;
+		padding: 2px;
+		background-color: var(--background-weekday-light);
+		color: inherit;
+	}
+
+	.wfs {
+		grid-area: wfs;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.som {
+		grid-area: som;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.drv1 {
+		grid-area: drv1;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.drv2 {
+		grid-area: drv2;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.drv3 {
+		grid-area: drv3;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.drv4 {
+		grid-area: drv4;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.drv5 {
+		grid-area: drv5;
+		padding: 2px;
+		background-color: var(--background-weekday-dark);
+		color: inherit;
+	}
+
+	.mtm {
+		grid-area: mtm;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.stm {
+		grid-area: stm;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.eco {
+		grid-area: eco;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.ita {
+		grid-area: ita;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.stm2 {
+		grid-area: stm2;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.nms {
+		grid-area: nms;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.fmt {
+		grid-area: fmt;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.r80 {
+		grid-area: r80;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.gap {
+		grid-area: gap;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.pfm {
+		grid-area: pfm;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.sfs {
+		grid-area: sfs;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.caf {
+		grid-area: caf;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.rck {
+		grid-area: rck;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.rem {
+		grid-area: rem;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.aft {
+		grid-area: aft;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
+		color: inherit;
+	}
+
+	.hwx {
+		grid-area: hwx;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.kev {
+		grid-area: kev;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.sss {
+		grid-area: sss;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.apz {
+		grid-area: apz;
+		padding: 2px;
+		background-color: var(--background-weekend-light);
+		color: inherit;
+	}
+
+	.rdr {
+		grid-area: rdr;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
+	.juk1 {
+		grid-area: juk1;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk2 {
+		grid-area: juk2;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk3 {
+		grid-area: juk3;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk4 {
+		grid-area: juk4;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk5 {
+		grid-area: juk5;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk6 {
+		grid-area: juk6;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk7 {
+		grid-area: juk7;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.schedule-container a {
+		text-decoration-line: none;
+	}
+</style>
+
+<p>
+	Here's our regular weekly schedule. Click on a programme for more details.
+</p>
+
+<div class="schedule-container">
+	<div class="d1">MONDAY</div>
+	<div class="d2">TUESDAY</div>
+	<div class="d3">WEDNESDAY</div>
+	<div class="d4">THURSDAY</div>
+	<div class="d5">FRIDAY</div>
+	<div class="d6">SATURDAY</div>
+	<div class="d7">SUNDAY</div>
+	<div class="t0700">7.00am</div>
+	<div class="t0800">8.00am</div>
+	<div class="t0900">9.00am</div>
+	<div class="t1000">10.00am</div>
+	<div class="t1100">11.00am</div>
+	<div class="t1200">Midday</div>
+	<div class="t1300">1.00pm</div>
+	<div class="t1400">2.00pm</div>
+	<div class="t1500">3.00pm</div>
+	<div class="t1600">4.00pm</div>
+	<div class="t1700">5.00pm</div>
+	<div class="t1800">6.00pm</div>
+	<div class="t1900">7.00pm</div>
+	<div class="t2000">8.00pm</div>
+	<div class="t2100">9.00pm</div>
+	<div class="t2200">10.00pm</div>
+	<div class="t2300">11.00pm</div>
+	<div class="t0000">Midnight</div>
+	<div class="t0100">1.00am</div>
+	<div class="t0200">2.00am -</div>
+	<div class="t0300">3.00am -</div>
+	<div class="t0400">4.00am -</div>
+	<a class="brk1" href="/programmes/breakfast/">BREAKFAST</a>
+	<a class="brk2" href="/programmes/breakfast/">BREAKFAST</a>
+	<a class="brk3" href="/programmes/breakfast/">BREAKFAST</a>
+	<a class="brk4" href="/programmes/breakfast/">BREAKFAST</a>
+	<a class="brk5" href="/programmes/breakfast/">BREAKFAST</a>
+	<a class="sat" href="/programmes/saturday-breakfast/">SATURDAY BREAKFAST</a>
+	<a class="fm2" href="/programmes/faith-matters/">FAITH MATTERS (R)</a>
+	<a class="box11" href="/programmes/music-box/">THE MUSIC BOX</a>
+	<a class="box21" href="/programmes/music-box/">THE MUSIC BOX</a>
+	<a class="box31" href="/programmes/music-box/">THE MUSIC BOX</a>
+	<a class="box41" href="/programmes/music-box/">THE MUSIC BOX</a>
+	<a class="box51" href="/programmes/music-box/">THE MUSIC BOX</a>
+	<a class="ser" href="/programmes/sunday-serenade/">SUNDAY SERENADE</a>
+	<a class="mmm1" href="/programmes/good-morning-marlow/"
+		>GOOD MORNING MARLOW</a
+	>
+	<a class="mmm2" href="/programmes/good-morning-marlow/"
+		>GOOD MORNING MARLOW</a
+	>
+	<a class="mmm3" href="/programmes/good-morning-marlow/"
+		>GOOD MORNING MARLOW</a
+	>
+	<a class="mmm4" href="/programmes/good-morning-marlow/"
+		>GOOD MORNING MARLOW</a
+	>
+	<a class="mmm5" href="/programmes/good-morning-marlow/"
+		>GOOD MORNING MARLOW</a
+	>
+	<a class="rcs" href="/programmes/retro-chart-show/">THE RETRO CHART SHOW</a>
+	<a class="chr7" href="/programmes/concert-hour/">CONCERT HOUR</a>
+	<a class="chr1" href="/programmes/concert-hour/">CONCERT HOUR</a>
+	<a class="zcn" href="/programmes/consumer-show/">THE CONSUMER SHOW</a>
+	<a class="zin" href="/programmes/internetted/">INTERNETTED</a>
+	<a class="zbs" href="/programmes/business-show/">THE BUSINESS SHOW</a>
+	<a class="chr5" href="/programmes/concert-hour/">CONCERT HOUR</a
+	>
+	<a class="box6" href="/programmes/music-box/">THE MUSIC BOX</a>
+	<a class="acz" href="/programmes/americanza/">AMERICANZA</a>
+	<a class="els1" href="/programmes/eclectic-light-show/"
+		>THE ECLECTIC LIGHT SHOW</a
+	>
+	<a class="els2" href="/programmes/eclectic-light-show/"
+		>THE ECLECTIC LIGHT SHOW</a
+	>
+	<a class="els3" href="/programmes/eclectic-light-show/"
+		>THE ECLECTIC LIGHT SHOW</a
+	>
+	<a class="els4" href="/programmes/eclectic-light-show/"
+		>THE ECLECTIC LIGHT SHOW</a
+	>
+	<a class="els5" href="/programmes/eclectic-light-show/"
+		>THE ECLECTIC LIGHT SHOW</a
+	>
+	<a class="hrt" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
+	<a class="spt" href="/programmes/spotlight/">SPOTLIGHT</a>
+	<a class="ag6" href="/programmes/afternoon-gold-60s/">AFTERNOON GOLD 60s</a>
+	<a class="ag7" href="/programmes/afternoon-gold-70s/">AFTERNOON GOLD 70s</a>
+	<a class="ag8" href="/programmes/afternoon-gold-80s/">AFTERNOON GOLD 80s</a>
+	<a class="ag9" href="/programmes/afternoon-gold-90s/">AFTERNOON GOLD 90s</a>
+	<a class="agx" href="/programmes/afternoon-gold-greatest-hits/">AFTERNOON GOLD GREATEST HITS</a>
+	<a class="wfs" href="/programmes/world-folk-show/">THE WORLD FOLK SHOW</a>
+	<a class="som" href="/programmes/sound-of-musicals/">THE SOUND OF MUSICALS</a>
+	<a class="drv1" href="/programmes/drivetime/">DRIVETIME</a>
+	<a class="drv2" href="/programmes/drivetime/">DRIVETIME</a>
+	<a class="drv3" href="/programmes/drivetime/">DRIVETIME</a>
+	<a class="drv4" href="/programmes/drivetime/">DRIVETIME</a>
+	<a class="drv5" href="/programmes/drivetime/">DRIVETIME</a>
+	<a class="mtm" href="/programmes/more-than-madness/">MORE THAN MADNESS</a>
+	<a class="stm" href="/programmes/swing-that-music/">SWING THAT MUSIC</a>
+	<a class="eco" href="/programmes/eco-show/">THE ECO SHOW</a>
+	<a class="ita" href="/programmes/italia-975/">ITALIA 97.5</a>
+	<a class="stm2" href="/programmes/swing-that-music/">SWING THAT MUSIC (R)</a>
+	<a class="nms" href="/programmes/new-music-show/">THE NEW MUSIC SHOW</a>
+	<a class="fmt" href="/programmes/faith-matters/">FAITH MATTERS</a>
+	<a class="r80" href="/programmes/80s-revival/">80s REVIVAL</a>
+	<a class="gap" href="/programmes/generation-gap/">THE GENERATION GAP</a>
+	<a class="pfm" href="/programmes/pirate-fm/">PIRATE FM</a>
+	<a class="sfs" href="/programmes/soulfusion/">SOULFUSION</a>
+	<a class="caf" href="/programmes/cafe-del-marlow/">CAFE DEL MARLOW</a>
+	<a class="rck" href="/programmes/rock-show/">THE ROCK SHOW</a>
+	<a class="rem" href="/programmes/residency-essential-mix/"
+		>RESIDENCY ESSENTIAL MIX</a
+	>
+	<a class="aft" href="/programmes/after-hours/">AFTER HOURS</a>
+	<a class="hwx" href="/programmes/houseworx-music-show/"
+		>HOUSEWORX MUSIC SHOW</a
+	>
+	<a class="kev" href="/programmes/kev-kinch-in-the-house/"
+		>KEV KINCH IN THE HOUSE</a
+	>
+	<a class="sss" href="/programmes/late-kick-off/"
+		>THE LATE KICK-OFF</a
+	>
+	<a class="apz" href="/programmes/after-party-zone/">THE AFTER PARTY ZONE</a>
+	<a class="rdr" href="/programmes/radio-daze-reggae-show/"
+		>RADIO DAZE REGGAE SHOW</a
+	>
+	<div class="juk1">THE JUKEBOX</div>
+	<div class="juk2">THE JUKEBOX</div>
+	<div class="juk3">THE JUKEBOX</div>
+	<div class="juk4">THE JUKEBOX</div>
+	<div class="juk5">THE JUKEBOX</div>
+	<div class="juk6">THE JUKEBOX</div>
+	<div class="juk7">THE JUKEBOX</div>
+</div>

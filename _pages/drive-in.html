@@ -1,0 +1,102 @@
+---
+published: false
+layout: single
+classes: wide
+title: "Marlow Christmas Drive-In"
+permalink: /drive-in/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+<p>Marlow FM will be at Marlow Rugby Club broadcasting most of the festival's events live - either as special programmes
+	or during our
+	normal shows. Some of our other shows will also be coming live from the rugby club.</p>
+
+<p><a href="https://www.marlowchristmasdrivein.co.uk/" target="_blank">Click here for the festival's website.</a></p>
+
+<h2>Special programmes</h2>
+<div id="upcoming"></div>
+
+<h3>Other events to be broadcast during our normal shows</h3>
+<table>
+	<tr>
+		<td>Wed Dec 16</td>
+		<td>10:00</td>
+		<td>Danesfield School's Festive Musical Celebration - Reception</td>
+		<td>During <i>Good Morning Marlow</i></td>
+	</tr>
+	<tr>
+		<td>Wed Dec 16</td>
+		<td>12:00</td>
+		<td>Danesfield School's Festive Musical Celebration - Years 1 and 2</td>
+		<td>During <i>The Eclectic Light Show</i></td>
+	</tr>
+	<tr>
+		<td>Wed Dec 16</td>
+		<td>16:00</td>
+		<td>Danesfield School's Festive Musical Celebration - Years 5 and 6</td>
+		<td>During <i>Afternoon Gold 80s</i></td>
+	</tr>
+	<tr>
+		<td>Thu Dec 17</td>
+		<td>10:00</td>
+		<td>Great Marlow School - Monologue Montage</td>
+		<td>During <i>Good Morning Marlow</i></td>
+	</tr>
+	<tr>
+		<td>Fri Dec 18</td>
+		<td>12:15</td>
+		<td>Meals from Marlow - Christmas lunch and carols</td>
+		<td>During <i>The Eclectic Light Show</i></td>
+	</tr>
+	<tr>
+		<td>Tue Dec 22</td>
+		<td>15:00</td>
+		<td>All Saints Church's Nativity play</td>
+		<td>During <i>Afternoon Gold 70s</i></td>
+	</tr>
+</table>
+
+<h2>Past programmes</h2>
+<!--<p>You can listen to any programme from the past three weeks by picking the date you want in the 'listen again' section
+	below.</p>-->
+<div id="past"></div>
+
+<!--<h2>Listen again</h2>
+<iframe width="100%" height="250" src="{{ page.again }}"></iframe>-->
+
+<script defer>
+	(async () => {
+		const response = await fetch("https://episodes.marlowfm.co.uk:3009/episodes?code=OUT");
+		const allEpisodes = await response.json();
+		const episodes = allEpisodes.filter(episode => episode.start > 1608076800000 && episode.start < 1608681600000);
+		let html = "<table>";
+		episodes.forEach(episode => {
+			const date = new Date(episode.start).toDateString().split(" ").slice(0, 3).join(" ");
+			const time = new Date(episode.start).toLocaleTimeString("en-GB", {
+				hour: "2-digit",
+				minute: "2-digit"
+			});
+			html +=
+				`<tr><td>${date}</td><td>${time}</td><td>${episode.public ? episode.public : ""}</td></tr>`;
+		});
+		html += "</table>";
+		document.querySelector("#upcoming").innerHTML = `${html}`;
+	})();
+	(async () => {
+		const response = await fetch("https://episodes.marlowfm.co.uk:3009/old?code=OUT");
+		const allEpisodes = await response.json();
+		const episodes = allEpisodes.filter(episode => episode.start > 1608076800000 && episode.start < 1608681600000);
+		let html = "<table>";
+		episodes.reverse().forEach(episode => {
+			const date = new Date(episode.start).toDateString().split(" ").slice(0, 3).join(" ");
+			const time = new Date(episode.start).toLocaleTimeString("en-GB", {
+				hour: "2-digit",
+				minute: "2-digit"
+			});
+			html +=
+				`<tr><td>${date}</td><td>${time}</td><td>${episode.public ? episode.public : ""}</td></tr>`;
+		});
+		html += "</table>";
+		document.querySelector("#past").innerHTML = `${html}`;
+	})();
+</script>

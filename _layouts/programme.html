@@ -1,0 +1,84 @@
+---
+layout: single
+classes: wide
+---
+<style>
+	iframe {
+		border: none;
+	}
+</style>
+
+{% if page.image %}
+<img src="{{ page.image }}" width="200">
+<br>
+<br>
+{% endif %}
+
+{{ content }}
+
+{% if page.fb_group %}
+<h3>Join the programme's <a href="{{ page.fb_group }}" target="_blank">Facebook group</a>.</h3>
+{% endif %}
+
+<h2>Upcoming programmes</h2>
+<div id="upcoming"></div>
+
+<h2>Past programmes</h2>
+<p>You can listen to any programme from the past three weeks by picking the date you want in the 'listen again' section below.</p>
+<div id="past"></div>
+
+{% if page.again %}
+<h2>Listen again</h2>
+<iframe width="100%" height="250" src="{{ page.again }}"></iframe>
+{% endif %}
+
+<h2>Regular presenters</h2>
+<ul style="list-style-type:none">
+  {% assign filtered_presenters = site.data.presenters | where: 'shows', page.code %}
+  {% assign sorted_presenters = filtered_presenters | sort: 'name' %}
+  {% for presenter in sorted_presenters %}
+  <li>
+    {% if presenter.image %}
+    <img src="{{ presenter.image }}" width="200">
+    <p>{{ presenter.name }}</p>
+    {% else %}
+    <p>{{ presenter.name }} (a photo's on its way)</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<script defer>
+	(async () => {
+		const response = await fetch("https://episodes.marlowfm.co.uk:3009/episodes?code={{ page.code }}");
+		const episodes = await response.json();
+		let html = "<table>";
+		episodes.slice(0, 5).forEach(episode => {
+			const date = new Date(episode.start).toDateString().split(" ").slice(0, 3).join(" ");
+			const time = new Date(episode.start).toLocaleTimeString("en-GB", {
+				hour: "2-digit",
+				minute: "2-digit"
+			});
+			html +=
+				`<tr><td>${date}</td><td>${time}</td><td>${episode.with ? "With " + episode.with : ""}</td><td>${episode.public ? episode.public : ""}</td></tr>`;
+		});
+		html += "</table>";
+		document.querySelector("#upcoming").innerHTML = `${html}`;
+	})();
+	(async () => {
+		const response = await fetch("https://episodes.marlowfm.co.uk:3009/old?code={{ page.code }}");
+		const episodes = await response.json();
+		let html = "<table>";
+		episodes.reverse().slice(0, 5).forEach(episode => {
+			const date = new Date(episode.start).toDateString().split(" ").slice(0, 3).join(" ");
+			const time = new Date(episode.start).toLocaleTimeString("en-GB", {
+				hour: "2-digit",
+				minute: "2-digit"
+			});
+			html +=
+				`<tr><td>${date}</td><td>${time}</td><td>${episode.with ? "With " + episode.with : ""}</td><td>${episode.public ? episode.public : ""}</td></tr>`;
+		});
+		html += "</table>";
+		document.querySelector("#past").innerHTML = `${html}`;
+	})();
+</script>

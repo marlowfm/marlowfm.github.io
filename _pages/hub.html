@@ -1,0 +1,587 @@
+---
+layout: single
+classes: wide
+title: "The Marlow FM Live Hub"
+permalink: /hub/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
+975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+<p>
+	Bringing you up-to-date local information from the Met Office, National Rail,
+	Transport for London, and the Environment Agency.
+</p>
+
+<h3>The weather in Marlow</h3>
+<p id="weather"></p>
+
+<div>
+	<div style="display: flex; flex-wrap: wrap">
+		<div style="flex: 1">
+			<h3>Trains from Marlow</h3>
+			<div id="trains-marlow"></div>
+		</div>
+		<div style="flex: 1">
+			<h3>Trains from Bourne End</h3>
+			<div id="trains-bourne-end"></div>
+		</div>
+	</div>
+	<div style="display: flex; flex-wrap: wrap">
+		<div style="flex: 1">
+			<h3>Trains from Maidenhead</h3>
+			<div id="trains-maidenhead"></div>
+		</div>
+		<div style="flex: 1">
+			<h3>Trains from High Wycombe</h3>
+			<div id="trains-high-wycombe"></div>
+		</div>
+	</div>
+</div>
+
+<h3>Transport for London services</h3>
+<div id="tfl" style="color: white"></div>
+
+<h2>Rainfall and river levels</h2>
+<form>
+	<select id="number-of-days">
+		<option value="1">Number of days: 1</option>
+		<option value="2">Number of days: 2</option>
+		<option value="3">Number of days: 3</option>
+		<option value="4">Number of days: 4</option>
+		<option value="5">Number of days: 5</option>
+		<option value="10">Number of days: 10</option>
+		<option value="30">Number of days: 30</option>
+	</select>
+	<select id="plot-interval">
+		<option value="1">Every 15 minutes</option>
+		<option value="2">Every 30 minutes</option>
+		<option value="4">One reading an hour</option>
+		<option value="24">Four readings a day</option>
+		<option value="48">Two readings a day</option>
+		<option value="96">One reading a day</option>
+	</select>
+	<button id="plot-graphs">Plot graphs</button>
+</form>
+<h3>Rainfall near Goring-on-Thames</h3>
+<div id="rainfall"></div>
+<h3>Cookham Lock (downstream)</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7162?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2601TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-cookham-cookham-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="cookham-downstream-levels"></div>
+<h3>Cookham Lock (upstream)</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7162?direction=u"
+			target="_blank"
+			>Flood information service (upstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2601TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a href="https://riverlevels.uk/thames-cookham-cookham-lock" target="_blank"
+			>River Levels (upstream)</a
+		>
+	</li>
+</ul>
+<div id="cookham-upstream-levels"></div>
+<h3>Marlow Lock</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7396?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2499TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-marlow-marlow-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="marlow-levels"></div>
+<h3>Hurley Lock</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7156?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2497TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-hurley-hurley-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="hurley-levels"></div>
+<h3>Marsh Lock</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7155?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2495TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-remenham-marsh-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="marsh-levels"></div>
+<h3>Shiplake Lock</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7133?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2302TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-shiplake-shiplake-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="shiplake-levels"></div>
+<h3>Sonning Lock</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7132?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2301TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-sonning-sonning-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="sonning-levels"></div>
+<h3>Caversham Lock</h3>
+<ul>
+	<li>
+		<a
+			href="https://flood-warning-information.service.gov.uk/station/7111?direction=d"
+			target="_blank"
+			>Flood information service (downstream)</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://environment.data.gov.uk/flood-monitoring/id/stations/2201TH.html"
+			target="_blank"
+			>Environment Agency</a
+		>
+	</li>
+	<li>
+		<a
+			href="https://riverlevels.uk/thames-reading-caversham-lock-downstream"
+			target="_blank"
+			>River Levels (downstream)</a
+		>
+	</li>
+</ul>
+<div id="caversham-levels"></div>
+
+<script
+	type="text/javascript"
+	src="https://www.gstatic.com/charts/loader.js"
+></script>
+<script type="text/javascript">
+	google.charts.load("current", {
+		packages: ["corechart"]
+	});
+</script>
+
+<script defer>
+	(async () => {
+		document.querySelector("#weather").innerText = "We're waiting for the data to come through.";
+		const weatherResponse = await fetch(
+			"https://form.marlowfm.co.uk:3011/weather"
+		);
+		const weatherData = await weatherResponse.json();
+		document.querySelector("#weather").innerText = weatherData;
+	})();
+</script>
+
+<script defer>
+	(async () => {
+		const trainResponse = await fetch(
+			"https://form.marlowfm.co.uk:3011/trains"
+		);
+		const [
+			marlow,
+			bourneEnd,
+			maidenhead,
+			highWycombe
+		] = await trainResponse.json();
+		const createDepartureBoard = station => {
+			if (station.length === 0) {
+				return "<p>There are no trains in the next two hours</p>";
+			} else {
+				let html = '<table style="padding-right: 5%;">';
+				station.forEach(
+					train =>
+						(html += `<tr>
+					<td>${train[1]}</td>
+					<td>${train[2]}</td>
+					<td>${
+						train[3] !== "On time"
+							? `<strong>${train[3]}</strong>`
+							: `${train[3]}`
+					}</td>
+				</tr>`)
+				);
+				html += "</table>";
+				return html;
+			}
+		};
+		document.querySelector("#trains-marlow").innerHTML = createDepartureBoard(
+			marlow
+		);
+		document.querySelector(
+			"#trains-bourne-end"
+		).innerHTML = createDepartureBoard(bourneEnd);
+		document.querySelector(
+			"#trains-maidenhead"
+		).innerHTML = createDepartureBoard(maidenhead);
+		document.querySelector(
+			"#trains-high-wycombe"
+		).innerHTML = createDepartureBoard(highWycombe);
+	})();
+</script>
+
+<style>
+	#tfl0 {
+		background-color: rgb(178, 99, 0);
+	}
+
+	#tfl1 {
+		background-color: rgb(220, 36, 31);
+	}
+
+	#tfl2 {
+		background-color: rgb(255, 211, 41);
+	}
+
+	#tfl3 {
+		background-color: rgb(0, 125, 50);
+	}
+
+	#tfl4 {
+		background-color: rgb(0, 175, 173);
+	}
+
+	#tfl5 {
+		background-color: rgb(244, 169, 190);
+	}
+
+	#tfl6 {
+		background-color: rgb(161, 165, 167);
+	}
+
+	#tfl7 {
+		background-color: rgb(239, 123, 16);
+	}
+
+	#tfl8 {
+		background-color: rgb(155, 0, 88);
+	}
+
+	#tfl9 {
+		background-color: rgb(0, 0, 0);
+	}
+
+	#tfl10 {
+		background-color: rgb(0, 25, 168);
+	}
+
+	#tfl11 {
+		background-color: rgb(0, 25, 168);
+	}
+
+	#tfl12 {
+		background-color: rgb(0, 152, 216);
+	}
+
+	#tfl13 {
+		background-color: rgb(147, 206, 186);
+	}
+
+	#tfl14 {
+		background-color: rgb(147, 100, 204);
+	}
+
+	.clickable {
+		cursor: pointer;
+	}
+</style>
+
+<script defer>
+	(async () => {
+		const tflResponse = await fetch("https://form.marlowfm.co.uk:3011/tfl");
+		const tflData = await tflResponse.json();
+		const statuses = [];
+		let html = "";
+		tflData.forEach((line, i) => {
+			html += `<div id="tfl${i}" style="display: flex; padding: 1%;">`;
+			if (line.lineStatuses[0].hasOwnProperty("reason")) {
+				let openHtml = "";
+				line.lineStatuses.forEach(status => {
+					openHtml += `<div><strong>${status.statusSeverityDescription.toUpperCase()}</strong></div><div>${
+						status.reason
+					}</div>`;
+				});
+				html += `<div id="open-close${i}" style="flex: 1; font-size: 1.25em;"><strong>&plus;</strong></div>
+					<div style="flex: 5;">${line.name}</div>
+					<div id="status${i}" style="flex: 9;"><strong>${line.lineStatuses[0].statusSeverityDescription.toUpperCase()}</strong></div>
+				`;
+				statuses.push(openHtml);
+			} else {
+				html += `<div style="flex: 1;"></div>
+					<div style="flex: 5;">${line.name}</div>
+					<div style="flex: 9;">${line.lineStatuses[0].statusSeverityDescription}</div>
+				`;
+				statuses.push("");
+			}
+			html += "</div>";
+		});
+		document.querySelector("#tfl").innerHTML = html;
+		for (let i = 0; i < statuses.length; i++) {
+			if (statuses[i]) {
+				document.querySelector(`#tfl${i}`).classList.add("clickable");
+				document.querySelector(`#tfl${i}`).onclick = e => {
+					e.preventDefault();
+					const openClose = document.querySelector(`#open-close${i}`);
+					openClose.innerHTML === "<strong>+</strong>"
+						? (openClose.innerHTML = "<strong>&minus;</strong>")
+						: (openClose.innerHTML = "<strong>&plus;</strong>");
+					const toggle = document.querySelector(`#status${i}`).innerHTML;
+					document.querySelector(`#status${i}`).innerHTML = statuses[i];
+					statuses[i] = toggle;
+				};
+			}
+		}
+	})();
+</script>
+
+<script defer>
+	document.querySelector("#plot-graphs").addEventListener("click", e => {
+		e.preventDefault();
+		const numberOfDays = document.querySelector("#number-of-days").value;
+		const plotInterval = document.querySelector("#plot-interval").value;
+		drawGraphOfRainfall("264845TP", numberOfDays, plotInterval, "#rainfall");
+		drawGraphOfLevels(
+			"2601TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			3.68,
+			"#cookham-downstream-levels"
+		);
+		drawGraphOfLevels(
+			"2601TH",
+			false,
+			numberOfDays,
+			plotInterval,
+			0.6,
+			"#cookham-upstream-levels"
+		);
+		drawGraphOfLevels(
+			"2499TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			3.23,
+			"#marlow-levels"
+		);
+		drawGraphOfLevels(
+			"2497TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			2.18,
+			"#hurley-levels"
+		);
+		drawGraphOfLevels(
+			"2495TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			3.02,
+			"#marsh-levels"
+		);
+		drawGraphOfLevels(
+			"2302TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			2.95,
+			"#shiplake-levels"
+		);
+		drawGraphOfLevels(
+			"2301TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			3.18,
+			"#sonning-levels"
+		);
+		drawGraphOfLevels(
+			"2201TH",
+			true,
+			numberOfDays,
+			plotInterval,
+			2.77,
+			"#caversham-levels"
+		);
+	});
+
+	function formatTime(string) {
+		const [date, time] = string.split("T");
+		return `${date.split("-").reverse().join("-")} ${time.slice(0, 5)}`;
+	}
+
+	async function drawGraphOfLevels(
+		code,
+		downstream,
+		days,
+		interval,
+		flooding,
+		element
+	) {
+		const response = await fetch(
+			`https://environment.data.gov.uk/flood-monitoring/id/measures/${code}-level-${
+				downstream ? "downstage" : "stage"
+			}-i-15_min-mASD/readings?_sorted&_limit=${days * 24 * 4}`
+		);
+		const data = await response.json();
+		const levels = data.items
+			.map(item => [formatTime(item.dateTime), item.value, flooding])
+			.reverse();
+		const graphData = new google.visualization.DataTable();
+		graphData.addColumn("string", "Time");
+		graphData.addColumn("number", "Level (m)");
+		graphData.addColumn("number", "Possible flooding (m)");
+		for (let i = 0; i < levels.length; i++) {
+			if ((i + 1) % interval === 0) {
+				graphData.addRow(levels[i]);
+			}
+		}
+		const graph = new google.visualization.ComboChart(
+			document.querySelector(`${element}`)
+		);
+		graph.draw(graphData, {
+			seriesType: "bars",
+			series: {
+				1: {
+					type: "line"
+				}
+			}
+		});
+	}
+
+	async function drawGraphOfRainfall(code, days, interval, element) {
+		const response = await fetch(
+			`https://environment.data.gov.uk/flood-monitoring/id/stations/${code}/readings?_sorted&_limit=${
+				days * 24 * 4
+			}`
+		);
+		const data = await response.json();
+		const readings = data.items
+			.map(item => [formatTime(item.dateTime), item.value])
+			.reverse();
+		const graphData = new google.visualization.DataTable();
+		graphData.addColumn("string", "Time");
+		graphData.addColumn("number", "Amount in 15mins (mm)");
+		for (let i = 0; i < readings.length; i++) {
+			if ((i + 1) % interval === 0) {
+				graphData.addRow(readings[i]);
+			}
+		}
+		const graph = new google.visualization.ColumnChart(
+			document.querySelector(`${element}`)
+		);
+		graph.draw(graphData);
+	}
+</script>
