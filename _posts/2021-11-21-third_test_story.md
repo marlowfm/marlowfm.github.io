@@ -6,7 +6,7 @@ categories: news
 header:
   teaser: /assets/images/news/test-story-1.jpg
 ---
-This is the first line of the third story. 
+This is the first line of the third story.
 
 !\[]({{ site.url }}{{ site.baseurl }}/assets/images/news/test-story-1.jpg)
 
