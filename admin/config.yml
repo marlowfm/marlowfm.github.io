@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway #github
+  repo: marlowfm/marlowfm.github.io
+  branch: master
+  api_root: https://api.github.com
+  site_domain: frosty-cori-0a21d7.netlify.app #cms.netlify.com when on localhost
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  cms_label_prefix: netlify-cms/
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/images/news"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "news" # Used in routes, e.g., /admin/collections/blog
+    label: "News" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+      - {label: "Title", name: "title", widget: "string", default: "[Write a snappy headline for the story]"}
+      - {label: "Publish date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm"}
+      - {label: "Categories", name: "categories", widget: "hidden", default: "news"}
+      - label: Header
+        name: header
+        widget: object
+        collapsed: false
+        fields:
+          - {label: "Image", name: "teaser", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown", default: "[Write the first line or two of the story, then put an empty line, then put ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/PUT_IMAGE_FILENAME_HERE), then put another empty line, and then write the rest of the story, putting an empty line after each paragraph]"}
