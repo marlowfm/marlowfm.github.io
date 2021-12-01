@@ -62,6 +62,10 @@
   shows: [AG7]
   image: "/assets/images/presenters/charlie_swadling.jpg"
 
+- name: "Chris MiMo"
+  shows: [MIM]
+  image: "/assets/images/presenters/chris_mimo.jpg"
+
 - name: "Chris Zaremba"
   shows: [MMM]
   image: "/assets/images/presenters/chris_zaremba.jpg"

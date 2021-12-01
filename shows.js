@@ -33,6 +33,7 @@ export const progURLs = {
 	KEV: "/programmes/kev-kinch-in-the-house/",
 	SSS: "/programmes/late-kick-off/",
 	SUN: "/programmes/late-late-sunday-brunch-show/",
+	MIM: "/programmes/mimo-music-show/",
 	MTM: "/programmes/more-than-madness/",
 	BOX: "/programmes/music-box/",
 	NMS: "/programmes/new-music-show/",
