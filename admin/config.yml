@@ -1,11 +1,11 @@
 backend:
-  name: git-gateway #github
+  name: github
   repo: marlowfm/marlowfm.github.io
   branch: master
-  api_root: https://api.github.com
+  #api_root: https://api.github.com
   site_domain: frosty-cori-0a21d7.netlify.app #cms.netlify.com when on localhost
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  #base_url: https://api.netlify.com
+  #auth_endpoint: auth
   cms_label_prefix: netlify-cms/
 
 publish_mode: editorial_workflow
