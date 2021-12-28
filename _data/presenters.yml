@@ -259,7 +259,7 @@
   image: "/assets/images/presenters/mike_sharp.png"
 
 - name: "Monty Ozanne"
-  shows: [AFT, NMS]
+  shows: []
   image: "/assets/images/presenters/monty_ozanne.jpg"
 
 - name: "Neil Knowles"
