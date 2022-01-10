@@ -79,7 +79,7 @@
   image: "/assets/images/presenters/clive_capp.png"
 
 - name: "Dave Pering"
-  shows: [SPT]
+  shows: []
   image: "/assets/images/presenters/dave_pering.jpg"
 
 - name: "David G. Croft"
@@ -263,7 +263,7 @@
   image: "/assets/images/presenters/monty_ozanne.jpg"
 
 - name: "Neil Knowles"
-  shows: []
+  shows: [A2Z]
   image: "/assets/images/presenters/neil_knowles.jpg"
 
 - name: "Pat Capp"

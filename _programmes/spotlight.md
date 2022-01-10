@@ -1,4 +1,5 @@
 ---
+published: false
 layout: programme
 title: "Spotlight"
 image: /assets/images/icons/SPT.jpg
