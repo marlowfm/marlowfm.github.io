@@ -254,6 +254,10 @@
   shows: [AG6, ELS]
   image: "/assets/images/presenters/mike_cannon.jpg"
 
+- name: "Mike Read"
+  shows: [HRT]
+  image: "/assets/images/presenters/mike_read.jpg"
+
 - name: "Mike Sharp"
   shows: [AGX]
   image: "/assets/images/presenters/mike_sharp.png"

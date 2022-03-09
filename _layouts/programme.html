@@ -20,12 +20,14 @@ classes: wide
 <h3>Join the programme's <a href="{{ page.fb_group }}" target="_blank">Facebook group</a>.</h3>
 {% endif %}
 
+{% if page.code != "HRT" %}
 <h2>Upcoming programmes</h2>
 <div id="upcoming"></div>
 
 <h2>Past programmes</h2>
 <p>You can listen to any programme from the past three weeks by picking the date you want in the 'listen again' section below.</p>
 <div id="past"></div>
+{% endif %}
 
 {% if page.again %}
 <h2>Listen again</h2>

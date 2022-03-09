@@ -37,10 +37,10 @@ sidebar:
 			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs ser"
 			"t1100 mmm1 mmm2 mmm3 mmm4 mmm5 rcs chr7"
 			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs chr7"
-			"t1200 els1 els2 els3 els4 els5 hrt acz"
-			". els1 els2 els3 els4 els5 hrt acz"
-			"t1300 els1 els2 els3 els4 els5 hrt acz"
-			". els1 els2 els3 els4 els5 hrt acz"
+			"t1200 els1 els2 els3 els4 els5 xxx acz"
+			". els1 els2 els3 els4 els5 xxx acz"
+			"t1300 els1 els2 els3 els4 els5 xxx acz"
+			". els1 els2 els3 els4 els5 xxx acz"
 			"t1400 chr1 zcn zin zbs chr5 hrt a2z"
 			". chr1 zcn zin zbs chr5 hrt a2z"
 			"t1500 ag6 ag7 ag8 ag9 agx hrt a2z"
@@ -435,10 +435,17 @@ sidebar:
 		color: inherit;
 	}
 
+	.xxx {
+		grid-area: xxx;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
 	.hrt {
 		grid-area: hrt;
 		padding: 2px;
-		background-color: var(--background-weekend-dark);
+		background-color: var(--background-weekend-light);
 		color: inherit;
 	}
 
@@ -487,7 +494,7 @@ sidebar:
 	.wfs {
 		grid-area: wfs;
 		padding: 2px;
-		background-color: var(--background-weekend-light);
+		background-color: var(--background-weekend-dark);
 		color: inherit;
 	}
 
@@ -536,7 +543,7 @@ sidebar:
 	.mtm {
 		grid-area: mtm;
 		padding: 2px;
-		background-color: var(--background-weekend-dark);
+		background-color: var(--background-weekend-light);
 		color: inherit;
 	}
 
@@ -648,7 +655,7 @@ sidebar:
 	.kev {
 		grid-area: kev;
 		padding: 2px;
-		background-color: var(--background-weekend-light);
+		background-color: var(--background-weekend-dark);
 		color: inherit;
 	}
 
@@ -662,7 +669,7 @@ sidebar:
 	.apz {
 		grid-area: apz;
 		padding: 2px;
-		background-color: var(--background-weekend-dark);
+		background-color: var(--background-weekend-light);
 		color: inherit;
 	}
 
@@ -813,6 +820,7 @@ sidebar:
 	<a class="els5" href="/programmes/eclectic-light-show/"
 		>THE ECLECTIC LIGHT SHOW</a
 	>
+	<a class="xxx" href=""></a>
 	<a class="hrt" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
 	<a class="a2z" href="/programmes/a2z/">A2Z</a>
 	<a class="ag6" href="/programmes/afternoon-gold-60s/">AFTERNOON GOLD 60s</a>
