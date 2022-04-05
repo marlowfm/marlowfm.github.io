@@ -25,7 +25,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
-      - {label: "Title", name: "title", widget: "string", default: "[Write a snappy headline for the story]"}
+      - {label: "Title", name: "title", widget: "string", default: "[Write a snappy headline for the story, with a Marlow FM angle]"}
       - {label: "Publish date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm"}
       - {label: "Categories", name: "categories", widget: "hidden", default: "news"}
       - label: Header
@@ -34,4 +34,4 @@ collections:
         collapsed: false
         fields:
           - {label: "Image", name: "teaser", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown", default: "[Write the first line or two of the story, then put an empty line, then put ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/PUT_IMAGE_FILENAME_HERE), then put another empty line, and then write the rest of the story, putting an empty line after each paragraph]"}
+      - {label: "Body", name: "body", widget: "markdown", default: "[Write the first line or two of the story, then insert an image, and then write the rest of the story]"}
