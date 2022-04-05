@@ -34,4 +34,4 @@ collections:
         collapsed: false
         fields:
           - {label: "Image", name: "teaser", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown", default: "[Write the first line or two of the story, then insert an image, and then write the rest of the story]"}
+      - {label: "Body", name: "body", widget: "markdown", default: "[Write the first paragraph of the story, then insert an image, and then write the rest of the story]"}
