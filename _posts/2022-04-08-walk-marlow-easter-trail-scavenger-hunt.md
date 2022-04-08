@@ -4,7 +4,7 @@ title: Walk Marlow Easter Trail & Scavenger Hunt
 date: 2022-04-08T14:04:53.146Z
 categories: news
 header:
-  teaser: /assets/images/news/walk-marlow.png
+  teaser: /assets/images/news/walk-marlow2.png
 ---
 As members of the Marlow Chamber of Trade & Commerce Marlow FM encourage you to sign up and join in!
 
