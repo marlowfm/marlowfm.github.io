@@ -1,0 +1,3 @@
+To configure Netlify CMS, log into https://app.netlify.com/ with the marlowfm GitHub account.
+
+More details here: https://sujaykundu.com/blog/how-to-setup-netlify-cms-with-github-pages-hosted-jekyll-blog/
