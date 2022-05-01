@@ -8,7 +8,7 @@ header:
 ---
 Marlow Round Table is delighted to be bringing back Marlow May Fayre after a 2 year absence on Saturday 7th May 2022.
 
-![](/assets/images/news/may-fayre.jpg)
+![]({{ site.url }}{{ site.baseurl }}/assets/images/news/may-fayre.jpg)
 
 There will be live music & entertainment from Marlow FM and more, gift stalls, a kid's disco, a bar, BBQ, teas, coffees & cakes..... and of course the famous Duck Race, with a first prize of £500 and many other prizes available!  Admission is free, Duck Race tickets are £2 per duck.
 
