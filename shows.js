@@ -27,6 +27,7 @@ export const progURLs = {
 	GAP: "/programmes/generation-gap/",
 	MMM: "/programmes/good-morning-marlow/",
 	HRT: "/programmes/heritage-chart/",
+	HCF: "/",
 	HVS: "/programmes/higher-vibration-show/",
 	HWX: "/programmes/houseworx-music-show/",
 	ZIN: "/programmes/internetted/",
