@@ -6,7 +6,7 @@ categories: news
 header:
   teaser: https://raw.githubusercontent.com/marlowfm/marlowfm.github.io/master/assets/images/logos/pub-in-the-park.png
 ---
-[Pub in the Park 2022](https://www.pubintheparkuk.com/marlow) kicks off this Thursday, 12th May, and Marlow FM will be broadcasting live each day from this amazing event in Higginson Park. 
+[Pub in the Park 2022](https://www.pubintheparkuk.com/marlow){:target="_blank"} kicks off this Thursday, 12th May, and Marlow FM will be broadcasting live each day from this amazing event in Higginson Park. 
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/pub-in-the-park.png)
 
