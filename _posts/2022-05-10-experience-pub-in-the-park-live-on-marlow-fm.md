@@ -12,6 +12,6 @@ header:
 
 Amelia, Jonny, Edan and the rest of the team will bring you behind-the-scenes interviews with the bands and artists, chefs, and stallholders, and get you the low-down on what's happening in the park each day. 
 
-On Thursday and Friday, we'll be live from 5pm to 9pm. On Saturday and Sunday, we'll be live from midday to 4pm, and back from 6pm to 8pm. That's 20 hours of coverage! 
+On Thursday and Friday, we'll be live from 5pm to 9pm. On Saturday and Sunday, we'll be live from midday to 4pm, and back again from 6pm to 8pm. That's 20 hours of coverage! 
 
-So if you can't make it down to Higginson Park this year, tune in to Marlow FM instead and experience the fun!
+So if you can't make it down to Higginson Park this year, tune in to Marlow FM instead, and make sure you still get to experience the fun!
