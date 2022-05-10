@@ -10,7 +10,7 @@ header:
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/pub-in-the-park.png)
 
-Amelia, Jonny, Edan and the rest of the team will bring you behind-the-scenes interviews with the bands and artists, chefs, and stallholders, and get you the low-down on what's happening in the park each day. 
+Amelia, Lucy, Jonny, Edan and the rest of the team will bring you behind-the-scenes interviews with the bands and artists, chefs, and stallholders, and get you the low-down on what's happening in the park each day. 
 
 On Thursday and Friday, we'll be live from 5pm to 9pm. On Saturday and Sunday, we'll be live from midday to 4pm, and back again from 6pm to 8pm. That's 20 hours of coverage! 
 
