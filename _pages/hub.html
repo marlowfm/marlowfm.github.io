@@ -7,6 +7,7 @@ sidebar:
   - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
+
 <p>
 	Bringing you up-to-date local information from the Met Office, National Rail,
 	Transport for London, and the Environment Agency.
@@ -275,7 +276,8 @@ sidebar:
 
 <script defer>
 	(async () => {
-		document.querySelector("#weather").innerText = "We're waiting for the data to come through.";
+		document.querySelector("#weather").innerText =
+			"We're waiting for the data to come through.";
 		const weatherResponse = await fetch(
 			"https://form.marlowfm.co.uk:3011/weather"
 		);
@@ -289,12 +291,8 @@ sidebar:
 		const trainResponse = await fetch(
 			"https://form.marlowfm.co.uk:3011/trains"
 		);
-		const [
-			marlow,
-			bourneEnd,
-			maidenhead,
-			highWycombe
-		] = await trainResponse.json();
+		const [marlow, bourneEnd, maidenhead, highWycombe] =
+			await trainResponse.json();
 		const createDepartureBoard = station => {
 			if (station.length === 0) {
 				return "<p>There are no trains in the next two hours</p>";
@@ -316,82 +314,18 @@ sidebar:
 				return html;
 			}
 		};
-		document.querySelector("#trains-marlow").innerHTML = createDepartureBoard(
-			marlow
-		);
-		document.querySelector(
-			"#trains-bourne-end"
-		).innerHTML = createDepartureBoard(bourneEnd);
-		document.querySelector(
-			"#trains-maidenhead"
-		).innerHTML = createDepartureBoard(maidenhead);
-		document.querySelector(
-			"#trains-high-wycombe"
-		).innerHTML = createDepartureBoard(highWycombe);
+		document.querySelector("#trains-marlow").innerHTML =
+			createDepartureBoard(marlow);
+		document.querySelector("#trains-bourne-end").innerHTML =
+			createDepartureBoard(bourneEnd);
+		document.querySelector("#trains-maidenhead").innerHTML =
+			createDepartureBoard(maidenhead);
+		document.querySelector("#trains-high-wycombe").innerHTML =
+			createDepartureBoard(highWycombe);
 	})();
 </script>
 
 <style>
-	#tfl0 {
-		background-color: rgb(178, 99, 0);
-	}
-
-	#tfl1 {
-		background-color: rgb(220, 36, 31);
-	}
-
-	#tfl2 {
-		background-color: rgb(255, 211, 41);
-	}
-
-	#tfl3 {
-		background-color: rgb(0, 125, 50);
-	}
-
-	#tfl4 {
-		background-color: rgb(0, 175, 173);
-	}
-
-	#tfl5 {
-		background-color: rgb(244, 169, 190);
-	}
-
-	#tfl6 {
-		background-color: rgb(161, 165, 167);
-	}
-
-	#tfl7 {
-		background-color: rgb(239, 123, 16);
-	}
-
-	#tfl8 {
-		background-color: rgb(155, 0, 88);
-	}
-
-	#tfl9 {
-		background-color: rgb(0, 0, 0);
-	}
-
-	#tfl10 {
-		background-color: rgb(0, 25, 168);
-	}
-
-	#tfl11 {
-		background-color: rgb(0, 25, 168);
-	}
-
-	#tfl12 {
-		background-color: rgb(0, 152, 216);
-	}
-
-	#tfl13 {
-		background-color: rgb(147, 206, 186);
-	}
-
-	#tfl14 {
-		background-color: rgb(147, 100, 204);
-	}
-
 	.clickable {
 		cursor: pointer;
 	}
@@ -401,47 +335,56 @@ sidebar:
 	(async () => {
 		const tflResponse = await fetch("https://form.marlowfm.co.uk:3011/tfl");
 		const tflData = await tflResponse.json();
-		const statuses = [];
+		const TFL_COLOURS = {
+			bakerloo: "rgb(178, 99, 0)",
+			central: "rgb(220, 36, 31)",
+			circle: "rgb(255, 206, 0)",
+			district: "rgb(0, 114, 41)",
+			dlr: "rgb(0, 175, 173)",
+			"elizabeth-line": "rgb(105, 80, 161)",
+			"hammersmith-city": "rgb(244, 169, 190)",
+			jubilee: "rgb(161, 165, 167)",
+			"london-overground": "rgb(239, 123, 16)",
+			metropolitan: "rgb(155, 0, 88)",
+			northern: "rgb(0, 0, 0)",
+			piccadilly: "rgb(0, 25, 168)",
+			"tfl-rail": "rgb(0, 25, 168)",
+			victoria: "rgb(0, 160, 226)",
+			"waterloo-city": "rgb(147, 206, 186)"
+		};
 		let html = "";
-		tflData.forEach((line, i) => {
-			html += `<div id="tfl${i}" style="display: flex; padding: 1%;">`;
-			if (line.lineStatuses[0].hasOwnProperty("reason")) {
-				let openHtml = "";
-				line.lineStatuses.forEach(status => {
-					openHtml += `<div><strong>${status.statusSeverityDescription.toUpperCase()}</strong></div><div>${
-						status.reason
-					}</div>`;
-				});
-				html += `<div id="open-close${i}" style="flex: 1; font-size: 1.25em;"><strong>&plus;</strong></div>
-					<div style="flex: 5;">${line.name}</div>
-					<div id="status${i}" style="flex: 9;"><strong>${line.lineStatuses[0].statusSeverityDescription.toUpperCase()}</strong></div>
-				`;
-				statuses.push(openHtml);
-			} else {
-				html += `<div style="flex: 1;"></div>
-					<div style="flex: 5;">${line.name}</div>
-					<div style="flex: 9;">${line.lineStatuses[0].statusSeverityDescription}</div>
-				`;
-				statuses.push("");
-			}
+		tflData.forEach(line => {
+			html += `<div style="display: flex; margin-bottom: 1%; padding: 1%; background-color: ${
+				TFL_COLOURS[line.id]
+			};">`;
+			html += `<div style="flex: 1;">${line.name}</div>`;
+			let statusesHtml = '<div style="flex: 3;">';
+			line.lineStatuses.forEach(status => {
+				statusesHtml += status.hasOwnProperty("reason")
+					? `<div class="clickable" style="margin-bottom: 4%;"><div style="display: flex;"><div style="flex: 11;"><strong>${status.statusSeverityDescription.toUpperCase()}</strong></div><div class="sign" style="flex: 1; font-size: 1.25em;"><strong>+</strong></div></div><div class="reason" style="display: none;"><div style="flex: 11;">${
+							status.reason
+					  }</div><div style="flex: 1;"></div></div></div>`
+					: `<div style="margin-bottom: 4%;"><div style="display: flex;"><div style="flex: 11;">${status.statusSeverityDescription}</div><div style="flex: 1;"></div></div></div>`;
+			});
+			statusesHtml += "</div>";
+			html += statusesHtml;
 			html += "</div>";
 		});
 		document.querySelector("#tfl").innerHTML = html;
-		for (let i = 0; i < statuses.length; i++) {
-			if (statuses[i]) {
-				document.querySelector(`#tfl${i}`).classList.add("clickable");
-				document.querySelector(`#tfl${i}`).onclick = e => {
-					e.preventDefault();
-					const openClose = document.querySelector(`#open-close${i}`);
-					openClose.innerHTML === "<strong>+</strong>"
-						? (openClose.innerHTML = "<strong>&minus;</strong>")
-						: (openClose.innerHTML = "<strong>&plus;</strong>");
-					const toggle = document.querySelector(`#status${i}`).innerHTML;
-					document.querySelector(`#status${i}`).innerHTML = statuses[i];
-					statuses[i] = toggle;
-				};
-			}
-		}
+		const statuses = document.querySelectorAll(".clickable");
+		statuses.forEach(status => {
+			status.onclick = e => {
+				e.preventDefault();
+				const sign = status.querySelector(".sign");
+				sign.innerHTML === "<strong>+</strong>"
+					? (sign.innerHTML = "<strong>&minus;</strong>")
+					: (sign.innerHTML = "<strong>+</strong>");
+				const reason = status.querySelector(".reason");
+				reason.style.display === "none"
+					? (reason.style.display = "flex")
+					: (reason.style.display = "none");
+			};
+		});
 	})();
 </script>
 
