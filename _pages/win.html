@@ -1,0 +1,106 @@
+---
+published: true
+layout: single
+classes: wide
+title: "Win tickets to Rock Bottom 2022!"
+permalink: /win/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+
+<img src="/assets/images/news/rock-bottom-2022.jpg" alt="Rock Bottom poster" />
+
+<p></p>
+
+<p><a href="http://www.marlowrockbottom.com/" target="_blank">Rock Bottom</a> will be taking place at Marlow Bottom Playing Fields on Saturday 25th June, and we're giving you a chance to win a family ticket for up to two adults and up to two children aged between 5 and 17. To enter the free draw, just answer the question below correctly and submit your details by 5pm on Sunday 19th June.</p>
+
+<form id="form">
+	<h3>The Dolly Show, the UK's leading Dolly Parton tribute act, will be performing this year. However, the real Dolly is godmother to which famous US singer?</h3>
+	<label>
+		<input
+			type="radio"
+			id="a"
+			name="answer"
+			value="britney"
+			style="display: inline"
+		/>
+		A: Britney Spears
+	</label>
+	<label>
+		<input
+			type="radio"
+			id="b"
+			name="answer"
+			value="miley"
+			style="display: inline"
+		/>
+		B: Miley Cyrus
+	</label>
+	<label>
+		<input
+			type="radio"
+			id="c"
+			name="answer"
+			value="justin"
+			style="display: inline"
+		/>
+		C: Justin Timberlake
+	</label>
+	<p></p>
+	<label for="name">Your name</label>
+	<input type="text" id="name" maxlength="50" required />
+	<label for="email">Your email address</label>
+	<input type="email" id="email" maxlength="75" required />
+	<label for="phone">Your phone number</label>
+	<input type="text" id="phone" maxlength="20" required />
+	<label
+		>Happy to hear from us by email?
+		<input type="checkbox" id="marketing" style="display: inline" checked />
+	</label>
+	<p></p>
+	<button type="submit" class="btn btn--inverse btn--large">Submit</button>
+</form>
+<div id="thanks"></div>
+
+<p></p>
+
+<p>Entry to the draw opens on Monday 23rd May and closes at 5pm on Sunday 19th June. You may only enter once. Members of Marlow FM and their close relatives aren't allowed to enter. The winner will be drawn from qualifying entries at random and notified within five days of the close of entry, and their name will be announced. We won't share your entry details with anyone not connected to the draw.</p>
+
+<script defer>
+	document.querySelector("#form").onsubmit = async e => {
+		e.preventDefault();
+		if (
+			document.querySelector("#a").checked ||
+			document.querySelector("#b").checked ||
+			document.querySelector("#c").checked
+		) {
+			try {
+				await fetch("https://form.marlowfm.co.uk:3011/create", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						name: document.querySelector("#name").value,
+						email: document.querySelector("#email").value,
+						phone: document.querySelector("#phone").value,
+						answer: document.querySelector("#a").checked
+							? document.querySelector("#a").value
+							: document.querySelector("#b").checked
+							? document.querySelector("#b").value
+							: document.querySelector("#c").value,
+						marketing: document.querySelector("#marketing").checked
+					})
+				});
+				document.querySelector(
+					"#thanks"
+				).innerHTML = `<p>You've entered the draw. Good luck!</p>`;
+				document.querySelector("#name").value = "";
+				document.querySelector("#email").value = "";
+				document.querySelector("#phone").value = "";
+			} catch (error) {
+				console.error(error);
+			}
+		}
+	};
+</script>
