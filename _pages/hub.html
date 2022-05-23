@@ -358,7 +358,7 @@ sidebar:
 				TFL_COLOURS[line.id]
 			};">`;
 			html += `<div style="flex: 1;">${line.name}</div>`;
-			let statusesHtml = '<div style="flex: 3;">';
+			let statusesHtml = '<div style="flex: 2;">';
 			line.lineStatuses.forEach(status => {
 				statusesHtml += status.hasOwnProperty("reason")
 					? `<div class="clickable" style="margin-bottom: 4%;"><div style="display: flex;"><div style="flex: 11;"><strong>${status.statusSeverityDescription.toUpperCase()}</strong></div><div class="sign" style="flex: 1; font-size: 1.25em;"><strong>+</strong></div></div><div class="reason" style="display: none;"><div style="flex: 11;">${
