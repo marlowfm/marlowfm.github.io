@@ -6,7 +6,7 @@ categories: news
 header:
   teaser: /assets/images/news/rock-bottom-2022.jpg
 ---
-[Rock Bottom](http://www.marlowrockbottom.com/){:target="_blank"} will be taking place at Marlow Bottom Playing Fields on Saturday 25th June, and we're giving you a chance to win a family ticket for up to two adults and up to two children aged between 5 and 17. [Enter the free draw]({{ site.url }}{{ site.baseurl }}/win/) by 5pm on Sunday 19th June. 
+[Rock Bottom](http://www.marlowrockbottom.com/){:target="_blank"} will be taking place at Marlow Bottom Playing Fields on Saturday 25th June, and we're giving you a chance to win a family ticket for up to two adults and up to two children aged between 5 and 17. Enter the free draw by 5pm on Sunday 19th June. 
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/rock-bottom-2022.jpg)
 
