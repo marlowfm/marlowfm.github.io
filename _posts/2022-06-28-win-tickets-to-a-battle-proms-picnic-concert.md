@@ -6,9 +6,9 @@ categories: news
 header:
   teaser: /assets/images/news/battle-proms-picnic.jpeg
 ---
-The [Battle Proms](https://www.battleproms.com/), the UK's premier picnic concert season, are celebrating 25 years of staging their unique and memorable events at some of the UK's most celebrated stately homes. And you could win a pair of tickets! 
+The [Battle Proms](https://www.battleproms.com/){:target="_blank"}, the UK's premier picnic concert season, are celebrating 25 years of staging their unique and memorable events at some of the UK's most celebrated stately homes. And you could win a pair of tickets! 
 
-![](/assets/images/news/battle-proms-picnic.jpeg)
+![]({{ site.url }}{{ site.baseurl }}/assets/images/news/battle-proms-picnic.jpeg)
 
 Concert goers will be treated to an unforgettable evening of toe-tapping vintage vocals and uplifting classical music, with breath-taking Spitfire, parachute, cavalry, cannon, and firework displays, all in stunning, stately home settings.
 
