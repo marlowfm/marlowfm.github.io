@@ -14,11 +14,10 @@ Concert goers will be treated to an unforgettable evening of toe-tapping vintage
 
 You could be going along, courtesy of Marlow FM. We have a pair of tickets to give away for any one of the following concerts. 
 
-* Blenheim Palace: Saturday 2nd July 
 * Burghley House, Lincolnshire: Saturday 9th July 
 * Hatfield House: Saturday 16th July 
 * Highclere Castle, the 'real' Downton Abbey: Saturday 30th July 
 
 To win the tickets to a Battle Prom picnic concert of your choice, just answer the following question: **Hatfield House is synonymous with which English monarch?** 
 
-Email your answer along with your choice of venue, your name, and a contact phone number to [studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk). Entry to the draw closes at 5pm on Thursday 30th June. You may only enter once. Members of Marlow FM and their close relatives aren't allowed to enter.
+Email your answer along with your choice of venue, your name, and a contact phone number to [studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk). Entry to the draw closes at 5pm on Thursday 7th July. You may only enter once. Members of Marlow FM and their close relatives aren't allowed to enter.
