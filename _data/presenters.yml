@@ -76,7 +76,7 @@
 
 - name: "Clare Bones"
   shows: [MMM]
-  image: 
+  image: "/assets/images/presenters/clare_bones.jpg"
 
 - name: "Clive Capp"
   shows: [AG6]
