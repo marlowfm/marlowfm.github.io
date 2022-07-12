@@ -6,16 +6,12 @@
   shows: [ELS]
   image: "/assets/images/presenters/abi_morris.jpg"
 
-- name: "Abigail Bailey"
-  shows: []
-  image: "/assets/images/presenters/abigail_bailey.jpg"
-
 - name: "Ali Gray"
   shows: [SSS]
   image: 
 
 - name: "Adam Swiergon"
-  shows: [DRV]
+  shows: []
   image: 
 
 - name: "Alan Price-Roberts"
@@ -27,7 +23,7 @@
   image: "/assets/images/presenters/amanda_street.jpg"
 
 - name: "Amelia Slaughter"
-  shows: [AG9, DRV]
+  shows: [DRV]
   image: "/assets/images/presenters/amelia_slaughter.jpg"
 
 - name: "Andy Barrett"
@@ -50,6 +46,10 @@
   shows: [AG8, MMM, SOM]
   image: "/assets/images/presenters/angie_burns.png"
 
+- name: "Beth Morris"
+  shows: [MMM]
+  image: "/assets/images/presenters/beth_morris.jpg"
+
 - name: "Bridget Biggar"
   shows: [SOM]
   image: "/assets/images/presenters/bridget_biggar.jpg"
@@ -59,7 +59,7 @@
   image: "/assets/images/presenters/carla_delaney.jpg"
 
 - name: "Charlie Swadling"
-  shows: [AG7]
+  shows: []
   image: "/assets/images/presenters/charlie_swadling.jpg"
 
 - name: "Chris MiMo"
@@ -74,6 +74,10 @@
   shows: [MMM]
   image: "/assets/images/presenters/chrissy_longley.jpg"
 
+- name: "Clare Bones"
+  shows: [MMM]
+  image: 
+
 - name: "Clive Capp"
   shows: [AG6]
   image: "/assets/images/presenters/clive_capp.png"
@@ -87,32 +91,36 @@
   image: "/assets/images/presenters/david_croft.jpg"
 
 - name: "David Downing"
-  shows: []
+  shows: [FMT]
   image: "/assets/images/presenters/david_downing.jpg"
 
 - name: "Debbie Baker"
   shows: [DRV, ELS, RCS]
   image: "/assets/images/presenters/debbie_baker.jpg"
 
-- name: "Donna Thacker"
-  shows: [MMM]
-  image: "/assets/images/presenters/donna_thacker.jpg"
-
 - name: "Dora Hargitai"
-  shows: [ECO]
+  shows: []
   image: 
 
 - name: "Toby Brown"
-  shows: [ECO]
+  shows: []
   image: 
 
+- name: "Dora Hargitai & Toby Brown"
+  shows: [ECO]
+  image: "/assets/images/presenters/dora_&_toby.jpeg"
+
 - name: "Edan Gaskell"
-  shows: [BRK, MMM, MTM]
+  shows: [BRK, MTM]
   image: "/assets/images/presenters/edan_gaskell.jpg"
 
-- name: "Fran Stafford"
-  shows: [CLS]
-  image: "/assets/images/presenters/fran_stafford.jpg"
+- name: "Emily Guiver"
+  shows: [MMM]
+  image: "/assets/images/presenters/emily_guiver.jpg"
+
+- name: "Frances Hearne"
+  shows: [MMM]
+  image: "/assets/images/presenters/frances_hearne.jpg"
 
 - name: "Geoff Motley"
   shows: [MMM]
@@ -130,10 +138,6 @@
   shows: [RCS]
   image: 
 
-- name: "Ian Harris"
-  shows: []
-  image: "/assets/images/presenters/ian_harris.jpg"
-
 - name: "Izzy Seddon"
   shows: [CAF]
   image: 
@@ -141,6 +145,10 @@
 - name: "Jack Gifford"
   shows: [DRV, SSS]
   image: 
+
+- name: "James Winter"
+  shows: [MMM]
+  image: "/assets/images/presenters/james_winter.jpg"
 
 - name: "Jamie Munn"
   shows: [DRV]
@@ -163,27 +171,19 @@
   image: "/assets/images/presenters/john_brotherton.jpg"
 
 - name: "John Rumble"
-  shows: [FMT]
+  shows: [FMT, MMM]
   image: "/assets/images/presenters/john_rumble.jpg"
 
-- name: "Jonathan Posner"
-  shows: []
-  image: "/assets/images/presenters/jonathan_posner.jpg"
-
 - name: "Jonny Ratner"
-  shows: [AG6, BRK, MTM, RCS]
+  shows: [BRK, MTM, RCS]
   image: "/assets/images/presenters/jonny_ratner.jpg"
 
 - name: "Julie Greatwood"
   shows: [MMM]
   image: "/assets/images/presenters/julie_greatwood.jpg"
 
-- name: "June Bailey"
-  shows: []
-  image: "/assets/images/presenters/june_bailey.jpg"
-
 - name: "Karen Feakin"
-  shows: [MMM]
+  shows: []
   image: "/assets/images/presenters/karen_feakin.jpg"
 
 - name: "Keith Wishart"
@@ -199,19 +199,15 @@
   image: 
 
 - name: "Laura Tilbury"
-  shows: [80S, AG7, ELS, RCS]
+  shows: [80S, ELS, RCS]
   image: "/assets/images/presenters/laura_tilbury.jpg"
 
 - name: "Lawrence Wood"
   shows: [ZBS]
   image: "/assets/images/presenters/lawrence_wood.jpg"
 
-- name: "Louise Carron Harris"
-  shows: []
-  image: "/assets/images/presenters/louise_carron-harris.jpg"
-
 - name: "Lucy Ashburner"
-  shows: [AG7, BRK, DRV, NMS]
+  shows: [BRK, NMS]
   image: "/assets/images/presenters/lucy_ashburner.jpg"
 
 - name: "Lucy O'Callaghan"
@@ -233,10 +229,6 @@
 - name: "Mary Flavelle"
   shows: [MMM]
   image: "/assets/images/presenters/mary_flavelle.jpg"
-
-- name: "Michael Bird"
-  shows: [ZIN]
-  image: 
 
 - name: "Michael Eagleton"
   shows: [CHR, SER, STM]
@@ -262,10 +254,6 @@
   shows: [AGX]
   image: "/assets/images/presenters/mike_sharp.png"
 
-- name: "Monty Ozanne"
-  shows: []
-  image: "/assets/images/presenters/monty_ozanne.jpg"
-
 - name: "Neil Knowles"
   shows: [A2Z]
   image: "/assets/images/presenters/neil_knowles.jpg"
@@ -275,12 +263,12 @@
   image: "/assets/images/presenters/pat_capp.jpg"
 
 - name: "Pat Reading"
-  shows: [BRK, FMT]
+  shows: [BRK]
   image: "/assets/images/presenters/pat_reading.jpg"
 
-- name: "Paul Busby"
+- name: "Paul Englezos"
   shows: [MMM]
-  image: "/assets/images/presenters/paul_busby.jpg"
+  image: "/assets/images/presenters/paul_englezos.jpg"
 
 - name: "Paul Goodwin"
   shows: [SFS]
@@ -311,11 +299,7 @@
   image: "/assets/images/presenters/rhidian_jones.jpg"
 
 - name: "Richard Moss"
-  shows: [RCS]
-  image: 
-
-- name: "Rob Murgatroyd"
-  shows: [ZIN]
+  shows: [DRV, RCS]
   image: 
 
 - name: "Ronnie Turner"
@@ -338,18 +322,6 @@
   shows: []
   image: "/assets/images/presenters/sheila_wilson.jpg"
 
-- name: "Sian Herschel"
-  shows: [MMM]
-  image: "/assets/images/presenters/sian_herschel.jpg"
-
-- name: "Steve Berry"
-  shows: []
-  image: "/assets/images/presenters/steve_berry.jpg"
-
-- name: "Stuart Maxwell"
-  shows: [RCK]
-  image: 
-
 - name: "Stuart Parker"
   shows: [RCK]
   image: "/assets/images/presenters/stuart_parker.jpg"
@@ -362,10 +334,6 @@
   shows: [ITA]
   image: 
 
-- name: "Tilly Hughes"
-  shows: []
-  image: "/assets/images/presenters/tilly_hughes.jpg"
-
 - name: "Tim Ashburner"
   shows: []
   image: 
@@ -375,9 +343,13 @@
   image: 
 
 - name: "Tom Fothergill"
-  shows: [AG9, BRK, SAT]
+  shows: [SAT]
   image: 
 
 - name: "Vicky Everitt"
   shows: [FMT]
   image: "/assets/images/presenters/vicky_everitt.jpg"
+
+- name: "Vonnie Williams & DJ Dan"
+  shows: [MMM]
+  image: "/assets/images/presenters/vonnie_&_dan.jpg"
