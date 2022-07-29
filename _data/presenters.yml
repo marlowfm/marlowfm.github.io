@@ -163,7 +163,7 @@
   image: "/assets/images/presenters/jill_huskisson.jpg"
 
 - name: "Jim Biggs"
-  shows: [GAP, MTM]
+  shows: [MTM]
   image: "/assets/images/presenters/jim_biggs.jpg"
 
 - name: "John Brotherton"
@@ -185,10 +185,6 @@
 - name: "Karen Feakin"
   shows: []
   image: "/assets/images/presenters/karen_feakin.jpg"
-
-- name: "Keith Wishart"
-  shows: [GAP]
-  image: "/assets/images/presenters/keith_wishart.jpg"
 
 - name: "Kev Kinch"
   shows: [APZ, KEV]
@@ -321,6 +317,10 @@
 - name: "Sheila Wilson"
   shows: []
   image: "/assets/images/presenters/sheila_wilson.jpg"
+
+- name: "Steve Nash"
+  shows: [REM]
+  image: "/assets/images/presenters/steve_nash.jpg"
 
 - name: "Stuart Parker"
   shows: [RCK]
