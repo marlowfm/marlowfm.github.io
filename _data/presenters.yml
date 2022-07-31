@@ -23,7 +23,7 @@
   image: "/assets/images/presenters/amanda_street.jpg"
 
 - name: "Amelia Slaughter"
-  shows: [DRV]
+  shows: []
   image: "/assets/images/presenters/amelia_slaughter.jpg"
 
 - name: "Andy Barrett"
@@ -143,7 +143,7 @@
   image: 
 
 - name: "Jack Gifford"
-  shows: [DRV, SSS]
+  shows: [SSS]
   image: 
 
 - name: "James Winter"
@@ -163,7 +163,7 @@
   image: "/assets/images/presenters/jill_huskisson.jpg"
 
 - name: "Jim Biggs"
-  shows: [MTM]
+  shows: []
   image: "/assets/images/presenters/jim_biggs.jpg"
 
 - name: "John Brotherton"
