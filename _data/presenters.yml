@@ -63,7 +63,7 @@
   image: "/assets/images/presenters/charlie_swadling.jpg"
 
 - name: "Chris MiMo"
-  shows: [MIM]
+  shows: []
   image: "/assets/images/presenters/chris_mimo.jpg"
 
 - name: "Chris Zaremba"
