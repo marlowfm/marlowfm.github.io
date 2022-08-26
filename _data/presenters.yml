@@ -318,6 +318,10 @@
   shows: []
   image: "/assets/images/presenters/sheila_wilson.jpg"
 
+- name: "Simon Harding"
+  shows: [EUR]
+  image: "/assets/images/presenters/simon_harding.jpg"
+
 - name: "Steve Nash"
   shows: [REM]
   image: "/assets/images/presenters/steve_nash.jpg"
