@@ -1,0 +1,134 @@
+---
+published: true
+layout: single
+classes: wide
+title: "Vote for Marlow's Hidden Gems!"
+permalink: /panther/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+
+<img src="/assets/images/hidden-heroes-logo.jpg" alt="Hidden Heroes logo" />
+
+<p>
+	Hidden Gems, Marlow FM's celebration of local people, businesses, and
+	organisations, is back for 2022!
+</p>
+
+<p>
+	Thank you for all your nominations. We've drawn up a shortlist for each
+	category, and it's now time to get voting. The winners and runners-up will be
+	announced at a special event at Great Marlow School on Saturday XXth November.
+</p>
+
+<p>
+	Please fill in and submit the form below by the end of Friday XXth November.
+	You can vote in however many categories you want, but please only vote once.
+	We'll reject any suspicious-looking forms!
+</p>
+
+<form id="form">
+	<label for="name">Your name</label>
+	<input type="text" id="name" maxlength="50" required />
+	<label for="email">Your email address</label>
+	<input type="email" id="email" maxlength="75" required />
+	<div id="categories"></div>
+	<p></p>
+	<label
+		>Happy to hear from us by email?
+		<input type="checkbox" id="marketing" style="display: inline" checked
+	/></label>
+	<button type="submit" class="btn btn--inverse btn--large">Submit</button>
+</form>
+<div id="thanks"><p>You haven't submitted your votes yet.</p></div>
+
+<script defer>
+	const CATEGORIES = [
+		{
+			long: "Best Cup of Tea",
+			short: "tea",
+			nominees: [
+				{ long: "Burgers", short: "Burgers" },
+				{ long: "Fego Restaurant", short: "Fego" },
+				{ long: "The Cedar Coffe Shop", short: "Cedar" }
+			]
+		},
+		{
+			long: "Best Teacher",
+			short: "teacher",
+			nominees: [
+				{ long: "Mr Smith - Great Marlow School", short: "Smith" },
+				{ long: "Miss Shipley - William Borlase", short: "Shipley" },
+				{ long: "Mrs Potter - Holy Trinity", short: "Potter" }
+			]
+		}
+	];
+	CATEGORIES.forEach(category =>
+		document.querySelector("#categories").insertAdjacentHTML(
+			"beforeend",
+			`
+				<div id="${category.short}">
+					<h3>${category.long}</h3>
+					<label>
+						<input type="radio" name="${category.short}" value="" style="display: inline" checked />
+						None selected
+					</label>
+				</div>
+			`
+		)
+	);
+	CATEGORIES.forEach(category =>
+		category.nominees.forEach(nominee =>
+			document.getElementById(category.short).insertAdjacentHTML(
+				"beforeend",
+				`
+					<label>
+						<input
+							type="radio"
+							name="${category.short}"
+							value="${nominee.short}"
+							style="display: inline"
+						/>
+						${nominee.long}
+					</label>
+				`
+			)
+		)
+	);
+
+	document.querySelector("#form").onsubmit = async e => {
+		e.preventDefault();
+		const votes = CATEGORIES.map(
+			category =>
+				document.querySelector(`input[name="${category.short}"]:checked`).value
+		);
+		console.table(votes);
+		if (votes.every(vote => !vote)) {
+			document.querySelector(
+				"#thanks"
+			).innerHTML = `<p>You haven't voted for anyone!</p>`;
+		} else {
+			try {
+				/*await fetch("https://form.marlowfm.co.uk:3011/create", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name: document.querySelector("#name").value,
+					email: document.querySelector("#email").value,
+					votes: votes,
+					marketing: document.querySelector("#marketing").checked
+				})
+			});*/
+				document.querySelector(
+					"#thanks"
+				).innerHTML = `<p>Thank you for voting.</p>`;
+				document.querySelector("#name").value = "";
+				document.querySelector("#email").value = "";
+			} catch (error) {
+				console.error(error);
+			}
+		}
+	};
+</script>

@@ -1,0 +1,91 @@
+---
+published: false
+layout: single
+classes: wide
+title: "Help us find Marlow's Hidden Gems!"
+permalink: /pink/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+
+<img src="/assets/images/hidden-heroes-logo.jpg" alt="Hidden Heroes logo" />
+
+<p>
+	Hidden Gems, Marlow FM's celebration of local people, businesses, and
+	organisations, is back for 2022!
+</p>
+
+<p>
+	As usual, we're first asking you to put forward nominees for a number of
+	categories. We'll then draw up a shortlist for each category, and ask you to
+	get voting. The winners and runners-up will be announced at a special event at
+	Great Marlow School on Saturday XXth November.
+</p>
+
+<p>
+	Please fill in and submit the form below by the end of Friday XXth October.
+	You can make as many nominations as you want in however many categories.
+</p>
+
+<form id="form">
+	<label for="name">Your name</label>
+	<input type="text" id="name" maxlength="50" required />
+	<label for="email">Your email address</label>
+	<input type="email" id="email" maxlength="75" required />
+	<label for="categories">Choose a category</label>
+	<select id="categories"></select>
+	<label for="nomination">Who you're nominating and why</label>
+	<textarea id="nomination" rows="4" maxlength="750" required></textarea>
+	<label
+		>Happy to hear from us by email?
+		<input type="checkbox" id="marketing" style="display: inline" checked
+	/></label>
+	<button type="submit" class="btn btn--inverse btn--large">
+		Submit your nomination
+	</button>
+</form>
+<div id="thanks"><p>You haven't submitted a nomination yet.</p></div>
+
+<script defer>
+	const CATEGORIES = [
+		{ long: "Best Cup of Tea", short: "tea" },
+		{ long: "Best Teacher", short: "teacher" }
+	];
+	const categoryObject = {};
+	CATEGORIES.forEach(category => {
+		document
+			.querySelector("#categories")
+			.insertAdjacentHTML(
+				"beforeend",
+				`<option value=${category.short}>${category.long}</option>`
+			);
+		categoryObject[category.short] = category.long;
+	});
+
+	document.querySelector("#form").onsubmit = async e => {
+		e.preventDefault();
+		try {
+			/*await fetch("https://form.marlowfm.co.uk:3011/create", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name: document.querySelector("#name").value,
+					email: document.querySelector("#email").value,
+					category: document.querySelector("#categories").value,
+					nomination: document.querySelector("#nomination").value,
+					marketing: document.querySelector("#marketing").checked
+				})
+			});*/
+			document.querySelector(
+				"#thanks"
+			).innerHTML = `<p>Thank you for submitting a nomination for '${
+				categoryObject[document.querySelector("#categories").value]
+			}'.</p>`;
+			document.querySelector("#nomination").value = "";
+		} catch (error) {
+			console.error(error);
+		}
+	};
+</script>
