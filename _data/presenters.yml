@@ -50,6 +50,10 @@
   shows: [MMM]
   image: "/assets/images/presenters/beth_morris.jpg"
 
+- name: "Beth Riley"
+  shows: [BOP]
+  image: "/assets/images/presenters/beth_riley.jpeg"
+
 - name: "Bridget Biggar"
   shows: [SOM]
   image: "/assets/images/presenters/bridget_biggar.jpg"
@@ -145,6 +149,10 @@
 - name: "Jack Gifford"
   shows: [SSS]
   image: 
+
+- name: "James Riley"
+  shows: [CAW]
+  image: "/assets/images/presenters/james_riley.jpg"
 
 - name: "James Winter"
   shows: [MMM]
@@ -277,6 +285,10 @@
 - name: "Paul Minkkinen"
   shows: [PFM]
   image: "/assets/images/presenters/paul_minkkinen.png"
+
+- name: "Paul Rose"
+  shows: [REE]
+  image: "/assets/images/presenters/paul_rose.jpg"
 
 - name: "Pauline Howe-Davies"
   shows: [MMM]
