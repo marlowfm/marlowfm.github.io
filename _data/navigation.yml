@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Quiz Night"
+    url: /quiz/
   - title: "Listen Live"
     url: "http://radioplayer.marlowfm.co.uk"
   - title: "Listen Again"
