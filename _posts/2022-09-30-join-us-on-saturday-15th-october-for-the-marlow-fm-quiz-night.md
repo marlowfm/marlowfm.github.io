@@ -10,4 +10,4 @@ The Marlow FM Quiz Night is back! Join us on Saturday 15th October in the gym at
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/quiz-night.jpg)
 
-[﻿All the details are here.]({{ site.url }}{{ site.baseurl }}/quiz)
+[﻿Tickets and all the details are here.]({{ site.url }}{{ site.baseurl }}/quiz)
