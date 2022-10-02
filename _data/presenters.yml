@@ -182,6 +182,10 @@
   shows: [FMT, MMM]
   image: "/assets/images/presenters/john_rumble.jpg"
 
+- name: "Jonathan Charles"
+  shows: [VIN]
+  image: "/assets/images/presenters/jonathan_charles.png"
+
 - name: "Jonny Ratner"
   shows: [BRK, MTM, RCS]
   image: "/assets/images/presenters/jonny_ratner.jpg"

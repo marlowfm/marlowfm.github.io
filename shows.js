@@ -59,6 +59,7 @@ export const progURLs = {
 	SER: "/programmes/sunday-serenade/",
 	STM: "/programmes/swing-that-music/",
 	ZTC: "/programmes/technology-show/",
+	VIN: "/programmes/vinyl-countdown/",
 	ZWL: "/programmes/work-life-balance-show/",
 	WFS: "/programmes/world-folk-show/"
 };
