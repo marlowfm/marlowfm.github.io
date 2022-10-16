@@ -9,5 +9,3 @@ header:
 The Marlow FM Quiz Night is back! Join us on Saturday 15th October in the hall at Holy Trinity School for a night of fun, head-scratching, and fundraising for your local community radio station.
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/quiz-night.jpg)
-
-[﻿Tickets and all the details are here.]({{ site.url }}{{ site.baseurl }}/quiz)
