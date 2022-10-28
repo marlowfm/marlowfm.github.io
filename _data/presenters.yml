@@ -19,7 +19,7 @@
   image: "/assets/images/presenters/alan_price-roberts.jpg"
 
 - name: "Amanda Street"
-  shows: [AGX, MMM]
+  shows: []
   image: "/assets/images/presenters/amanda_street.jpg"
 
 - name: "Amelia Slaughter"
@@ -27,11 +27,11 @@
   image: "/assets/images/presenters/amelia_slaughter.jpg"
 
 - name: "Andy Barrett"
-  shows: [ELS]
+  shows: []
   image: "/assets/images/presenters/andy_barrett.jpg"
 
 - name: "Andy Beggs"
-  shows: [SFS]
+  shows: []
   image: "/assets/images/presenters/andy_beggs.jpg"
 
 - name: "Andy Fowler"
@@ -135,7 +135,7 @@
   image: "/assets/images/presenters/graham_duthie.jpg"
 
 - name: "Howie Rogers"
-  shows: [80S]
+  shows: []
   image: "/assets/images/presenters/howie_rogers.jpg"
 
 - name: "Ian Branch"
@@ -210,9 +210,17 @@
   shows: [80S, ELS, RCS]
   image: "/assets/images/presenters/laura_tilbury.jpg"
 
+- name: "Laura Webb"
+  shows: [AG7, DRV]
+  image: 
+
 - name: "Lawrence Wood"
   shows: [ZBS]
   image: "/assets/images/presenters/lawrence_wood.jpg"
+
+- name: "Lisa BHA"
+  shows: [80S]
+  image: 
 
 - name: "Lucy Ashburner"
   shows: [BRK, NMS]
@@ -237,6 +245,10 @@
 - name: "Mary Flavelle"
   shows: [MMM]
   image: "/assets/images/presenters/mary_flavelle.jpg"
+
+- name: "Melissa Barnby"
+  shows: [DRV]
+  image: 
 
 - name: "Michael Eagleton"
   shows: [CHR, SER, STM]
@@ -315,7 +327,7 @@
   image: 
 
 - name: "Ronnie Turner"
-  shows: [REM]
+  shows: []
   image: "/assets/images/presenters/ronnie_turner.jpg"
 
 - name: "Ruth Humphreys"
@@ -323,7 +335,7 @@
   image: "/assets/images/presenters/ruth_humphreys.jpg"
 
 - name: "Sarah-Jane Dale"
-  shows: [80S]
+  shows: [AG9]
   image: "/assets/images/presenters/sarah-jane_dale.jpg"
 
 - name: "Serena Spencer-Jones"
