@@ -6,9 +6,7 @@ categories: news
 header:
   teaser: /assets/images/news/community-radio-awards-2022.png
 ---
-W﻿e're over the moon that o﻿ur head of training, John Rumble, collected the bronze award in the *Sage Person* category at this year's [Community Radio Awards](https://communityradioawards.org.uk/). The category recognises people over the age of 60.
-
-O﻿ur head of training, John Rumble, collected the bronze award in the Sage Person category at this year's [Community Radio Awards](https://communityradioawards.org.uk/). And member John Rumble is a finalist in the *Sage Person* category, which recognises people over the age of 60.
+W﻿e're over the moon that o﻿ur head of training, John Rumble, collected the bronze award in the *Sage Person* category at this year's [Community Radio Awards](https://communityradioawards.org.uk/). The category recognises people over the age of 60. 
 
 ![John Rumble (right) and managing director Graham Duthie at the awards]({{ site.url }}{{ site.baseurl }}/assets/images/news/community-radio-awards-2022.png "John Rumble (right) and managing director Graham Duthie at the awards")
 
