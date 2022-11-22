@@ -6,7 +6,7 @@ categories: news
 header:
   teaser: /assets/images/news/community-radio-awards-2022.png
 ---
-W﻿e've o﻿nce again made the shortlists in this year's [Community Radio Awards](https://communityradioawards.org.uk/finalist-revealed-for-the-community-radio-awards-2022/). 
+W﻿e've o﻿nce again made the shortlists in this year's [Community Radio Awards](https://communityradioawards.org.uk/finalist-revealed-for-the-community-radio-awards-2022/){:target="_blank"}. 
 
 ![Some of the team at this year's Marlow Town Regatta]({{ site.url }}{{ site.baseurl }}/assets/images/news/community-radio-awards-2022-ob.jpg "Some of the team at this year's Marlow Town Regatta")
 

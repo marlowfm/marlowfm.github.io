@@ -6,7 +6,7 @@ categories: news
 header:
   teaser: /assets/images/news/john-rumble-cra-2022.png
 ---
-W﻿e're over the moon that o﻿ur head of training, John Rumble, collected the bronze award in the *Sage Person* category at this year's [Community Radio Awards](https://communityradioawards.org.uk/). The category recognises people over the age of 60. 
+W﻿e're over the moon that o﻿ur head of training, John Rumble, collected the bronze award in the *Sage Person* category at this year's [Community Radio Awards](https://communityradioawards.org.uk/){:target="_blank"}. The category recognises people over the age of 60. 
 
 ![John Rumble (right) and managing director Graham Duthie at the awards]({{ site.url }}{{ site.baseurl }}/assets/images/news/john-rumble-cra-2022.png "John Rumble (right) and managing director Graham Duthie at the awards")
 
@@ -14,4 +14,4 @@ I﻿t's fantastic that John, who leads our *Faith Matters* programme, and does s
 
 T﻿he awards ceremony took place in Bedford on 19 November. We were also up for *Outside Broadcast of the Year* for our coverage of this year's Marlow Town Regatta and Festival. 
 
-Y﻿ou can \[see and listen to all of our entries here]({{ site.url }}{{ site.baseurl }}/cra2022/).
+Y﻿ou can [see and listen to all of our entries here]({{ site.url }}{{ site.baseurl }}/cra2022/).
