@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: programme
 title: "Cool Yule"
 image: /assets/images/icons/YUL.jpg
