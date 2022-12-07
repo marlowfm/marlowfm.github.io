@@ -12,19 +12,25 @@ sidebar:
 
 <p>
 	Hidden Gems, Marlow FM's celebration of local people, businesses, and
-	organisations, is back for 2022!
+	organisations, is back for 2023 - with some new categories!
 </p>
 
 <p>
-	As usual, we're first asking you to put forward nominees for a number of
-	categories. We'll then draw up a shortlist for each category, and ask you to
-	get voting. The winners and runners-up will be announced at a special event at
-	Great Marlow School on Saturday XXth November.
+	As usual, we're first asking you to make nominations. We'll then draw up a
+	shortlist of nominees for each category, and ask you to get voting. The
+	winners and runners-up will be announced at a special fiesta at Holy Trinity
+	School on Saturday 18th February - click here to buy tickets.
 </p>
 
 <p>
-	Please fill in and submit the form below by the end of Friday XXth October.
-	You can make as many nominations as you want in however many categories.
+	Please fill in and submit the form below by the end of [Sunday 15th] January.
+	You can make as many nominations as you want, in as many categories as you
+	want.
+</p>
+
+<p>
+	The organising team will also be making two special recognition awards for
+	services to charity and to the community.
 </p>
 
 <form id="form">
@@ -34,13 +40,14 @@ sidebar:
 	<input type="email" id="email" maxlength="75" required />
 	<label for="categories">Choose a category</label>
 	<select id="categories"></select>
+	<p id="description"></p>
 	<label for="nomination">Who you're nominating and why</label>
 	<textarea id="nomination" rows="4" maxlength="750" required></textarea>
 	<label
 		>Happy to hear from us by email?
 		<input type="checkbox" id="marketing" style="display: inline" checked
 	/></label>
-	<button type="submit" class="btn btn--inverse btn--large">
+	<button type="submit" class="btn btn--inverse btn--large" id="submit-button">
 		Submit your nomination
 	</button>
 </form>
@@ -48,10 +55,68 @@ sidebar:
 
 <script defer>
 	const CATEGORIES = [
-		{ long: "Best Cup of Tea", short: "tea" },
-		{ long: "Best Teacher", short: "teacher" }
+		{
+			long: "Best Cuppa",
+			short: "cuppa",
+			description:
+				"Who's the best for a cup of tea, mug of coffee, loaded hot chocolate?"
+		},
+		{
+			long: "Best Pub",
+			short: "pub",
+			description:
+				"Where do you go for the best pint, entertainment, atmosphere?"
+		},
+		{
+			long: "Best Sunday Roast",
+			short: "roast",
+			description: "Where do you go for your roasties and Yorkshire pudding?"
+		},
+		{
+			long: "Best Breakfast",
+			short: "breakfast",
+			description: "Full English or smashed avocado - who does it the best?"
+		},
+		{
+			long: "Best Night Out",
+			short: "night",
+			description: "All dressed up - where's the best place to be?"
+		},
+		{
+			long: "Best Sports Club",
+			short: "sports",
+			description:
+				"Whatever your sport, there's a club for it - which is the best?"
+		},
+		{
+			long: "Best Special Interest Club",
+			short: "interest",
+			description:
+				"From archaeology to zoology, there's a club for all interests - which is the best?"
+		},
+		{
+			long: "Best Teaching or Learning Support Assistant",
+			short: "teaching",
+			description:
+				"They support children at school every day - it's time to recognise them!"
+		},
+		{
+			long: "Best Local Producer",
+			short: "producer",
+			description:
+				"We've got local cheese, beer, fizz, and so much more - who's the best?"
+		},
+		{
+			long: "Best Tradesperson",
+			short: "tradesperson",
+			description:
+				"Electricians, builders, plumbers, gardeners, and so many more - who do you always recommend?"
+		}
 	];
-	const categoryObject = {};
+
+	const shortToLongObject = {};
+	const shortToDescriptionObject = {};
+
 	CATEGORIES.forEach(category => {
 		document
 			.querySelector("#categories")
@@ -59,13 +124,23 @@ sidebar:
 				"beforeend",
 				`<option value=${category.short}>${category.long}</option>`
 			);
-		categoryObject[category.short] = category.long;
+		shortToLongObject[category.short] = category.long;
+		shortToDescriptionObject[category.short] = category.description;
 	});
+
+	document.querySelector("#description").innerText =
+		shortToDescriptionObject[document.querySelector("#categories").value];
+
+	document.querySelector("#categories").onchange = e => {
+		e.preventDefault();
+		document.querySelector("#description").innerText =
+			shortToDescriptionObject[document.querySelector("#categories").value];
+	};
 
 	document.querySelector("#form").onsubmit = async e => {
 		e.preventDefault();
 		try {
-			/*await fetch("https://form.marlowfm.co.uk:3011/create", {
+			await fetch("https://form.marlowfm.co.uk:3011/create", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json"
@@ -77,13 +152,20 @@ sidebar:
 					nomination: document.querySelector("#nomination").value,
 					marketing: document.querySelector("#marketing").checked
 				})
-			});*/
+			});
 			document.querySelector(
 				"#thanks"
 			).innerHTML = `<p>Thank you for submitting a nomination for '${
-				categoryObject[document.querySelector("#categories").value]
+				shortToLongObject[document.querySelector("#categories").value]
 			}'.</p>`;
 			document.querySelector("#nomination").value = "";
+			document.querySelector("#submit-button").innerText = "SUBMITTED";
+			setTimeout(
+				() =>
+					(document.querySelector("#submit-button").innerText =
+						"Submit your nomination"),
+				2000
+			);
 		} catch (error) {
 			console.error(error);
 		}
