@@ -6,12 +6,12 @@ categories: news
 header:
   teaser: /assets/images/news/santa-s-fun-run-2022-team-mfm.jpg
 ---
-This year's Santa's Fun Run takes place on Sunday 4th December, and we'd love you to be part of the Marlow FM team. 
+W﻿e're delighted to announce that we raised more than £1,200 in Santa's Fun Run on Sunday 4th December, way over our target of £975. 
 
 ![Team Marlow FM at Santa's Fun Run 2022]({{ site.url }}{{ site.baseurl }}/assets/images/news/santa-s-fun-run-2022-team-mfm.jpg "Team Marlow FM at Santa's Fun Run 2022")
 
-Join a bunch of Marlow FM presenters and listeners running, or perhaps walking, around the town dressed in Santa outfits, and maybe raise a little money too for your local community radio station. 
+W﻿e'd like to thank everyone who gave so generously, and especially the Rotary Clubs of Marlow, who made a donation from their charity pool. The money will help Marlow FM continue to serve the community. 
 
-If you'd like to join our team, Marlow FM presenter Chris Zaremba has put together \[this document with all the details you need]({{ site.url }}{{ site.baseurl }}/other_documents/Enter Marlow Santa's Fun Run as part of the Marlow FM team.docx){:target="_blank"}. 
+W﻿e'd also like to thank everyone who joined the Marlow FM team. It was the first time our station had put a team together for the event - a big thank you to Chris Zaremba for making it happen. 
 
-If you'd prefer to send a donation our way instead, [our fundraising page is here](https://www.justgiving.com/crowdfunding/marlowfm-runningteam-1){:target="_blank"}.
+W﻿ell done everyone!
