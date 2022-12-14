@@ -218,9 +218,17 @@
   shows: [ZBS]
   image: "/assets/images/presenters/lawrence_wood.jpg"
 
+- name: "Linda Webb"
+  shows: [MMM]
+  image: "/assets/images/presenters/linda_webb.jpg"
+
 - name: "Lisa BHA"
   shows: [80S]
   image: 
+
+- name: "Lisa La Moda"
+  shows: [MMM]
+  image: "/assets/images/presenters/lisa_la_moda.jpg"
 
 - name: "Lucy Ashburner"
   shows: [BRK, NMS]
