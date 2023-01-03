@@ -3,12 +3,12 @@ published: true
 layout: single
 classes: wide
 title: "Help us find Marlow's Hidden Gems!"
-permalink: /pink/
+permalink: /gems/
 sidebar:
   - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
 
-<img src="/assets/images/hidden-heroes-logo.jpg" alt="Hidden Heroes logo" />
+<!--<img src="" alt="" />-->
 
 <p>
 	Hidden Gems, Marlow FM's celebration of local people, businesses, and
@@ -18,19 +18,23 @@ sidebar:
 <p>
 	As usual, we're first asking you to make nominations. We'll then draw up a
 	shortlist of nominees for each category, and ask you to get voting. The
-	winners and runners-up will be announced at a special fiesta at Holy Trinity
-	School on Saturday 18th February - click here to buy tickets.
+	winners will be announced at a fun-filled Mexican fiesta-inspired evening,
+	where we will celebrate our hidden gems, dine in style, and party the night
+	away - fabuloso!
+	<a href="{{ site.url }}{{ site.baseurl }}/tickets"
+		>Early-bird tickets are available now.</a
+	>
 </p>
 
 <p>
-	Please fill in and submit the form below by the end of [Sunday 15th] January.
+	Please fill in and submit the form below by the end of Friday 20th January.
 	You can make as many nominations as you want, in as many categories as you
 	want.
 </p>
 
 <p>
-	The organising team will also be making two special recognition awards for
-	services to charity and to the community.
+	The Hidden Gems Committee will decide the winners of the Services to Charity
+	and Services to the Community categories.
 </p>
 
 <form id="form">
@@ -40,7 +44,7 @@ sidebar:
 	<input type="email" id="email" maxlength="75" required />
 	<label for="categories">Choose a category</label>
 	<select id="categories"></select>
-	<p id="description"></p>
+	<i><p id="description"></p></i>
 	<label for="nomination">Who you're nominating and why</label>
 	<textarea id="nomination" rows="4" maxlength="750" required></textarea>
 	<label
@@ -96,7 +100,7 @@ sidebar:
 		},
 		{
 			long: "Best Teaching or Learning Support Assistant",
-			short: "teaching",
+			short: "assistant",
 			description:
 				"They support children at school every day - it's time to recognise them!"
 		},
@@ -111,6 +115,16 @@ sidebar:
 			short: "tradesperson",
 			description:
 				"Electricians, builders, plumbers, gardeners, and so many more - who do you always recommend?"
+		},
+		{
+			long: "Services to Charity",
+			short: "charity",
+			description: ""
+		},
+		{
+			long: "Services to the Community",
+			short: "community",
+			description: ""
 		}
 	];
 
@@ -131,8 +145,7 @@ sidebar:
 	document.querySelector("#description").innerText =
 		shortToDescriptionObject[document.querySelector("#categories").value];
 
-	document.querySelector("#categories").onchange = e => {
-		e.preventDefault();
+	document.querySelector("#categories").onchange = () => {
 		document.querySelector("#description").innerText =
 			shortToDescriptionObject[document.querySelector("#categories").value];
 	};
@@ -153,19 +166,18 @@ sidebar:
 					marketing: document.querySelector("#marketing").checked
 				})
 			});
+			document.querySelector("#submit-button").innerText =
+				"NOMINATION SUBMITTED";
 			document.querySelector(
 				"#thanks"
 			).innerHTML = `<p>Thank you for submitting a nomination for '${
 				shortToLongObject[document.querySelector("#categories").value]
 			}'.</p>`;
-			document.querySelector("#nomination").value = "";
-			document.querySelector("#submit-button").innerText = "SUBMITTED";
-			setTimeout(
-				() =>
-					(document.querySelector("#submit-button").innerText =
-						"Submit your nomination"),
-				2000
-			);
+			setTimeout(() => {
+				document.querySelector("#nomination").value = "";
+				document.querySelector("#submit-button").innerText =
+					"Submit your nomination";
+			}, 2000);
 		} catch (error) {
 			console.error(error);
 		}
