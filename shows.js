@@ -55,6 +55,7 @@ export const progURLs = {
 	SSW: "/programmes/she-said-what/",
 	SFS: "/programmes/soulfusion/",
 	SOM: "/programmes/sound-of-musicals/",
+	XXX: "/",
 	SPT: "/programmes/spotlight/",
 	SER: "/programmes/sunday-serenade/",
 	STM: "/programmes/swing-that-music/",
