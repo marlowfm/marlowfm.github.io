@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Hidden Gems"
+    url: /gems/
   - title: "Listen Live"
     url: "http://radioplayer.marlowfm.co.uk"
   - title: "Listen Again"
