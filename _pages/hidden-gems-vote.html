@@ -2,29 +2,40 @@
 published: true
 layout: single
 classes: wide
-title: "Vote for Marlow's Hidden Gems!"
+title: "Vote now for Marlow's Hidden Gems!"
 permalink: /panther/
 sidebar:
   - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
 
-<img src="/assets/images/hidden-heroes-logo.jpg" alt="Hidden Heroes logo" />
+<img
+	src="{{ site.url }}{{ site.baseurl }}/assets/images/logos/hidden-gems-2023-logo-1-small.png"
+	alt="Hidden Gems 2023 logo"
+/>
 
 <p>
 	Hidden Gems, Marlow FM's celebration of local people, businesses, and
-	organisations, is back for 2022!
+	organisations, is back for 2023.
 </p>
 
 <p>
-	Thank you for all your nominations. We've drawn up a shortlist for each
-	category, and it's now time to get voting. The winners and runners-up will be
-	announced at a special event at Great Marlow School on Saturday XXth November.
+	A big thank you for all your deserving nominations. We've drawn up a shortlist
+	of nominees for each category, and it's now time to get voting!
 </p>
 
 <p>
-	Please fill in and submit the form below by the end of Friday XXth November.
+	Please fill in and submit the form below by the end of Sunday 5th February.
 	You can vote in however many categories you want, but please only vote once.
 	We'll reject any suspicious-looking forms!
+</p>
+
+<p>
+	And remember
+	<a href="{{ site.url }}{{ site.baseurl }}/tickets"
+		>early-bird tickets are still available</a
+	>
+	for a fun-filled Mexican fiesta-inspired evening, where we will celebrate our
+	winners, dine in style, and party the night away - fabuloso!
 </p>
 
 <form id="form">
@@ -38,31 +49,106 @@ sidebar:
 		>Happy to hear from us by email?
 		<input type="checkbox" id="marketing" style="display: inline" checked
 	/></label>
-	<button type="submit" class="btn btn--inverse btn--large">Submit</button>
+	<button type="submit" class="btn btn--inverse btn--large">
+		Submit your votes
+	</button>
 </form>
 <div id="thanks"><p>You haven't submitted your votes yet.</p></div>
 
 <script defer>
 	const CATEGORIES = [
 		{
-			long: "Best Cup of Tea",
-			short: "tea",
+			long: "Best Cuppa",
+			short: "cuppa",
 			nominees: [
-				{ long: "Burgers", short: "Burgers" },
-				{ long: "Fego Restaurant", short: "Fego" },
-				{ long: "The Cedar Coffe Shop", short: "Cedar" }
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
 			]
 		},
 		{
-			long: "Best Teacher",
-			short: "teacher",
+			long: "Best Pub",
+			short: "pub",
 			nominees: [
-				{ long: "Mr Smith - Great Marlow School", short: "Smith" },
-				{ long: "Miss Shipley - William Borlase", short: "Shipley" },
-				{ long: "Mrs Potter - Holy Trinity", short: "Potter" }
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Sunday Roast",
+			short: "roast",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Breakfast",
+			short: "breakfast",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Night Out",
+			short: "night",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Sports Club",
+			short: "sports",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Special Interest Club",
+			short: "interest",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Teaching or Learning Support Assistant",
+			short: "assistant",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Local Producer",
+			short: "producer",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
+			]
+		},
+		{
+			long: "Best Tradesperson",
+			short: "tradesperson",
+			nominees: [
+				{ long: "AAAAAAAAAA", short: "AAAAA" },
+				{ long: "BBBBBBBBBB", short: "BBBBB" },
+				{ long: "CCCCCCCCCC", short: "CCCCC" }
 			]
 		}
 	];
+
 	CATEGORIES.forEach(category =>
 		document.querySelector("#categories").insertAdjacentHTML(
 			"beforeend",
@@ -77,6 +163,7 @@ sidebar:
 			`
 		)
 	);
+
 	CATEGORIES.forEach(category =>
 		category.nominees.forEach(nominee =>
 			document.getElementById(category.short).insertAdjacentHTML(
