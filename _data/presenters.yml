@@ -7,7 +7,7 @@
   image: "/assets/images/presenters/abi_morris.jpg"
 
 - name: "Ali Gray"
-  shows: [SSS]
+  shows: []
   image: 
 
 - name: "Adam Swiergon"
@@ -35,7 +35,11 @@
   image: "/assets/images/presenters/andy_beggs.jpg"
 
 - name: "Andy Fowler"
-  shows: [WFS]
+  shows: []
+  image: 
+
+- name: "Andy Franklin"
+  shows: [BAB]
   image: 
 
 - name: "Andy Jay"
@@ -115,7 +119,7 @@
   image: "/assets/images/presenters/dora_&_toby.jpeg"
 
 - name: "Edan Gaskell"
-  shows: [BRK, MTM]
+  shows: [MTM]
   image: "/assets/images/presenters/edan_gaskell.jpg"
 
 - name: "Emily Guiver"
@@ -143,11 +147,11 @@
   image: 
 
 - name: "Izzy Seddon"
-  shows: [CAF]
+  shows: []
   image: 
 
 - name: "Jack Gifford"
-  shows: [SSS]
+  shows: []
   image: 
 
 - name: "James Riley"
@@ -203,6 +207,10 @@
   image: "/assets/images/presenters/kev_kinch.jpg"
 
 - name: "Kwakzino"
+  shows: [NMS]
+  image: 
+
+- name: "Laura Stevens"
   shows: [NMS]
   image: 
 
@@ -371,7 +379,7 @@
   image: 
 
 - name: "Theo Toaldo"
-  shows: [ITA]
+  shows: []
   image: 
 
 - name: "Tim Ashburner"

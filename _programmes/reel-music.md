@@ -4,9 +4,9 @@ layout: programme
 title: "Reel Music"
 image: 
 code: REE
-again: 
+again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=143"
 ---
-Every Wednesday from 9pm to 11pm. 
+Every Sunday from 8pm to 10pm. 
 
 Reel Music brings together all of the best tunes from the world of TV and film in a mix so eclectic, you'll swear Paul's making it up as he goes along! 
 

@@ -1,4 +1,5 @@
 ---
+published: false
 layout: programme
 title: "The Late Kick-Off"
 image: /assets/images/icons/SSS.jpeg
