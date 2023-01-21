@@ -20,7 +20,10 @@ sidebar:
 
 <p>
 	A big thank you for all your deserving nominations. We've drawn up a shortlist
-	of nominees for each category, and it's now time to get voting!
+	of nominees for 10 of the categories, and it's now time to get voting! The
+	Hidden Gems Committee* itself will review the many nominations for Services to
+	Charity and Services to the Community, and decide the winners of these two
+	categories.
 </p>
 
 <p>
@@ -55,96 +58,103 @@ sidebar:
 </form>
 <div id="thanks"><p>You haven't submitted your votes yet.</p></div>
 
+<p>
+	*The committee is made up of Pat Reading from Marlow FM, Paul Merchant from
+	MyMarlow, Hilary Martin from Marlow Town Council, and Peter Evans, President
+	of the Marlow Chamber of Trade & Commerce.
+</p>
+
 <script defer>
 	const CATEGORIES = [
 		{
 			long: "Best Cuppa",
 			short: "cuppa",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "The Cedar", short: "cedar" },
+				{ long: "Chives", short: "chives" },
+				{ long: "The Coffee Dan", short: "dan" }
 			]
 		},
 		{
 			long: "Best Pub",
 			short: "pub",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "The Duke", short: "duke" },
+				{ long: "The Kings Head", short: "kings" },
+				{ long: "The Queens Head", short: "queens" }
 			]
 		},
 		{
 			long: "Best Sunday Roast",
 			short: "roast",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "The Kings Head", short: "kings" },
+				{ long: "The Queens Head", short: "queens" },
+				{ long: "The Two Brewers", short: "brewers" }
 			]
 		},
 		{
 			long: "Best Breakfast",
 			short: "breakfast",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "The Cedar", short: "cedar" },
+				{ long: "Fego", short: "fego" }
 			]
 		},
 		{
 			long: "Best Night Out",
 			short: "night",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "Amorino", short: "amorino" },
+				{ long: "Clayton's Lounge", short: "claytons" },
+				{ long: "Grape Expectations", short: "grape" }
 			]
 		},
 		{
 			long: "Best Sports Club",
 			short: "sports",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "Harleyford Golf Club", short: "harleyford" },
+				{ long: "Marlow Rowing Club", short: "rowing" },
+				{ long: "Marlow Rugby Club", short: "rugby" }
 			]
 		},
 		{
 			long: "Best Special Interest Club",
 			short: "interest",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "Harmony Belles", short: "belles" },
+				{ long: "Marlow Town Band", short: "band" },
+				{ long: "The Marlow Writers' Group", short: "writers" },
+				{ long: "Wild Marlow", short: "wild" }
 			]
 		},
 		{
 			long: "Best Teaching or Learning Support Assistant",
 			short: "assistant",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "Jenny Britnell - Sandygate", short: "jenny" },
+				{ long: "Sarah Brooks - St Peter's", short: "sarah" },
+				{ long: "Annie Clarke - GMS", short: "annie" },
+				{ long: "Helen Lewis - Burford", short: "helen" },
+				{ long: "Debbie Payne - Burford", short: "debbie" }
 			]
 		},
 		{
 			long: "Best Local Producer",
 			short: "producer",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "Harrow & Hope", short: "harrow" },
+				{ long: "The Marlow Cheese Co", short: "cheese" },
+				{ long: "Rebellion Beer Company", short: "rebellion" }
 			]
 		},
 		{
 			long: "Best Tradesperson",
 			short: "tradesperson",
 			nominees: [
-				{ long: "AAAAAAAAAA", short: "AAAAA" },
-				{ long: "BBBBBBBBBB", short: "BBBBB" },
-				{ long: "CCCCCCCCCC", short: "CCCCC" }
+				{ long: "B&S Projects", short: "bs" },
+				{ long: "Steve Carlton, Marlow Motors", short: "motors" }
 			]
 		}
 	];
@@ -189,25 +199,24 @@ sidebar:
 			category =>
 				document.querySelector(`input[name="${category.short}"]:checked`).value
 		);
-		console.table(votes);
 		if (votes.every(vote => !vote)) {
 			document.querySelector(
 				"#thanks"
 			).innerHTML = `<p>You haven't voted for anyone!</p>`;
 		} else {
 			try {
-				/*await fetch("https://form.marlowfm.co.uk:3011/create", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({
-					name: document.querySelector("#name").value,
-					email: document.querySelector("#email").value,
-					votes: votes,
-					marketing: document.querySelector("#marketing").checked
-				})
-			});*/
+				await fetch("https://form.marlowfm.co.uk:3011/create", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						name: document.querySelector("#name").value,
+						email: document.querySelector("#email").value,
+						votes: votes,
+						marketing: document.querySelector("#marketing").checked
+					})
+				});
 				document.querySelector(
 					"#thanks"
 				).innerHTML = `<p>Thank you for voting.</p>`;
