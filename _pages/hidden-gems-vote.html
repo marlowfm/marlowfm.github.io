@@ -55,8 +55,9 @@ sidebar:
 	<button type="submit" class="btn btn--inverse btn--large">
 		Submit your votes
 	</button>
+	<p></p>
+	<div id="thanks"><p>You haven't submitted your votes yet.</p></div>
 </form>
-<div id="thanks"><p>You haven't submitted your votes yet.</p></div>
 
 <p>
 	*The committee is made up of Pat Reading from Marlow FM, Paul Merchant from
@@ -218,10 +219,8 @@ sidebar:
 					})
 				});
 				document.querySelector(
-					"#thanks"
-				).innerHTML = `<p>Thank you for voting.</p>`;
-				document.querySelector("#name").value = "";
-				document.querySelector("#email").value = "";
+					"#form"
+				).innerHTML = `<p><strong>Thank you for voting.</strong> Now buy your tickets for the big event!</p>`;
 			} catch (error) {
 				console.error(error);
 			}
