@@ -12,4 +12,4 @@ After three years away, the Marlow FM 97.5 Hidden Gems Awards, celebrating all t
 
 The winners will be announced at a fun-filled Mexican fiesta-inspired evening on Saturday 18th February, where we will celebrate our hidden gems, dine in style, and party the night away - fabuloso!
 
-Your nominations are in, and you can now vote for your favourites and buy early-bird tickets for the awards party. [All the details are here.](https://www.marlowfm.co.uk/gems/)
+You can still buy tickets for the awards party, and bid for some great items in our online auction. [All the details are here.](https://www.marlowfm.co.uk/gems/)
