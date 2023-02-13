@@ -13,6 +13,7 @@ export const progURLs = {
 	BAB: "/programmes/beats-and-bants",
 	BOP: "/programmes/boppin-with-beth/",
 	BRK: "/programmes/breakfast/",
+	BDD: "/programmes/burn-down-the-disco/",
 	ZBS: "/programmes/business-show/",
 	CAF: "/programmes/cafe-del-marlow",
 	CAW: "/programmes/catching-a-wave/",

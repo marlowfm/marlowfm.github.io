@@ -7,7 +7,7 @@
   image: "/assets/images/presenters/abi_morris.jpg"
 
 - name: "Ali Gray"
-  shows: []
+  shows: [BDD]
   image: 
 
 - name: "Adam Swiergon"
