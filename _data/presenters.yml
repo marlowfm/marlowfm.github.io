@@ -10,33 +10,9 @@
   shows: [BDD]
   image: 
 
-- name: "Adam Swiergon"
-  shows: []
-  image: 
-
 - name: "Alan Price-Roberts"
   shows: [ACZ]
   image: "/assets/images/presenters/alan_price-roberts.jpg"
-
-- name: "Amanda Street"
-  shows: []
-  image: "/assets/images/presenters/amanda_street.jpg"
-
-- name: "Amelia Slaughter"
-  shows: []
-  image: "/assets/images/presenters/amelia_slaughter.jpg"
-
-- name: "Andy Barrett"
-  shows: []
-  image: "/assets/images/presenters/andy_barrett.jpg"
-
-- name: "Andy Beggs"
-  shows: []
-  image: "/assets/images/presenters/andy_beggs.jpg"
-
-- name: "Andy Fowler"
-  shows: []
-  image: 
 
 - name: "Andy Franklin"
   shows: [BAB]
@@ -66,14 +42,6 @@
   shows: [MMM, ZCN]
   image: "/assets/images/presenters/carla_delaney.jpg"
 
-- name: "Charlie Swadling"
-  shows: []
-  image: "/assets/images/presenters/charlie_swadling.jpg"
-
-- name: "Chris MiMo"
-  shows: []
-  image: "/assets/images/presenters/chris_mimo.jpg"
-
 - name: "Chris Zaremba"
   shows: [MMM]
   image: "/assets/images/presenters/chris_zaremba.jpg"
@@ -89,10 +57,6 @@
 - name: "Clive Capp"
   shows: [AG6]
   image: "/assets/images/presenters/clive_capp.png"
-
-- name: "Dave Pering"
-  shows: []
-  image: "/assets/images/presenters/dave_pering.jpg"
 
 - name: "David G. Croft"
   shows: [PFM]
@@ -138,20 +102,8 @@
   shows: [BRK]
   image: "/assets/images/presenters/graham_duthie.jpg"
 
-- name: "Howie Rogers"
-  shows: []
-  image: "/assets/images/presenters/howie_rogers.jpg"
-
 - name: "Ian Branch"
   shows: [RCS]
-  image: 
-
-- name: "Izzy Seddon"
-  shows: []
-  image: 
-
-- name: "Jack Gifford"
-  shows: []
   image: 
 
 - name: "James Riley"
@@ -169,14 +121,6 @@
 - name: "Jill Hickey"
   shows: [MMM, SOM]
   image: "/assets/images/presenters/jill_hickey.jpg"
-
-- name: "Jill Huskisson"
-  shows: [MMM]
-  image: "/assets/images/presenters/jill_huskisson.jpg"
-
-- name: "Jim Biggs"
-  shows: []
-  image: "/assets/images/presenters/jim_biggs.jpg"
 
 - name: "John Brotherton"
   shows: [YUL]
@@ -198,17 +142,13 @@
   shows: [MMM]
   image: "/assets/images/presenters/julie_greatwood.jpg"
 
-- name: "Karen Feakin"
-  shows: []
-  image: "/assets/images/presenters/karen_feakin.jpg"
+- name: "Katie Wilson"
+  shows: [MMM]
+  image: "/assets/images/presenters/katie_wilson.jpeg"
 
 - name: "Kev Kinch"
   shows: [APZ, KEV]
   image: "/assets/images/presenters/kev_kinch.jpg"
-
-- name: "Kwakzino"
-  shows: [NMS]
-  image: 
 
 - name: "Laura Stevens"
   shows: [NMS]
@@ -323,8 +263,12 @@
   image: "/assets/images/presenters/paul_rose.jpg"
 
 - name: "Pauline Howe-Davies"
+  shows: []
+  image: 
+
+- name: "Mike Bayless & Pauline Howe-Davies"
   shows: [MMM]
-  image: "/assets/images/presenters/pauline_howe-davies.jpg"
+  image: "/assets/images/presenters/mike_&_pauline.jpg"
 
 - name: "Phil Ward"
   shows: [MTM]
@@ -342,14 +286,6 @@
   shows: [DRV, RCS]
   image: 
 
-- name: "Ronnie Turner"
-  shows: []
-  image: "/assets/images/presenters/ronnie_turner.jpg"
-
-- name: "Ruth Humphreys"
-  shows: []
-  image: "/assets/images/presenters/ruth_humphreys.jpg"
-
 - name: "Sarah-Jane Dale"
   shows: [AG9]
   image: "/assets/images/presenters/sarah-jane_dale.jpg"
@@ -357,10 +293,6 @@
 - name: "Serena Spencer-Jones"
   shows: [MMM]
   image: "/assets/images/presenters/serena_spencer-jones.jpg"
-
-- name: "Sheila Wilson"
-  shows: []
-  image: "/assets/images/presenters/sheila_wilson.jpg"
 
 - name: "Simon Harding"
   shows: [EUR]
@@ -376,10 +308,6 @@
 
 - name: "Susan Allan"
   shows: [MTM]
-  image: 
-
-- name: "Theo Toaldo"
-  shows: []
   image: 
 
 - name: "Tim Ashburner"
