@@ -106,6 +106,10 @@
   shows: [RCS]
   image: 
 
+- name: "James Mulchrone"
+  shows: [BRK]
+  image: "/assets/images/presenters/james_mulchrone.jpg"
+
 - name: "James Riley"
   shows: [CAW]
   image: "/assets/images/presenters/james_riley.jpg"
@@ -234,6 +238,10 @@
   shows: [A2Z]
   image: "/assets/images/presenters/neil_knowles.jpg"
 
+- name: "Nikky Smart"
+  shows: [BRK]
+  image: 
+
 - name: "Pat Capp"
   shows: [MMM]
   image: "/assets/images/presenters/pat_capp.jpg"
@@ -316,6 +324,10 @@
 
 - name: "Tim Lovelace"
   shows: [REM]
+  image: 
+
+- name: "Tom Brown"
+  shows: [BRK]
   image: 
 
 - name: "Tom Fothergill"
