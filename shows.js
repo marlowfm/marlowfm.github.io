@@ -22,6 +22,7 @@ export const progURLs = {
 	CHR: "/programmes/concert-hour/",
 	ZCN: "/programmes/consumer-show/",
 	YUL: "/programmes/cool-yule/",
+	DMS: "/programmes/dance-music-show/",
 	DRV: "/programmes/drivetime/",
 	ELS: "/programmes/eclectic-light-show/",
 	ECO: "/programmes/eco-show/",
