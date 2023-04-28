@@ -1,0 +1,134 @@
+---
+layout: single
+title: "Help us build a new home!"
+permalink: /bricks/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975"
+---
+
+<form
+	action="https://www.paypal.com/cgi-bin/webscr"
+	method="post"
+	target="_blank"
+>
+	<input type="hidden" name="cmd" value="_s-xclick" />
+	<input type="hidden" name="hosted_button_id" value="ZDD9T54Q9PELE" />
+	<table>
+		<tr>
+			<td>
+				<input type="hidden" name="on0" value="SIZE OF BRICK" />SIZE OF BRICK
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<select name="os0" id="menu">
+					<option value="Half (1 line)">Half (1 line) £75.00 GBP</option>
+					<option value="Single (2 lines)">Single (2 lines) £150.00 GBP</option>
+					<option value="Double (4 lines)">Double (4 lines) £300.00 GBP</option>
+					<option value="Free">Free £0.01 GBP</option>
+				</select>
+			</td>
+		</tr>
+		<tr id="line1-heading">
+			<td>
+				<input
+					type="hidden"
+					name="on1"
+					value="Line 1 (up to 16 characters)"
+				/>Line 1 (up to 16 characters)
+			</td>
+		</tr>
+		<tr id="line1-input">
+			<td><input type="text" name="os1" maxlength="16" /></td>
+		</tr>
+		<tr id="line2-heading">
+			<td>
+				<input
+					type="hidden"
+					name="on2"
+					value="Line 2 (up to 16 characters)"
+				/>Line 2 (up to 16 characters)
+			</td>
+		</tr>
+		<tr id="line2-input">
+			<td><input type="text" name="os2" maxlength="16" /></td>
+		</tr>
+		<tr id="line3-heading">
+			<td>
+				<input
+					type="hidden"
+					name="on3"
+					value="Line 3 (up to 16 characters)"
+				/>Line 3 (up to 16 characters)
+			</td>
+		</tr>
+		<tr id="line3-input">
+			<td><input type="text" name="os3" maxlength="16" /></td>
+		</tr>
+		<tr id="line4-heading">
+			<td>
+				<input
+					type="hidden"
+					name="on4"
+					value="Line 4 (up to 16 characters)"
+				/>Line 4 (up to 16 characters)
+			</td>
+		</tr>
+		<tr id="line4-input">
+			<td><input type="text" name="os4" maxlength="16" /></td>
+		</tr>
+	</table>
+	<input type="hidden" name="currency_code" value="GBP" />
+	<input
+		type="image"
+		src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
+		border="0"
+		name="submit"
+		alt="PayPal – The safer, easier way to pay online!"
+	/>
+	<img
+		alt=""
+		border="0"
+		src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif"
+		width="1"
+		height="1"
+	/>
+</form>
+
+<script>
+	const line1Heading = document.getElementById("line1-heading");
+	const line1Input = document.getElementById("line1-input");
+	const line2Heading = document.getElementById("line2-heading");
+	const line2Input = document.getElementById("line2-input");
+	const line3Heading = document.getElementById("line3-heading");
+	const line3Input = document.getElementById("line3-input");
+	const line4Heading = document.getElementById("line4-heading");
+	const line4Input = document.getElementById("line4-input");
+	line2Heading.style.display = "none";
+	line2Input.style.display = "none";
+	line3Heading.style.display = "none";
+	line3Input.style.display = "none";
+	line4Heading.style.display = "none";
+	line4Input.style.display = "none";
+	const settings = {
+		"Half (1 line)": ["table-row", "none", "none", "none"],
+		"Single (2 lines)": ["table-row", "table-row", "none", "none"],
+		"Double (4 lines)": ["table-row", "table-row", "table-row", "table-row"],
+		Free: ["table-row", "table-row", "none", "none"]
+	};
+	document.getElementById("menu").onchange = e => {
+		const brick = e.target.value;
+		document.querySelector("input[name=os1]").value = "";
+		document.querySelector("input[name=os2]").value = "";
+		document.querySelector("input[name=os3]").value = "";
+		document.querySelector("input[name=os4]").value = "";
+		line1Heading.style.display = settings[brick][0];
+		line1Input.style.display = settings[brick][0];
+		line2Heading.style.display = settings[brick][1];
+		line2Input.style.display = settings[brick][1];
+		line3Heading.style.display = settings[brick][2];
+		line3Input.style.display = settings[brick][2];
+		line4Heading.style.display = settings[brick][3];
+		line4Input.style.display = settings[brick][3];
+	};
+</script>
