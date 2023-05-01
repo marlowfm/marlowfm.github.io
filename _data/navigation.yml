@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Bricks"
+    url: /bricks/
   - title: "Listen Live"
     url: "http://radioplayer.marlowfm.co.uk"
   - title: "Listen Again"

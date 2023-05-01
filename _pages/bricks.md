@@ -5,17 +5,17 @@ classes: wide
 title: "Buy a brick!"
 permalink: /bricks/
 sidebar:
-  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975"
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
 
-![Buy a brick for Marlow FM]({{ site.url }}{{ site.baseurl }}/assets/images/other/buy-a-brick-1.png){: .align-right}
-We'll be putting up a supporters' wall inside our new studio building, and we're giving you the opportunity to add an engraved brick to it!
+![Buy a brick for Marlow FM](/assets/images/other/buy-a-brick-1.png){: .align-right}
+We'll be putting up a supporters' wall inside [our new studio building](/donate), and you can add an engraved brick to it!
 
-For just £97.50, you get a permanent way to show your support for Marlow FM and the service we give.
+For just £97.50, your support for Marlow FM and the service we give will be on display for years to come.
 
-Fill in one or both lines below, with up to 16 characters per line. Feel free to find a 'brick buddy' and have a line each!
+![Buy a brick for Marlow FM](/assets/images/other/buy-a-brick-2.jpg)
 
-![Buy a brick for Marlow FM]({{ site.url }}{{ site.baseurl }}/assets/images/other/buy-a-brick-2.jpg)
+Fill in either one or both lines below, with up to 16 characters per line, including spaces. Feel free to find a 'brick buddy' if you want to split the cost and have a line each!
 
 <form
 	action="https://www.paypal.com/cgi-bin/webscr"
@@ -68,7 +68,7 @@ Fill in one or both lines below, with up to 16 characters per line. Feel free to
 
 ### Terms and conditions
 
-- At this early stage of the project, we can't guarantee how the supporters' wall will exactly look, where it will be positioned in the building, or when it will go up. But rest assured we want the wall to take pride of place in our new home!
-- We reserve the right to reject or modify any text that we consider unsuitable for display.
+- At this stage of the project, we can't guarantee for sure how the supporters' wall will look, where it will be positioned in the building, or when it will go up. But rest assured we want the wall to take pride of place in our new home!
+- We reserve the right to modify or reject any text that we consider unsuitable for display.
 - 'Buy a brick' is a donation to Marlow FM, and not a purchase of goods or services. So you're not entitled to a refund or exchange unless we make a mistake.
 - We'll tell you when your brick is installed, and invite you to visit the new studios and see your brick in person.
