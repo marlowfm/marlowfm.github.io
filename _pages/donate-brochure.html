@@ -1,0 +1,35 @@
+---
+layout: single
+classes: wide
+title: "Help us build a new home!"
+permalink: /brochure/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975"
+---
+
+<div id="pdf" style="width: 100%; height: 800px"></div>
+
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function () {
+		var adobeDCView = new AdobeDC.View({
+			clientId: "e6834f705a6f4ad8ba077e4f3d98b4fe",
+			divId: "pdf"
+		});
+		adobeDCView.previewFile(
+			{
+				content: {
+					location: {
+						url: "/other_documents/MFM Studio Fundraising Brochure v3.pdf"
+					}
+				},
+				metaData: { fileName: "MFM Studio Fundraising Brochure v3.pdf" }
+			},
+			{ defaultViewMode: "FIT_WIDTH", showAnnotationTools: false }
+		);
+	});
+</script>
+
+<!--localhost:b71cd596e431455883f27c3a7aa28950-->
+<!--marlowfm.co.uk:e6834f705a6f4ad8ba077e4f3d98b4fe-->
