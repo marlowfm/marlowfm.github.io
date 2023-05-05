@@ -9,13 +9,15 @@ sidebar:
 ---
 
 ![Buy a brick for Marlow FM](/assets/images/other/buy-a-brick-1.png){: .align-right}
-We'll be putting up a supporters' wall inside [our new studio building](/donate), and you can add an engraved brick to it!
+We'll be putting up a [supporters' wall](/wall) inside our [new studio building](/donate), and you can add an engraved brick to it!
 
 For just £97.50, your support for Marlow FM and the service we give will be on display for years to come.
 
 ![Buy a brick for Marlow FM](/assets/images/other/buy-a-brick-2.jpg)
 
-Fill in either one or both lines below, with up to 16 characters per line, including spaces. Feel free to find a 'brick buddy' if you want to split the cost and have a line each!
+Fill in either one or both lines below, with up to 16 characters per line (if you don't need the second line, just leave it blank). Feel free to find a 'brick buddy' if you want to split the cost and have a line each!
+
+If you can't wait to see your brick in real life, [take a look here](/wall).
 
 <form
 	action="https://www.paypal.com/cgi-bin/webscr"

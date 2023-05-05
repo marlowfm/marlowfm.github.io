@@ -1,0 +1,80 @@
+---
+layout: single
+classes: wide
+title: "Here's our supporters' wall"
+permalink: /wall/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+
+<style>
+	.row-even {
+		display: flex;
+		justify-content: center;
+		margin-left: -5rem;
+	}
+
+	.row-odd {
+		display: flex;
+		justify-content: center;
+		margin-right: -5rem;
+	}
+
+	.brick {
+		width: 10rem;
+		height: 5rem;
+		background-color: #bc4a3c;
+		margin: 0.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-weight: bold;
+	}
+
+	.brick-element {
+		margin: 0.5% 0;
+	}
+</style>
+
+<p>
+	There are <span id="bricks">X</span> bricks in our wall so far (if you 'bought
+	a brick' recently and it's not here, please come back in a day or so).
+</p>
+
+<div class="wall"></div>
+
+<script defer>
+	(async () => {
+		const bricksResponse = await fetch(
+			"https://form.marlowfm.co.uk:3011/bricks"
+		);
+		const bricksData = await bricksResponse.json();
+		const wall = document.querySelector(".wall");
+		const numberOfBricks = bricksData.total;
+		const bricksPerRow = 3;
+		const numberOfRows = Math.ceil(numberOfBricks / bricksPerRow);
+		const bricks = bricksData.bricks;
+		document.querySelector("#bricks").textContent = numberOfBricks;
+		let brickCounter = 0;
+		for (let i = 0; i < numberOfRows; i++) {
+			let row = `<div class=${i % 2 === 0 ? "row-even" : "row-odd"}>`;
+			for (let j = 0; j < bricksPerRow; j++) {
+				if (brickCounter >= numberOfBricks) {
+					bricks.push(["YOU COULD", "GO HERE!"]);
+				}
+				const brick = `
+					<div class="brick">
+						<div class="brick-element">${bricks[brickCounter][0]}</div>
+						<div class="brick-element">${bricks[brickCounter][1]}</div>
+					</div>
+				`;
+				row += brick;
+				brickCounter++;
+			}
+			row += `</div>`;
+			wall.insertAdjacentHTML("beforeend", row);
+		}
+	})();
+</script>
