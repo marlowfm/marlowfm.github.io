@@ -17,7 +17,7 @@ For just £97.50, your support for Marlow FM and the service we give will be on 
 
 Fill in either one or both lines below, with up to 16 characters per line (if you don't need the second line, just leave it blank). Feel free to find a 'brick buddy' if you want to split the cost and have a line each!
 
-If you can't wait to see your brick in real life, [we're building a virtual wall too](/wall).
+If you can't wait to see your brick in real life, [take a look at the online version](/wall).
 
 <form
 	action="https://www.paypal.com/cgi-bin/webscr"
