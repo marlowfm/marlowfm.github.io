@@ -9,14 +9,22 @@ sidebar:
 ---
 
 <style>
-	#banner {
+	#banner-donate,
+	#banner-wall {
 		color: white;
 		text-decoration: none;
 	}
 
-	#banner > p {
+	#banner-donate > p {
 		padding: 1%;
 		background-color: green;
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	#banner-wall > p {
+		padding: 1%;
+		background-color: #bc4a3c;
 		font-weight: bold;
 		font-size: 1em;
 	}
@@ -112,10 +120,14 @@ sidebar:
 	};
 </script>
 
-<a id="banner" href="/donate"
+<a id="banner-donate" href="/donate"
 	><p>
 		We're raising money to build new studios - click here to find out more
 	</p></a
+>
+
+<a id="banner-wall" href="/wall"
+	><p>Have you bought a brick? Find your name in the virtual wall!</p></a
 >
 
 <div id="now-and-next">
