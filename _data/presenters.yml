@@ -8,7 +8,7 @@
 
 - name: "Ali Gray"
   shows: [BDD]
-  image: 
+  image:
 
 - name: "Alan Price-Roberts"
   shows: [ACZ]
@@ -16,7 +16,7 @@
 
 - name: "Andy Franklin"
   shows: [BAB]
-  image: 
+  image:
 
 - name: "Andy Jay"
   shows: [ELS, RCS]
@@ -72,11 +72,11 @@
 
 - name: "Dora Hargitai"
   shows: []
-  image: 
+  image:
 
 - name: "Toby Brown"
   shows: []
-  image: 
+  image:
 
 - name: "Dora Hargitai & Toby Brown"
   shows: [ECO]
@@ -104,7 +104,7 @@
 
 - name: "Ian Branch"
   shows: [RCS]
-  image: 
+  image:
 
 - name: "James Mulchrone"
   shows: [BRK]
@@ -160,7 +160,7 @@
 
 - name: "Laura Stevens"
   shows: [NMS]
-  image: 
+  image:
 
 - name: "Laura Tilbury"
   shows: [80S, ELS, RCS]
@@ -168,11 +168,7 @@
 
 - name: "Laura Webb"
   shows: [AG7, DRV]
-  image: 
-
-- name: "Lawrence Wood"
-  shows: [ZBS]
-  image: "/assets/images/presenters/lawrence_wood.jpg"
+  image:
 
 - name: "Linda Webb"
   shows: [MMM]
@@ -180,7 +176,7 @@
 
 - name: "Lisa BHA"
   shows: [80S]
-  image: 
+  image:
 
 - name: "Lisa La Moda"
   shows: [MMM]
@@ -192,7 +188,7 @@
 
 - name: "Lucy O'Callaghan"
   shows: [SOM]
-  image: 
+  image:
 
 - name: "Luke Morton"
   shows: [BRK]
@@ -212,7 +208,7 @@
 
 - name: "Melissa Barnby"
   shows: [DRV]
-  image: 
+  image:
 
 - name: "Michael Eagleton"
   shows: [CHR, SER, STM]
@@ -224,7 +220,7 @@
 
 - name: "Mike Agate"
   shows: [ZCN]
-  image: 
+  image:
 
 - name: "Mike Cannon"
   shows: [AG6, ELS]
@@ -244,7 +240,7 @@
 
 - name: "Nikky Smart"
   shows: [BRK]
-  image: 
+  image:
 
 - name: "Pat Capp"
   shows: [MMM]
@@ -276,7 +272,7 @@
 
 - name: "Pauline Howe-Davies"
   shows: []
-  image: 
+  image:
 
 - name: "Mike Bayless & Pauline Howe-Davies"
   shows: [MMM]
@@ -284,7 +280,7 @@
 
 - name: "Phil Ward"
   shows: [MTM]
-  image: 
+  image:
 
 - name: "Piers Burnell"
   shows: [ELS]
@@ -296,7 +292,7 @@
 
 - name: "Richard Moss"
   shows: [DRV, RCS]
-  image: 
+  image:
 
 - name: "Sarah-Jane Dale"
   shows: [AG9]
@@ -320,23 +316,23 @@
 
 - name: "Susan Allan"
   shows: [MTM]
-  image: 
+  image:
 
 - name: "Tim Ashburner"
   shows: []
-  image: 
+  image:
 
 - name: "Tim Lovelace"
   shows: [REM]
-  image: 
+  image:
 
 - name: "Tom Brown"
   shows: [BRK]
-  image: 
+  image:
 
 - name: "Tom Fothergill"
   shows: [SAT]
-  image: 
+  image:
 
 - name: "Vicky Everitt"
   shows: [FMT]
