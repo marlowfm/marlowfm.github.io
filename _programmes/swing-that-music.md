@@ -5,7 +5,7 @@ image: /assets/images/icons/STM.jpg
 code: STM
 again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=18"
 ---
-Every Sunday from 6pm to 8pm, and repeated on Mondays from 9pm to 11pm. 
+Every Sunday from 6pm to 8pm. 
 
 Michael Eagleton presents our jazz and blues show. 
 
