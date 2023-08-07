@@ -10,7 +10,7 @@
   shows: [BDD]
   image:
 
-- name: "Alan Price-Roberts"
+- name: "Alan Roberts"
   shows: [ACZ]
   image: "/assets/images/presenters/alan_price-roberts.jpg"
 
@@ -27,7 +27,7 @@
   image: "/assets/images/presenters/angie_burns.png"
 
 - name: "Beth Morris"
-  shows: [MMM]
+  shows: []
   image: "/assets/images/presenters/beth_morris.jpg"
 
 - name: "Beth Riley"
@@ -67,7 +67,7 @@
   image: "/assets/images/presenters/david_downing.jpg"
 
 - name: "Debbie Baker"
-  shows: [DRV, ELS, RCS]
+  shows: [DRV, RCS]
   image: "/assets/images/presenters/debbie_baker.jpg"
 
 - name: "Dora Hargitai"
@@ -101,6 +101,10 @@
 - name: "Graham Duthie"
   shows: [BRK]
   image: "/assets/images/presenters/graham_duthie.jpg"
+
+- name: "Hugo Salinas"
+  shows: [BRK]
+  image:
 
 - name: "Ian Branch"
   shows: [RCS]
@@ -150,6 +154,10 @@
   shows: [MMM]
   image: "/assets/images/presenters/julie_greatwood.jpg"
 
+- name: "Julie Lowry"
+  shows: [RCK]
+  image:
+
 - name: "Katie Wilson"
   shows: [MMM]
   image: "/assets/images/presenters/katie_wilson.jpeg"
@@ -163,7 +171,7 @@
   image:
 
 - name: "Laura Tilbury"
-  shows: [80S, ELS, RCS]
+  shows: [DRV]
   image: "/assets/images/presenters/laura_tilbury.jpg"
 
 - name: "Laura Webb"
@@ -181,6 +189,10 @@
 - name: "Lisa La Moda"
   shows: [MMM]
   image: "/assets/images/presenters/lisa_la_moda.jpg"
+
+- name: "Lizzie Sentance"
+  shows: [ELS]
+  image:
 
 - name: "Lucy Ashburner"
   shows: [BRK, NMS]
@@ -251,7 +263,7 @@
   image: "/assets/images/presenters/pat_reading.jpg"
 
 - name: "Paul Englezos"
-  shows: [MMM]
+  shows: []
   image: "/assets/images/presenters/paul_englezos.jpg"
 
 - name: "Paul Goodwin"
@@ -283,7 +295,7 @@
   image:
 
 - name: "Piers Burnell"
-  shows: [ELS]
+  shows: []
   image: "/assets/images/presenters/piers_burnell.jpeg"
 
 - name: "Rhidian Jones"
@@ -316,6 +328,10 @@
 
 - name: "Susan Allan"
   shows: [MTM]
+  image:
+
+- name: "Terri Dixon-Prior"
+  shows: [NMS]
   image:
 
 - name: "Tim Ashburner"
