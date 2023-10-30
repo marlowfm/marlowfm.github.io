@@ -6,10 +6,6 @@
   shows: [ELS]
   image: "/assets/images/presenters/abi_morris.jpg"
 
-- name: "Ali Gray"
-  shows: [BDD]
-  image:
-
 - name: "Alan Roberts"
   shows: [ACZ]
   image: "/assets/images/presenters/alan_price-roberts.jpg"
@@ -19,7 +15,7 @@
   image:
 
 - name: "Andy Jay"
-  shows: [ELS, RCS]
+  shows: [RCS]
   image: "/assets/images/presenters/andy_jay.jpg"
 
 - name: "Angie Burns"
@@ -47,7 +43,7 @@
   image: "/assets/images/presenters/chris_zaremba.jpg"
 
 - name: "Chrissy Longley"
-  shows: [MMM]
+  shows: []
   image: "/assets/images/presenters/chrissy_longley.jpg"
 
 - name: "Clare Bones"
@@ -159,7 +155,7 @@
   image:
 
 - name: "Katie Wilson"
-  shows: [MMM]
+  shows: []
   image: "/assets/images/presenters/katie_wilson.jpeg"
 
 - name: "Kev Kinch"
@@ -234,6 +230,10 @@
   shows: [ZCN]
   image:
 
+- name: "Mike Bourton"
+  shows: [DRV]
+  image: "/assets/images/presenters/mike_bourton.jpg"
+
 - name: "Mike Cannon"
   shows: [AG6, ELS]
   image: "/assets/images/presenters/mike_cannon.jpg"
@@ -247,7 +247,7 @@
   image: "/assets/images/presenters/mike_sharp.png"
 
 - name: "Neil Knowles"
-  shows: [A2Z]
+  shows: []
   image: "/assets/images/presenters/neil_knowles.jpg"
 
 - name: "Nikky Smart"
@@ -267,7 +267,7 @@
   image: "/assets/images/presenters/paul_englezos.jpg"
 
 - name: "Paul Goodwin"
-  shows: [SFS]
+  shows: []
   image: "/assets/images/presenters/paul_goodwin.jpg"
 
 - name: "Paul Mansell"
