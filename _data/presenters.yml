@@ -210,6 +210,10 @@
   shows: [ZBS]
   image: "/assets/images/presenters/mark_harris.jpg"
 
+- name: "Mark Robson"
+  shows: [SFS]
+  image:
+
 - name: "Mary Flavelle"
   shows: [MMM]
   image: "/assets/images/presenters/mary_flavelle.jpg"
@@ -219,7 +223,7 @@
   image:
 
 - name: "Michael Eagleton"
-  shows: [CHR, SER, STM]
+  shows: [CHR, MEM, SER, STM]
   image: "/assets/images/presenters/michael_eagleton.jpg"
 
 - name: "Michelle Livings"
