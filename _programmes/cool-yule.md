@@ -4,7 +4,7 @@ layout: programme
 title: "Cool Yule"
 image: /assets/images/icons/YUL.jpg
 code: YUL
-again: ""
+again:
 ---
 
 Bored with hearing the same old Christmas songs every year? Then listen to Cool Yule for some refreshingly different festive fare.

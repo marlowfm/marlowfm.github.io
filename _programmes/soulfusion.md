@@ -1,9 +1,10 @@
 ---
+published: true
 layout: programme
 title: "Soulfusion"
 image: /assets/images/icons/SFS.jpg
 code: SFS
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=76"
+again:
 ---
 
 Every Thursday from 9pm to 11pm.

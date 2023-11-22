@@ -1,8 +1,10 @@
 ---
+published: true
 layout: programme
 title: "Concert Hour"
-image: 
+image:
 code: CHR
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=134"
+again:
 ---
-Michael Eagleton presents some of the great names of show business, past and present, in live performance. 
+
+Michael Eagleton presents some of the great names of show business, past and present, in live performance.

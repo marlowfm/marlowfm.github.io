@@ -1,9 +1,10 @@
 ---
+published: true
 layout: programme
 title: "Good Morning Marlow"
 image: /assets/images/icons/MMM.jpg
 code: MMM
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=5"
+again:
 ---
 
 Every weekday from 10am to noon.

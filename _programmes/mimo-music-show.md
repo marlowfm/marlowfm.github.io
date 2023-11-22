@@ -2,10 +2,11 @@
 published: false
 layout: programme
 title: "MiMo Music Show"
-image: 
+image:
 code: MIM
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=126"
+again:
 ---
-Every Friday night/Saturday morning from midnight to 2am. 
 
-Chris MiMo brings you two hours of the best house music, new and old. 
+Every Friday night/Saturday morning from midnight to 2am.
+
+Chris MiMo brings you two hours of the best house music, new and old.

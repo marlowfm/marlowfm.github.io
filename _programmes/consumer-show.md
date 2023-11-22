@@ -1,10 +1,12 @@
 ---
+published: true
 layout: programme
 title: "The Consumer Show"
-image: 
+image:
 code: ZCN
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=122"
+again:
 ---
-Every Tuesday from 2pm to 3pm. 
 
-Carla Delaney and Mike Agate look at consumer and financial issues. 
+Every Tuesday from 2pm to 3pm.
+
+Carla Delaney and Mike Agate look at consumer and financial issues.

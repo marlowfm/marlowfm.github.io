@@ -4,7 +4,7 @@ layout: programme
 title: "Sunday Serenade"
 image:
 code: SER
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=132"
+again:
 ---
 
 Every Sunday from 10am to 11am.

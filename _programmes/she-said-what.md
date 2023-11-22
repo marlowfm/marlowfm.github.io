@@ -4,12 +4,13 @@ layout: programme
 title: "She Said What?"
 image: /assets/images/icons/SSW.jpg
 code: SSW
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=112"
+again:
 ---
-Every Saturday from midday to 2pm. 
 
-"She said what? Did she? Really?" 
+Every Saturday from midday to 2pm.
 
-"Yes, she did!" 
+"She said what? Did she? Really?"
 
-Music and gossip not just for the girls! 
+"Yes, she did!"
+
+Music and gossip not just for the girls!

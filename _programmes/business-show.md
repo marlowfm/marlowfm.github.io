@@ -1,10 +1,11 @@
 ---
+published: true
 layout: programme
 title: "The Business Show"
 image: /assets/images/icons/ZBS.jpeg
 fb_group: "https://www.facebook.com/groups/thebusinessshow"
 code: ZBS
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=124"
+again:
 ---
 
 Every Thursday from 2pm to 3pm.

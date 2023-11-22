@@ -2,14 +2,15 @@
 published: true
 layout: programme
 title: "Reel Music"
-image: 
+image:
 code: REE
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=143"
+again:
 ---
-Every Sunday from 8pm to 10pm. 
 
-Reel Music brings together all of the best tunes from the world of TV and film in a mix so eclectic, you'll swear Paul's making it up as he goes along! 
+Every Sunday from 8pm to 10pm.
 
-Chart hits, indie tunes, film scores, TV themes - as long as it's been heard on the big or small screen, Paul will play it. 
+Reel Music brings together all of the best tunes from the world of TV and film in a mix so eclectic, you'll swear Paul's making it up as he goes along!
 
-Regular features include *Commercial Break Brain Teasers*, *TV Show Trilogies*, *Movie Trilogies*, and so much more. 
+Chart hits, indie tunes, film scores, TV themes - as long as it's been heard on the big or small screen, Paul will play it.
+
+Regular features include _Commercial Break Brain Teasers_, _TV Show Trilogies_, _Movie Trilogies_, and so much more.

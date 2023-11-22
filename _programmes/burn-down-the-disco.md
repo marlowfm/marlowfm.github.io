@@ -4,7 +4,7 @@ layout: programme
 title: "Burn Down The Disco"
 image: /assets/images/icons/BDD.png
 code: BDD
-again: "https://listenagain.marlowfm.co.uk/index.php?programmeID=145"
+again:
 ---
 
 Every Sunday from 2pm to 4pm.
