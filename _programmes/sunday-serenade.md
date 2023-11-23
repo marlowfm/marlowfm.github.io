@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: programme
 title: "Sunday Serenade"
 image:
@@ -7,6 +7,6 @@ code: SER
 again:
 ---
 
-Every Sunday from 10am to 11am.
+Sundays from 10am to 11am, whenever Marlow Memories isn't on.
 
 An hour of light classical favourites.

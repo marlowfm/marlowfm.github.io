@@ -7,6 +7,6 @@ code: MEM
 again:
 ---
 
-Every Sunday from 10am to 11am.
+Sundays from 10am to 11am, whenever Sunday Serenade isn't on.
 
 Marlow Memories brings you interviews with some of Marlow's senior citizens, together with some suitably nostalgic music.
