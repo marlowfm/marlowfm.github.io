@@ -98,10 +98,6 @@
   shows: [BRK]
   image: "/assets/images/presenters/graham_duthie.jpg"
 
-- name: "Hugo Salinas"
-  shows: [BRK]
-  image:
-
 - name: "Ian Branch"
   shows: [RCS]
   image:
