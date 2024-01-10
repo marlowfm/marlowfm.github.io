@@ -23,7 +23,7 @@
   image: "/assets/images/presenters/angie_burns.png"
 
 - name: "Beth Morris"
-  shows: []
+  shows: [NMS]
   image: "/assets/images/presenters/beth_morris.jpg"
 
 - name: "Beth Riley"
@@ -215,7 +215,7 @@
   image: "/assets/images/presenters/mary_flavelle.jpg"
 
 - name: "Melissa Barnby"
-  shows: [DRV]
+  shows: []
   image:
 
 - name: "Michael Eagleton"
@@ -291,7 +291,7 @@
   image: "/assets/images/presenters/mike_&_pauline.jpg"
 
 - name: "Phil Ward"
-  shows: [MTM]
+  shows: []
   image:
 
 - name: "Piers Burnell"
@@ -327,7 +327,7 @@
   image: "/assets/images/presenters/stuart_parker.jpg"
 
 - name: "Susan Allan"
-  shows: [MTM]
+  shows: []
   image:
 
 - name: "Terri Dixon-Prior"
