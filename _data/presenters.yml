@@ -79,7 +79,7 @@
   image: "/assets/images/presenters/dora_&_toby.jpeg"
 
 - name: "Edan Gaskell"
-  shows: [MTM]
+  shows: []
   image: "/assets/images/presenters/edan_gaskell.jpg"
 
 - name: "Emily Guiver"
@@ -135,7 +135,7 @@
   image: "/assets/images/presenters/jonathan_charles.png"
 
 - name: "Jonny Ratner"
-  shows: [BRK, MTM, RCS]
+  shows: [BRK, RCS]
   image: "/assets/images/presenters/jonny_ratner.jpg"
 
 - name: "Nora & Josh of J.B.MAC"
@@ -290,10 +290,6 @@
   shows: [MMM]
   image: "/assets/images/presenters/mike_&_pauline.jpg"
 
-- name: "Phil Ward"
-  shows: []
-  image:
-
 - name: "Piers Burnell"
   shows: []
   image: "/assets/images/presenters/piers_burnell.jpeg"
@@ -325,10 +321,6 @@
 - name: "Stuart Parker"
   shows: [RCK]
   image: "/assets/images/presenters/stuart_parker.jpg"
-
-- name: "Susan Allan"
-  shows: []
-  image:
 
 - name: "Terri Dixon-Prior"
   shows: [NMS]

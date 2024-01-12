@@ -8,6 +8,7 @@ export const progURLs = {
 	AG9: "/programmes/afternoon-gold-90s/",
 	ACZ: "/programmes/americanza/",
 	BAB: "/programmes/beats-and-bants",
+	BDT: "/programmes/vinyl-countdown/",
 	BOP: "/programmes/boppin-with-beth/",
 	BRK: "/programmes/breakfast/",
 	ZBS: "/programmes/business-show/",
