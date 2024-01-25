@@ -318,10 +318,6 @@
   shows: [REM]
   image: "/assets/images/presenters/steve_nash.jpg"
 
-- name: "Stuart Parker"
-  shows: [RCK]
-  image: "/assets/images/presenters/stuart_parker.jpg"
-
 - name: "Terri Dixon-Prior"
   shows: [NMS]
   image:
