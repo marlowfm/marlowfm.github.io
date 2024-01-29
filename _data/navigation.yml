@@ -1,5 +1,8 @@
 # main links
 main:
+  - title: "Quiz"
+    url: /quiz/
+    description: "Get tickets to our quiz night on Saturday 9th March at Great Marlow School."
   - title: "Bricks"
     url: /bricks/
   - title: "Listen Live"
