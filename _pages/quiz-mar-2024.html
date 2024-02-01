@@ -27,11 +27,8 @@ sidebar:
 		own Nikky Smart
 	</li>
 	<li>
-		<a href="https://book.stripe.com/4gwg1C5ZN9Y44Za9AG" target="_blank"
-			>Tickets are £10 per person</a
-		>
-		(make up a team of up to eight people, or just buy a ticket and we'll put
-		you in a team!)
+		Tickets are £10 per person (make up a team of up to eight people, or just
+		buy a ticket and we'll put you in a team!)
 	</li>
 	<li>Card-only bar (just beer, wine, soft drinks)</li>
 	<li>Feel free to bring your own snacks</li>
@@ -40,10 +37,48 @@ sidebar:
 
 <p>The night is always a laugh, so do invite all your friends!</p>
 
-<script async src="https://js.stripe.com/v3/buy-button.js"></script>
-
-<stripe-buy-button
-	buy-button-id="buy_btn_1OcWD9BwywyfcjvoBnM1ik8n"
-	publishable-key="pk_live_ZlBIoXqf0V3ZPu3qoijGRBYm"
+<form
+	action="https://www.paypal.com/cgi-bin/webscr"
+	method="post"
+	target="_blank"
 >
-</stripe-buy-button>
+	<input type="hidden" name="cmd" value="_s-xclick" />
+	<input type="hidden" name="hosted_button_id" value="3X3LYEK9CY8RU" />
+	<table>
+		<tr>
+			<td>
+				<input type="hidden" name="on0" value="Your name" />
+				Your name
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="os0" maxlength="32" required />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input
+					type="hidden"
+					name="on1"
+					value="The other people you&#39;re paying for (full names please)"
+				/>
+				The other people you&#39;re paying for (full names please)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="os1" maxlength="256" required />
+			</td>
+		</tr>
+	</table>
+	<input type="hidden" name="currency_code" value="GBP" />
+	<input
+		type="image"
+		src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif"
+		border="0"
+		name="submit"
+		title="PayPal - The safer, easier way to pay online!"
+		alt="Buy Now"
+	/>
+</form>
