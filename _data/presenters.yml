@@ -23,7 +23,7 @@
   image: "/assets/images/presenters/angie_burns.png"
 
 - name: "Beth Morris"
-  shows: [NMS]
+  shows: [ELS, NMS]
   image: "/assets/images/presenters/beth_morris.jpg"
 
 - name: "Beth Riley"
@@ -79,7 +79,7 @@
   image: "/assets/images/presenters/dora_&_toby.jpeg"
 
 - name: "Edan Gaskell"
-  shows: []
+  shows: [AGX]
   image: "/assets/images/presenters/edan_gaskell.jpg"
 
 - name: "Emily Guiver"
@@ -135,7 +135,7 @@
   image: "/assets/images/presenters/jonathan_charles.png"
 
 - name: "Jonny Ratner"
-  shows: [BRK, RCS]
+  shows: [BRK]
   image: "/assets/images/presenters/jonny_ratner.jpg"
 
 - name: "Nora & Josh of J.B.MAC"
@@ -153,6 +153,10 @@
 - name: "Katie Wilson"
   shows: []
   image: "/assets/images/presenters/katie_wilson.jpeg"
+
+- name: "Kelly Saward"
+  shows: [MMM]
+  image: "/assets/images/presenters/kelly_saward.jpg"
 
 - name: "Kev Kinch"
   shows: [APZ, KEV]
@@ -230,6 +234,10 @@
   shows: [ZCN]
   image:
 
+- name: "Mike Bayless"
+  shows: [ELS]
+  image: "/assets/images/presenters/mike_bayless.jpg"
+
 - name: "Mike Bourton"
   shows: [DRV]
   image: "/assets/images/presenters/mike_bourton.jpg"
@@ -243,7 +251,7 @@
   image: "/assets/images/presenters/mike_read.jpg"
 
 - name: "Mike Sharp"
-  shows: [AGX]
+  shows: []
   image: "/assets/images/presenters/mike_sharp.png"
 
 - name: "Neil Knowles"
@@ -287,7 +295,7 @@
   image:
 
 - name: "Mike Bayless & Pauline Howe-Davies"
-  shows: [MMM]
+  shows: []
   image: "/assets/images/presenters/mike_&_pauline.jpg"
 
 - name: "Piers Burnell"
@@ -302,6 +310,10 @@
   shows: [DRV, RCS]
   image:
 
+- name: "Ronnie Turner"
+  shows: [REM]
+  image: "/assets/images/presenters/ronnie_turner.jpg"
+
 - name: "Sarah-Jane Dale"
   shows: [AG9]
   image: "/assets/images/presenters/sarah-jane_dale.jpg"
@@ -310,12 +322,16 @@
   shows: [MMM]
   image: "/assets/images/presenters/serena_spencer-jones.jpg"
 
+- name: "Sheila Docker"
+  shows: []
+  image:
+
 - name: "Simon Harding"
   shows: [EUR]
   image: "/assets/images/presenters/simon_harding.jpg"
 
 - name: "Steve Nash"
-  shows: [REM]
+  shows: []
   image: "/assets/images/presenters/steve_nash.jpg"
 
 - name: "Terri Dixon-Prior"
@@ -327,7 +343,7 @@
   image:
 
 - name: "Tim Lovelace"
-  shows: [REM]
+  shows: []
   image:
 
 - name: "Tom Brown"
@@ -336,6 +352,10 @@
 
 - name: "Tom Fothergill"
   shows: [SAT]
+  image:
+
+- name: "Toney White"
+  shows: [REM]
   image:
 
 - name: "Vicky Everitt"
