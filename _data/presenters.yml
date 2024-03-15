@@ -323,8 +323,8 @@
   image: "/assets/images/presenters/serena_spencer-jones.jpg"
 
 - name: "Sheila Docker"
-  shows: []
-  image:
+  shows: [ZBS]
+  image: "/assets/images/presenters/sheila_docker.jpeg"
 
 - name: "Simon Harding"
   shows: [EUR]
