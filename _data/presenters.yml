@@ -138,10 +138,6 @@
   shows: [BRK]
   image: "/assets/images/presenters/jonny_ratner.jpg"
 
-- name: "Nora & Josh of J.B.MAC"
-  shows: [DMS]
-  image: "/assets/images/presenters/josh_&_nora.jpg"
-
 - name: "Julie Greatwood"
   shows: [MMM]
   image: "/assets/images/presenters/julie_greatwood.jpg"
@@ -285,10 +281,6 @@
 - name: "Paul Minkkinen"
   shows: [PFM]
   image: "/assets/images/presenters/paul_minkkinen.png"
-
-- name: "Paul Rose"
-  shows: [REE]
-  image: "/assets/images/presenters/paul_rose.jpg"
 
 - name: "Pauline Howe-Davies"
   shows: []
