@@ -3,7 +3,7 @@ published: true
 layout: single
 classes: wide
 title: "Buy a brick!"
-permalink: /bricks/
+permalink: /abc/
 sidebar:
   - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
