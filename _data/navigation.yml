@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Night Walk"
+    url: /walk/
   - title: "Listen Live"
     url: "http://radioplayer.marlowfm.co.uk"
     description: "If Radioplayer doesn't work, you'll need to configure your browser to use http rather than https. Alternatively, search for 'Marlow FM' on tunein.com, ask your smart speaker to 'Play Marlow FM', or download our app."
