@@ -315,7 +315,7 @@
   image: "/assets/images/presenters/serena_spencer-jones.jpg"
 
 - name: "Sheila Docker"
-  shows: [ZBS]
+  shows: [MMM, ZBS]
   image: "/assets/images/presenters/sheila_docker.jpeg"
 
 - name: "Simon Harding"
