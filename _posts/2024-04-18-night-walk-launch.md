@@ -13,4 +13,4 @@ Professor Greg Whyte OBE, Olympian and trainer to the stars, will lead the Marlo
 
 The half marathon walk will be made up of about 28 circuits of the field at Great Marlow School.
 
-Please consider getting involved by either [signing up and taking part](/walk/), or [sponsoring this fantastic event](https://www.justgiving.com/crowdfunding/marlowfmmoonwalk){:target="\_blank"}.
+Please consider getting involved by either signing up and taking part, or [sponsoring this fantastic event](https://www.justgiving.com/crowdfunding/marlowfmmoonwalk){:target="\_blank"}.
