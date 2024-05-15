@@ -32,6 +32,7 @@ export const progURLs = {
 	MTM: "/programmes/more-than-madness/",
 	BOX: "/programmes/music-box/",
 	NMS: "/programmes/new-music-show/",
+	OTE: "/programmes/on-the-edge/",
 	OUT: "/",
 	PFM: "/programmes/pirate-fm/",
 	QBN: "/programmes/q-burn/",
@@ -45,6 +46,7 @@ export const progURLs = {
 	SOM: "/programmes/sound-of-musicals/",
 	XXX: "/",
 	SER: "/programmes/sunday-serenade/",
+	SSP: "/programmes/sunday-sports-show/",
 	STM: "/programmes/swing-that-music/",
 	VIN: "/programmes/vinyl-countdown/",
 	WFS: "/programmes/world-folk-show/"

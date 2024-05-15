@@ -38,6 +38,10 @@
   shows: [MMM, ZCN]
   image: "/assets/images/presenters/carla_delaney.jpg"
 
+- name: "Chris Tandy"
+  shows: [MMM]
+  image:
+
 - name: "Chris Zaremba"
   shows: [MMM]
   image: "/assets/images/presenters/chris_zaremba.jpg"
@@ -130,6 +134,10 @@
   shows: [FMT, MMM]
   image: "/assets/images/presenters/john_rumble.jpg"
 
+- name: "John Savage"
+  shows: [SSP]
+  image:
+
 - name: "Jonathan Charles"
   shows: [VIN]
   image: "/assets/images/presenters/jonathan_charles.png"
@@ -137,6 +145,10 @@
 - name: "Jonny Ratner"
   shows: [BRK]
   image: "/assets/images/presenters/jonny_ratner.jpg"
+
+- name: "Jules Herd"
+  shows: [OTE]
+  image: "/assets/images/presenters/jules_herd.jpg"
 
 - name: "Julie Greatwood"
   shows: [MMM]
@@ -214,10 +226,6 @@
   shows: [MMM]
   image: "/assets/images/presenters/mary_flavelle.jpg"
 
-- name: "Melissa Barnby"
-  shows: []
-  image:
-
 - name: "Michael Eagleton"
   shows: [CHR, MEM, SER, STM]
   image: "/assets/images/presenters/michael_eagleton.jpg"
@@ -254,6 +262,10 @@
   shows: []
   image: "/assets/images/presenters/neil_knowles.jpg"
 
+- name: "Nicky Reeves"
+  shows: [MMM]
+  image:
+
 - name: "Nikky Smart"
   shows: [BRK]
   image:
@@ -279,7 +291,7 @@
   image: "/assets/images/presenters/paul_mansell.jpg"
 
 - name: "Paul Minkkinen"
-  shows: [PFM]
+  shows: []
   image: "/assets/images/presenters/paul_minkkinen.png"
 
 - name: "Pauline Howe-Davies"
@@ -357,3 +369,7 @@
 - name: "Vonnie Williams & DJ Dan"
   shows: [MMM]
   image: "/assets/images/presenters/vonnie_&_dan.jpg"
+
+- name: "Zoë Lister"
+  shows: [DRV]
+  image:
