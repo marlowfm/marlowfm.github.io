@@ -136,7 +136,7 @@
 
 - name: "John Savage"
   shows: [SSP]
-  image:
+  image: "/assets/images/presenters/john_savage.jpg"
 
 - name: "Jonathan Charles"
   shows: [VIN]
