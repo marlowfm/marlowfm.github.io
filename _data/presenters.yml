@@ -242,10 +242,6 @@
   shows: [ELS]
   image: "/assets/images/presenters/mike_bayless.jpg"
 
-- name: "Mike Bourton"
-  shows: [DRV]
-  image: "/assets/images/presenters/mike_bourton.jpg"
-
 - name: "Mike Cannon"
   shows: [AG6, ELS]
   image: "/assets/images/presenters/mike_cannon.jpg"
