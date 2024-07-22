@@ -19,4 +19,4 @@ The project involved the conversion and extension of the old caretaker's garage.
 
 We needed a new home because our original one at Longridge Activity Centre, from where we started broadcasting full time in May 2011, was to be demolished (it now has been). Since the autumn of last year we've been broadcasting on a temporary basis from a room at Marlow Library.
 
-Marlow FM thanks everyone who's been involved with this amazing new chapter. So many have done so much, often behind the scenes. More photos of our new home will appear in the coming days.
+Marlow FM thanks everyone who's been involved with this amazing new chapter. So many have done so much, often behind the scenes.
