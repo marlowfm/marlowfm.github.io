@@ -42,7 +42,7 @@ export const progURLs = {
 	RCS: "/programmes/retro-chart-show/",
 	RCK: "/programmes/rock-show/",
 	SAT: "/programmes/saturday-breakfast/",
-	SFS: "/programmes/soulfusion/",
+	SFS: "/programmes/soul-fusion/",
 	SOM: "/programmes/sound-of-musicals/",
 	XXX: "/",
 	SER: "/programmes/sunday-serenade/",
