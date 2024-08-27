@@ -4,6 +4,7 @@ layout: programme
 title: "The Eco Show"
 image: /assets/images/icons/ECO.jpg
 fb_group: "https://www.facebook.com/groups/theecoshow"
+instagram: "https://www.instagram.com/the_eco_show_marlowfm_97.5"
 code: ECO
 again:
 ---
