@@ -40,6 +40,7 @@ export const progURLs = {
 	REE: "/programmes/reel-music/",
 	REM: "/programmes/residency-essential-mix/",
 	RCS: "/programmes/retro-chart-show/",
+	REV: "/programmes/revival/",
 	RCK: "/programmes/rock-show/",
 	SAT: "/programmes/saturday-breakfast/",
 	SFS: "/programmes/soul-fusion/",

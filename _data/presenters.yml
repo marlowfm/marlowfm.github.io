@@ -187,7 +187,7 @@
   image: "/assets/images/presenters/linda_webb.png"
 
 - name: "Lisa BHA"
-  shows: [80S]
+  shows: [80S, REV]
   image:
 
 - name: "Lisa La Moda"
