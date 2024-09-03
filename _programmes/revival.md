@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: programme
 title: "Revival!"
 image:
