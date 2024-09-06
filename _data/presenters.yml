@@ -11,7 +11,7 @@
   image: "/assets/images/presenters/alan_price-roberts.jpg"
 
 - name: "Andy Franklin"
-  shows: [BAB]
+  shows: [BAB, INA]
   image:
 
 - name: "Andy Jay"
