@@ -33,26 +33,26 @@ sidebar:
 			". brk1 brk2 brk3 brk4 brk5 sat fm2"
 			"t0900 box11 box21 box31 box41 box51 sat fm2"
 			". box11 box21 box31 box41 box51 sat fm2"
-			"t1000 mmm1 mmm2 mmm3 mmm4 mmm5 rcs mem"
-			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs mem"
-			"t1100 mmm1 mmm2 mmm3 mmm4 mmm5 rcs chr7"
-			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs chr7"
+			"t1000 mmm1 mmm2 mmm3 mmm4 mmm5 rcs juk71"
+			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs juk71"
+			"t1100 mmm1 mmm2 mmm3 mmm4 mmm5 rcs juk71"
+			". mmm1 mmm2 mmm3 mmm4 mmm5 rcs juk71"
 			"t1200 els1 els2 els3 els4 els5 ina acz"
 			". els1 els2 els3 els4 els5 ina acz"
 			"t1300 els1 els2 els3 els4 els5 ina acz"
 			". els1 els2 els3 els4 els5 ina acz"
-			"t1400 chr1 zcn bop zbs chr5 hrt6 ssp"
-			". chr1 zcn bop zbs chr5 hrt6 ssp"
+			"t1400 juk11 zcn juk31 zbs juk51 hrt6 ssp"
+			". juk11 zcn juk31 zbs juk51 hrt6 ssp"
 			"t1500 ag6 ag7 ag8 ag9 agx hrt6 ssp"
 			". ag6 ag7 ag8 ag9 agx hrt6 ssp"
 			"t1600 ag6 ag7 ag8 ag9 agx wfs som"
 			". ag6 ag7 ag8 ag9 agx wfs som"
 			"t1700 drv1 drv2 drv3 drv4 drv5 wfs som"
 			". drv1 drv2 drv3 drv4 drv5 wfs som"
-			"t1800 drv1 drv2 drv3 drv4 drv5 qbn stm"
-			". drv1 drv2 drv3 drv4 drv5 qbn stm"
-			"t1900 eco nms rev pfm rck qbn stm"
-			". eco nms rev pfm rck qbn stm"
+			"t1800 drv1 drv2 drv3 drv4 drv5 qbn juk72"
+			". drv1 drv2 drv3 drv4 drv5 qbn juk72"
+			"t1900 eco nms rev pfm rck qbn juk72"
+			". eco nms rev pfm rck qbn juk72"
 			"t2000 eco nms rev pfm rck kev ote"
 			". eco nms rev pfm rck kev ote"
 			"t2100 hrt1 fmt bab sfs rem kev ote"
@@ -346,13 +346,6 @@ sidebar:
 
 	.zcn {
 		grid-area: zcn;
-		padding: 2px;
-		background-color: var(--background-weekday-dark);
-		color: inherit;
-	}
-
-	.bop {
-		grid-area: bop;
 		padding: 2px;
 		background-color: var(--background-weekday-dark);
 		color: inherit;
@@ -652,6 +645,13 @@ sidebar:
 		color: inherit;
 	}
 
+	.juk11 {
+		grid-area: juk11;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
 	.juk2 {
 		grid-area: juk2;
 		padding: 2px;
@@ -661,6 +661,13 @@ sidebar:
 
 	.juk3 {
 		grid-area: juk3;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk31 {
+		grid-area: juk31;
 		padding: 2px;
 		background-color: var(--background-jukebox);
 		color: inherit;
@@ -680,6 +687,13 @@ sidebar:
 		color: inherit;
 	}
 
+	.juk51 {
+		grid-area: juk51;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
 	.juk6 {
 		grid-area: juk6;
 		padding: 2px;
@@ -689,6 +703,20 @@ sidebar:
 
 	.juk7 {
 		grid-area: juk7;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk71 {
+		grid-area: juk71;
+		padding: 2px;
+		background-color: var(--background-jukebox);
+		color: inherit;
+	}
+
+	.juk72 {
+		grid-area: juk72;
 		padding: 2px;
 		background-color: var(--background-jukebox);
 		color: inherit;
@@ -743,7 +771,6 @@ sidebar:
 	<a class="box31" href="/programmes/music-box/">THE MUSIC BOX</a>
 	<a class="box41" href="/programmes/music-box/">THE MUSIC BOX</a>
 	<a class="box51" href="/programmes/music-box/">THE MUSIC BOX</a>
-	<a class="mem" href="/programmes/marlow-memories/">MARLOW MEMORIES</a>
 	<a class="mmm1" href="/programmes/good-morning-marlow/"
 		>GOOD MORNING MARLOW</a
 	>
@@ -760,12 +787,8 @@ sidebar:
 		>GOOD MORNING MARLOW</a
 	>
 	<a class="rcs" href="/programmes/retro-chart-show/">THE RETRO CHART SHOW</a>
-	<a class="chr7" href="/programmes/concert-hour/">CONCERT HOUR</a>
-	<a class="chr1" href="/programmes/concert-hour/">CONCERT HOUR</a>
 	<a class="zcn" href="/programmes/consumer-show/">THE CONSUMER SHOW</a>
-	<a class="bop" href="/programmes/boppin-with-beth/">BOPPIN' WITH BETH</a>
 	<a class="zbs" href="/programmes/business-show/">THE BUSINESS SHOW</a>
-	<a class="chr5" href="/programmes/concert-hour/">CONCERT HOUR</a>
 	<a class="acz" href="/programmes/americanza/">AMERICANZA</a>
 	<a class="els1" href="/programmes/eclectic-light-show/"
 		>THE ECLECTIC LIGHT SHOW</a
@@ -802,7 +825,6 @@ sidebar:
 	<a class="drv4" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="drv5" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="qbn" href="/programmes/q-burn/">Q-BURN</a>
-	<a class="stm" href="/programmes/swing-that-music/">SWING THAT MUSIC</a>
 	<a class="eco" href="/programmes/eco-show/">THE ECO SHOW</a>
 	<a class="hrt1" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
 	<a class="nms" href="/programmes/new-music-show/">THE NEW MUSIC SHOW</a>
@@ -824,10 +846,15 @@ sidebar:
 		>RADIO DAZE REGGAE SHOW</a
 	>
 	<div class="juk1">THE JUKEBOX</div>
+	<div class="juk11">THE JUKEBOX</div>
 	<div class="juk2">THE JUKEBOX</div>
 	<div class="juk3">THE JUKEBOX</div>
+	<div class="juk31">THE JUKEBOX</div>
 	<div class="juk4">THE JUKEBOX</div>
 	<div class="juk5">THE JUKEBOX</div>
+	<div class="juk51">THE JUKEBOX</div>
 	<div class="juk6">THE JUKEBOX</div>
 	<div class="juk7">THE JUKEBOX</div>
+	<div class="juk71">THE JUKEBOX</div>
+	<div class="juk72">THE JUKEBOX</div>
 </div>

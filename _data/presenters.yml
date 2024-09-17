@@ -26,10 +26,6 @@
   shows: [ELS, NMS]
   image: "/assets/images/presenters/beth_morris.jpg"
 
-- name: "Beth Riley"
-  shows: [BOP]
-  image: "/assets/images/presenters/beth_riley.jpeg"
-
 - name: "Bridget Biggar"
   shows: [SOM]
   image: "/assets/images/presenters/bridget_biggar.jpg"
@@ -63,7 +59,7 @@
   image: "/assets/images/presenters/david_croft.jpg"
 
 - name: "David Downing"
-  shows: [FMT]
+  shows: []
   image: "/assets/images/presenters/david_downing.jpg"
 
 - name: "Debbie Baker"
@@ -75,11 +71,11 @@
   image:
 
 - name: "Toby Brown"
-  shows: []
+  shows: [ECO]
   image:
 
 - name: "Dora Hargitai & Toby Brown"
-  shows: [ECO]
+  shows: []
   image: "/assets/images/presenters/dora_&_toby.jpeg"
 
 - name: "Edan Gaskell"
@@ -109,10 +105,6 @@
 - name: "James Mulchrone"
   shows: [BRK]
   image: "/assets/images/presenters/james_mulchrone.jpg"
-
-- name: "James Riley"
-  shows: [CAW]
-  image: "/assets/images/presenters/james_riley.jpg"
 
 - name: "James Winter"
   shows: [MMM]
@@ -163,7 +155,7 @@
   image: "/assets/images/presenters/katie_wilson.jpeg"
 
 - name: "Kelly Saward"
-  shows: [MMM]
+  shows: [DRV, MMM]
   image: "/assets/images/presenters/kelly_saward.jpg"
 
 - name: "Kev Kinch"
@@ -187,7 +179,7 @@
   image: "/assets/images/presenters/linda_webb.png"
 
 - name: "Lisa BHA"
-  shows: [80S, REV]
+  shows: [REV]
   image:
 
 - name: "Lisa La Moda"
@@ -226,10 +218,6 @@
   shows: [MMM]
   image: "/assets/images/presenters/mary_flavelle.jpg"
 
-- name: "Michael Eagleton"
-  shows: [CHR, MEM, SER, STM]
-  image: "/assets/images/presenters/michael_eagleton.jpg"
-
 - name: "Michelle Livings"
   shows: [RCK]
   image: "/assets/images/presenters/michelle_livings.jpg"
@@ -263,7 +251,7 @@
   image:
 
 - name: "Nikky Smart"
-  shows: [BRK]
+  shows: [BRK, NMS]
   image:
 
 - name: "Pat Capp"
@@ -314,6 +302,10 @@
   shows: [REM]
   image: "/assets/images/presenters/ronnie_turner.jpg"
 
+- name: "Sarah C"
+  shows: [REM]
+  image:
+
 - name: "Sarah-Jane Dale"
   shows: [AG9]
   image: "/assets/images/presenters/sarah-jane_dale.jpg"
@@ -325,10 +317,6 @@
 - name: "Sheila Docker"
   shows: [MMM, ZBS]
   image: "/assets/images/presenters/sheila_docker.jpeg"
-
-- name: "Simon Harding"
-  shows: [EUR]
-  image: "/assets/images/presenters/simon_harding.jpg"
 
 - name: "Steve Nash"
   shows: []
@@ -347,7 +335,7 @@
   image:
 
 - name: "Tom Brown"
-  shows: [BRK]
+  shows: [BRK, NMS]
   image:
 
 - name: "Tom Fothergill"
