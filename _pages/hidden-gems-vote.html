@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: single
 classes: wide
 title: "Vote now for Marlow's Hidden Gems!"
@@ -9,36 +9,37 @@ sidebar:
 ---
 
 <img
-	src="{{ site.url }}{{ site.baseurl }}/assets/images/logos/hidden-gems-2023-logo-1-small.png"
-	alt="Hidden Gems 2023 logo"
+	src="{{ site.url }}{{ site.baseurl }}/assets/images/logos/hidden-gems-2024-logo.jpg"
+	alt="Hidden Gems 2024 logo"
 />
 
+<br />
+<br />
+
 <p>
-	Hidden Gems, Marlow FM's celebration of local people, businesses, and
-	organisations, is back for 2023.
+	Hidden Gems is back! It's Marlow FM's celebration of local people, businesses,
+	and organisations - with some new categories for 2024.
 </p>
 
 <p>
 	A big thank you for all your deserving nominations. We've drawn up a shortlist
-	of nominees for 10 of the categories, and it's now time to get voting! The
-	Hidden Gems Committee* itself will review the many nominations for Services to
+	of nominees for nine of the categories, and it's now time to get voting! The
+	Hidden Gems Committee itself will review the many nominations for Services to
 	Charity and Services to the Community, and decide the winners of these two
 	categories.
 </p>
 
 <p>
-	Please fill in and submit the form below by the end of Sunday 5th February.
+	Please fill in and submit the form below by the end of Sunday 3rd November.
 	You can vote in however many categories you want, but please only vote once.
 	We'll reject any suspicious-looking forms!
 </p>
 
 <p>
-	And remember
-	<a href="{{ site.url }}{{ site.baseurl }}/tickets"
-		>early-bird tickets are still available</a
-	>
-	for a fun-filled Mexican fiesta-inspired evening, where we will celebrate our
-	winners, dine in style, and party the night away - fabuloso!
+	And remember to
+	<a href="{{ site.url }}{{ site.baseurl }}/tickets">get your tickets</a>
+	for a glittering black tie event at Harleyford Golf Club on Saturday 16th
+	November, where the winners will be announced.
 </p>
 
 <form id="form">
@@ -52,18 +53,18 @@ sidebar:
 		>Happy to hear from us by email?
 		<input type="checkbox" id="marketing" style="display: inline" checked
 	/></label>
-	<button type="submit" class="btn btn--inverse btn--large">
+	<button type="submit" class="btn btn--inverse btn--large" id="button">
 		Submit your votes
 	</button>
 	<p></p>
 	<div id="thanks"><p>You haven't submitted your votes yet.</p></div>
 </form>
 
-<p>
+<!--<p>
 	*The committee is made up of Pat Reading from Marlow FM, Paul Merchant from
 	MyMarlow, Hilary Martin from Marlow Town Council, and Peter Evans, President
 	of the Marlow Chamber of Trade & Commerce.
-</p>
+</p>-->
 
 <script defer>
 	const CATEGORIES = [
@@ -71,91 +72,81 @@ sidebar:
 			long: "Best Cuppa",
 			short: "cuppa",
 			nominees: [
-				{ long: "The Cedar", short: "cedar" },
 				{ long: "Chives", short: "chives" },
-				{ long: "The Coffee Dan", short: "dan" }
+				{ long: "The Coffee Dan", short: "dan" },
+				{ long: "The M Café", short: "mcafe" }
 			]
 		},
 		{
 			long: "Best Pub",
 			short: "pub",
 			nominees: [
-				{ long: "The Duke", short: "duke" },
-				{ long: "The Kings Head", short: "kings" },
-				{ long: "The Queens Head", short: "queens" }
-			]
-		},
-		{
-			long: "Best Sunday Roast",
-			short: "roast",
-			nominees: [
-				{ long: "The Kings Head", short: "kings" },
-				{ long: "The Queens Head", short: "queens" },
-				{ long: "The Two Brewers", short: "brewers" }
+				{ long: "The Duke (Queen's Road)", short: "duke" },
+				{ long: "The Marlow Donkey", short: "donkey" },
+				{ long: "The Oarsman", short: "oarsman" }
 			]
 		},
 		{
 			long: "Best Breakfast",
 			short: "breakfast",
 			nominees: [
-				{ long: "The Cedar", short: "cedar" },
-				{ long: "Fego", short: "fego" }
+				{ long: "Chives", short: "chives" },
+				{ long: "Fego", short: "fego" },
+				{ long: "The M Café", short: "mcafe" }
+			]
+		},
+		{
+			long: "Best Event",
+			short: "event",
+			nominees: [
+				{ long: "Higginson parkrun", short: "parkrun" },
+				{ long: "Marlow Town Regatta & Festival", short: "regatta" },
+				{ long: "Santa's Fun Run", short: "santa" }
 			]
 		},
 		{
 			long: "Best Night Out",
 			short: "night",
 			nominees: [
-				{ long: "Amorino", short: "amorino" },
-				{ long: "Clayton's Lounge", short: "claytons" },
-				{ long: "Grape Expectations", short: "grape" }
+				{ long: "The Duke (Queen's Road)", short: "duke" },
+				{ long: "Grape Expectations", short: "grape" },
+				{ long: "Rebellion Members' Night", short: "rebellion" }
 			]
 		},
 		{
 			long: "Best Sports Club",
 			short: "sports",
 			nominees: [
-				{ long: "Harleyford Golf Club", short: "harleyford" },
-				{ long: "Marlow Rowing Club", short: "rowing" },
-				{ long: "Marlow Rugby Club", short: "rugby" }
+				{ long: "Marlow Football Club", short: "marlowfc" },
+				{ long: "Marlow Rugby Club", short: "rugby" },
+				{ long: "Marlow United Juniors", short: "juniors" }
 			]
 		},
 		{
-			long: "Best Special Interest Club",
-			short: "interest",
+			long: "Best Therapist",
+			short: "therapist",
 			nominees: [
-				{ long: "Harmony Belles", short: "belles" },
-				{ long: "Marlow Town Band", short: "band" },
-				{ long: "The Marlow Writers' Group", short: "writers" },
-				{ long: "Wild Marlow", short: "wild" }
+				{ long: "Mike Banks, The Marlow Club", short: "mike" },
+				{ long: "Shelley Protheroe, Signature Beauty", short: "shelley" },
+				{ long: "Claire Watson, Peachi Beauty", short: "claire" }
 			]
 		},
 		{
-			long: "Best Teaching or Learning Support Assistant",
-			short: "assistant",
+			long: "Best Teacher",
+			short: "teacher",
 			nominees: [
-				{ long: "Jenny Britnell - Sandygate", short: "jenny" },
-				{ long: "Sarah Brooks", short: "sarah" },
-				{ long: "Annie Clarke - Great Marlow", short: "annie" },
-				{ long: "Helen Lewis - Burford", short: "helen" },
-				{ long: "Debbie Payne - Burford", short: "debbie" }
+				{ long: "Mrs Boyle, St Peter's", short: "boyle" },
+				{ long: "Mrs Clarke, Spinfield", short: "clarke" },
+				{ long: "Mrs De Gatacre, Danesfield", short: "degatacre" }
 			]
 		},
 		{
 			long: "Best Local Producer",
 			short: "producer",
 			nominees: [
+				{ long: "Burgers", short: "burgers" },
 				{ long: "Harrow & Hope", short: "harrow" },
-				{ long: "The Marlow Cheese Co", short: "cheese" },
 				{ long: "Rebellion Beer Company", short: "rebellion" }
-			]
-		},
-		{
-			long: "Best Tradesperson",
-			short: "tradesperson",
-			nominees: [
-				{ long: "B&S Projects", short: "bs" },
-				{ long: "Steve Carlton, Marlow Motors", short: "motors" }
 			]
 		}
 	];
@@ -196,6 +187,7 @@ sidebar:
 
 	document.querySelector("#form").onsubmit = async e => {
 		e.preventDefault();
+		document.querySelector("#button").disabled = true;
 		const votes = CATEGORIES.map(
 			category =>
 				document.querySelector(`input[name="${category.short}"]:checked`).value
@@ -204,7 +196,9 @@ sidebar:
 			document.querySelector(
 				"#thanks"
 			).innerHTML = `<p>You haven't voted for anyone!</p>`;
+			document.querySelector("#button").disabled = false;
 		} else {
+			//console.table(votes);
 			try {
 				await fetch("https://form.marlowfm.co.uk:3011/create", {
 					method: "POST",
@@ -220,7 +214,7 @@ sidebar:
 				});
 				document.querySelector(
 					"#form"
-				).innerHTML = `<p><strong>Thank you for voting.</strong> Now buy your tickets for the big event!</p>`;
+				).innerHTML = `<p><strong>Thank you for voting. Now buy your tickets for the big event!</strong></p>`;
 			} catch (error) {
 				console.error(error);
 			}
