@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/news/shaila-prospere-tickets-giveaway.jpg
 ---
 
-Acclaimed UK soul vocalist Shaila Prospere has announced an exclusive London concert at The Forge, Camden on Saturday 26th October, and you could be there courtesy of Marlow FM.
+Acclaimed UK soul vocalist [Shaila Prospere](https://shailaprosperemusic.com/home){:target="\_blank"} has announced an exclusive London concert at [The Forge, Camden](https://theforgecamden.co.uk/){:target="\_blank"} on Saturday 26th October, and you could be there courtesy of Marlow FM.
 
 ![Shaila Prospere tickets giveaway]({{ site.url }}{{ site.baseurl }}/assets/images/news/shaila-prospere-tickets-giveaway.jpg "Shaila Prospere tickets giveaway")
 
