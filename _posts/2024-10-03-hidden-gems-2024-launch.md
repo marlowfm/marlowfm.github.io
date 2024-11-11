@@ -11,4 +11,4 @@ Yes, Hidden Gems 2024 is underway...
 
 ![Hidden Gems 2024]({{ site.url }}{{ site.baseurl }}/assets/images/logos/hidden-gems-2024-logo.jpg "Hidden Gems 2024")
 
-We're now inviting you to make your nominations. So [head over here]({{ site.url }}{{ site.baseurl }}/gems/) to nominate the best of Marlow, and [head here]({{ site.url }}{{ site.baseurl }}/tickets/) to buy your tickets for the glittering black tie event in November!
+We're now inviting you to make your nominations. So head over here to nominate the best of Marlow, and head here to buy your tickets for the glittering black tie event in November!
