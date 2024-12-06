@@ -41,10 +41,10 @@ sidebar:
 			". els1 els2 els3 els4 els5 ina acz"
 			"t1300 els1 els2 els3 els4 els5 ina acz"
 			". els1 els2 els3 els4 els5 ina acz"
-			"t1400 juk11 zcn bdt zbs juk51 hrt6 ssp"
-			". juk11 zcn bdt zbs juk51 hrt6 ssp"
-			"t1500 ag6 ag7 ag8 ag9 agx hrt6 ssp"
-			". ag6 ag7 ag8 ag9 agx hrt6 ssp"
+			"t1400 juk11 zcn bdt zbs juk51 hrt6 juk73"
+			". juk11 zcn bdt zbs juk51 hrt6 juk73"
+			"t1500 ag6 ag7 ag8 ag9 agx hrt6 juk73"
+			". ag6 ag7 ag8 ag9 agx hrt6 juk73"
 			"t1600 ag6 ag7 ag8 ag9 agx wfs som"
 			". ag6 ag7 ag8 ag9 agx wfs som"
 			"t1700 drv1 drv2 drv3 drv4 drv5 wfs som"
@@ -55,12 +55,12 @@ sidebar:
 			". eco nms rev pfm rck qbn juk72"
 			"t2000 eco nms rev pfm rck kev ote"
 			". eco nms rev pfm rck kev ote"
-			"t2100 hrt1 fmt bab sfs rem kev ote"
-			". hrt1 fmt bab sfs rem kev ote"
+			"t2100 ctc fmt bab sfs rem kev ote"
+			". ctc fmt bab sfs rem kev ote"
 			"t2200 hrt1 fmt bab sfs rem kev rdr"
 			". hrt1 fmt bab sfs rem kev rdr"
-			"t2300 juk1 juk2 juk3 juk4 rem apz rdr"
-			". juk1 juk2 juk3 juk4 rem apz rdr"
+			"t2300 hrt1 juk2 juk3 juk4 rem apz rdr"
+			". hrt1 juk2 juk3 juk4 rem apz rdr"
 			"t0000 juk1 juk2 juk3 juk4 juk5 apz juk7"
 			". juk1 juk2 juk3 juk4 juk5 apz juk7"
 			"t0100 juk1 juk2 juk3 juk4 juk5 juk6 juk7"
@@ -375,7 +375,7 @@ sidebar:
 	.acz {
 		grid-area: acz;
 		padding: 2px;
-		background-color: var(--background-weekend-light);
+		background-color: var(--background-weekend-dark);
 		color: inherit;
 	}
 
@@ -414,10 +414,10 @@ sidebar:
 		color: inherit;
 	}
 
-	.ssp {
-		grid-area: ssp;
+	.juk73 {
+		grid-area: juk73;
 		padding: 2px;
-		background-color: var(--background-weekend-dark);
+		background-color: var(--background-jukebox);
 		color: inherit;
 	}
 
@@ -494,7 +494,7 @@ sidebar:
 	.som {
 		grid-area: som;
 		padding: 2px;
-		background-color: var(--background-weekend-light);
+		background-color: var(--background-weekend-dark);
 		color: inherit;
 	}
 
@@ -554,10 +554,17 @@ sidebar:
 		color: inherit;
 	}
 
+	.ctc {
+		grid-area: ctc;
+		padding: 2px;
+		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
 	.hrt1 {
 		grid-area: hrt1;
 		padding: 2px;
-		background-color: var(--background-weeknight-light);
+		background-color: var(--background-weeknight-dark);
 		color: inherit;
 	}
 
@@ -627,7 +634,7 @@ sidebar:
 	.ote {
 		grid-area: ote;
 		padding: 2px;
-		background-color: var(--background-weekend-light);
+		background-color: var(--background-weekend-dark);
 		color: inherit;
 	}
 
@@ -641,7 +648,7 @@ sidebar:
 	.rdr {
 		grid-area: rdr;
 		padding: 2px;
-		background-color: var(--background-weekend-dark);
+		background-color: var(--background-weekend-light);
 		color: inherit;
 	}
 
@@ -808,9 +815,6 @@ sidebar:
 	>
 	<a class="ina" href="/programmes/in-the-afternoon/">IN THE AFTERNOON</a>
 	<a class="hrt6" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
-	<a class="ssp" href="/programmes/sunday-sports-show/"
-		>THE SUNDAY SPORTS SHOW</a
-	>
 	<a class="ag6" href="/programmes/afternoon-gold-60s/">AFTERNOON GOLD 60s</a>
 	<a class="ag7" href="/programmes/afternoon-gold-70s/">AFTERNOON GOLD 70s</a>
 	<a class="ag8" href="/programmes/afternoon-gold-80s/">AFTERNOON GOLD 80s</a>
@@ -827,6 +831,7 @@ sidebar:
 	<a class="drv5" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="qbn" href="/programmes/q-burn/">Q-BURN</a>
 	<a class="eco" href="/programmes/eco-show/">THE ECO SHOW</a>
+	<a class="ctc" href="/programmes/cover-to-cover/">COVER TO COVER</a>
 	<a class="hrt1" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
 	<a class="nms" href="/programmes/new-music-show/">THE NEW MUSIC SHOW</a>
 	<a class="fmt" href="/programmes/faith-matters/">FAITH MATTERS</a>
@@ -857,4 +862,5 @@ sidebar:
 	<div class="juk7">THE JUKEBOX</div>
 	<div class="juk71">THE JUKEBOX</div>
 	<div class="juk72">THE JUKEBOX</div>
+	<div class="juk73">THE JUKEBOX</div>
 </div>

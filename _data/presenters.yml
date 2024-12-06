@@ -126,10 +126,6 @@
   shows: [FMT, MMM]
   image: "/assets/images/presenters/john_rumble.jpg"
 
-- name: "John Savage"
-  shows: [SSP]
-  image: "/assets/images/presenters/john_savage.jpg"
-
 - name: "Jonathan Charles"
   shows: [VIN]
   image: "/assets/images/presenters/jonathan_charles.png"
@@ -149,10 +145,6 @@
 - name: "Julie Lowry"
   shows: [RCK]
   image:
-
-- name: "Katie Wilson"
-  shows: []
-  image: "/assets/images/presenters/katie_wilson.jpeg"
 
 - name: "Kelly Saward"
   shows: [DRV, MMM]
@@ -174,6 +166,9 @@
   shows: [AG7, DRV]
   image:
 
+- name: "Lily Birch"
+  shows: [CTC]
+  image:
 - name: "Linda Webb"
   shows: [MMM]
   image: "/assets/images/presenters/linda_webb.png"
@@ -354,6 +349,9 @@
   shows: [MMM]
   image: "/assets/images/presenters/vonnie_&_dan.jpg"
 
+- name: "Yasmin Mills"
+  shows: [CTC]
+  image:
 - name: "Zoë Lister"
   shows: [DRV]
   image:
