@@ -7,7 +7,6 @@ export const progURLs = {
 	AG8: "/programmes/afternoon-gold-80s/",
 	AG9: "/programmes/afternoon-gold-90s/",
 	ACZ: "/programmes/americanza/",
-	BAB: "/programmes/beats-and-bants",
 	BDT: "/programmes/vinyl-countdown/",
 	BOP: "/programmes/boppin-with-beth/",
 	BRK: "/programmes/breakfast/",
@@ -52,5 +51,6 @@ export const progURLs = {
 	SSP: "/programmes/sunday-sports-show/",
 	STM: "/programmes/swing-that-music/",
 	VIN: "/programmes/vinyl-countdown/",
-	WFS: "/programmes/world-folk-show/"
+	WFS: "/programmes/world-folk-show/",
+	BAB: "/programmes/your-classic-rnb-show/"
 };

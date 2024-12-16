@@ -1,7 +1,7 @@
 ---
 published: true
 layout: programme
-title: "Beats And Bants"
+title: "Your Classic RnB Show"
 image: /assets/images/icons/BAB.jpeg
 code: BAB
 again:
