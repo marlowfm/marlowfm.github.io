@@ -4,24 +4,27 @@ classes: wide
 title: "Music"
 permalink: /music/
 sidebar:
-  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
+  - text: "<a class='btn btn--success btn--large' onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
+
 <h3>The last tracks played on Marlow FM</h3>
 <p>This list updates automatically.</p>
 <div id="last-played"></div>
-<p style="font-size: 0.66em;">We use <a href="https://www.acrcloud.com/" target="_blank">ACRCloud</a> to recognise the
-	tracks we play. A few tracks might not be picked up properly, or at all. So please don't count on the information
-	above or below
-	being completely accurate.</p>
+<p style="font-size: 0.66em">
+	We use <a href="https://www.acrcloud.com/" target="_blank">ACRCloud</a> to
+	recognise the tracks we play. A few tracks might not be picked up properly, or
+	at all. So please don't count on the information above or below being
+	completely accurate.
+</p>
 
 <h3>The top tracks and artists played last week</h3>
 <p id="from-to"></p>
-<div style="display: flex; flex-wrap: wrap;">
-	<div style="flex: 1;">
+<div style="display: flex; flex-wrap: wrap">
+	<div style="flex: 1">
 		<div id="top-tracks"></div>
 	</div>
-	<div style="flex: 1;">
+	<div style="flex: 1">
 		<div id="top-artists"></div>
 	</div>
 </div>
@@ -35,15 +38,15 @@ sidebar:
 			const data = JSON.parse(e.data);
 			if (data.length !== 0) {
 				let html = "<table>";
-				data.forEach(track => html += `<tr><td>${track[0]}</td><td>${track[1]}</td><td>${track[2]}</td></tr>`);
+				data.forEach(
+					track =>
+						(html += `<tr><td>${track[0]}</td><td>${track[1]}</td><td>${track[2]}</td></tr>`)
+				);
 				html += "</table>";
-				document.querySelector(
-					"#last-played"
-				).innerHTML = `${html}`;
+				document.querySelector("#last-played").innerHTML = `${html}`;
 			} else {
-				document.querySelector(
-					"#last-played"
-				).innerHTML = "<p>Waiting for the next track to play...</p>";
+				document.querySelector("#last-played").innerHTML =
+					"<p>Waiting for the next track to play...</p>";
 			}
 		};
 	})();
@@ -62,26 +65,35 @@ sidebar:
 <script defer>
 	(async () => {
 		const response = await fetch("https://now-playing.marlowfm.co.uk:3002/top");
-		const {
-			from,
-			to,
-			tracks,
-			artists
-		} = await response.json();
+		const { from, to, tracks, artists } = await response.json();
 		if (from) {
 			const topTracks = tracks.filter(track => track[0] > 1);
 			const topArtists = artists.filter(artist => artist[0] > 1);
 			document.querySelector("#from-to").innerHTML = `From ${from} to ${to}`;
-			let html1 = '<table style="padding-right: 5%;"><tr><td>Plays</td><td>Track</td><td>Artist</td></tr>',
-				html2 = '<table><tr><td>Plays</td><td>Click on row to show/hide tracks</td></tr>';
-			topTracks.forEach(track => html1 += `<tr><td>${track[0]}</td><td>${track[1]}</td><td>${track[2]}</td></tr>`);
-			topArtists.forEach((artist, i) => html2 +=
-				`<tr id="artist${i}"><td>${artist[0]}</td><td><div>${artist[1]}</div><div class="hidden" id="tracks${i}" style="font-size: 0.75em;">${artist[2].join("<br>")}</div></td></tr>`
+			let html1 =
+					'<table style="padding-right: 5%;"><tr><td>Plays</td><td>Track</td><td>Artist</td></tr>',
+				html2 =
+					"<table><tr><td>Plays</td><td>Click on row to show/hide tracks</td></tr>";
+			topTracks.forEach(
+				track =>
+					(html1 += `<tr><td>${track[0]}</td><td>${track[1]}</td><td>${track[2]}</td></tr>`)
+			);
+			topArtists.forEach(
+				(artist, i) =>
+					(html2 += `<tr id="artist${i}"><td>${artist[0]}</td><td><div>${
+						artist[1]
+					}</div><div class="hidden" id="tracks${i}" style="font-size: 0.75em;">${artist[2].join(
+						"<br>"
+					)}</div></td></tr>`)
 			);
 			html1 += "</table>";
 			html2 += "</table>";
-			document.querySelector("#top-tracks").innerHTML = `<h6>Tracks played more than once</h6>${html1}`;
-			document.querySelector("#top-artists").innerHTML = `<h6>Artists played more than once</h6>${html2}`;
+			document.querySelector(
+				"#top-tracks"
+			).innerHTML = `<h6>Tracks played more than once</h6>${html1}`;
+			document.querySelector(
+				"#top-artists"
+			).innerHTML = `<h6>Artists played more than once</h6>${html2}`;
 			for (let i = 0; i < topArtists.length; i++) {
 				document.querySelector(`#artist${i}`).classList.add("clickable");
 				document.querySelector(`#artist${i}`).onclick = e => {
@@ -90,7 +102,8 @@ sidebar:
 				};
 			}
 		} else {
-			document.querySelector("#from-to").innerHTML = "Waiting for them to come through...";
+			document.querySelector("#from-to").innerHTML =
+				"Waiting for them to come through...";
 		}
 	})();
 </script>
