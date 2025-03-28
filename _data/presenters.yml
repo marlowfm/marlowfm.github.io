@@ -54,6 +54,10 @@
   shows: [AG6]
   image: "/assets/images/presenters/clive_capp.png"
 
+- name: "Colin Moore"
+  shows: [HMC]
+  image:
+
 - name: "David G. Croft"
   shows: [PFM]
   image: "/assets/images/presenters/david_croft.jpg"

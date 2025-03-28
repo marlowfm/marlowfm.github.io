@@ -27,6 +27,7 @@ export const progURLs = {
 	MMM: "/programmes/good-morning-marlow/",
 	HRT: "/programmes/heritage-chart/",
 	HCF: "/",
+	HMC: "/programmes/hit-mix-challenge/",
 	INA: "/programmes/in-the-afternoon/",
 	KEV: "/programmes/kev-kinch-in-the-house/",
 	MEM: "/programmes/marlow-memories/",
