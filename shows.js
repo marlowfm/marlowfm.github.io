@@ -20,7 +20,7 @@ export const progURLs = {
 	DMS: "/programmes/dance-music-show/",
 	DRV: "/programmes/drivetime/",
 	ELS: "/programmes/eclectic-light-show/",
-	ECO: "/programmes/eco-show/",
+	ECO: "/programmes/earth-show/",
 	EUR: "/programmes/eurovision-show/",
 	FMT: "/programmes/faith-matters/",
 	FM2: "/programmes/faith-matters/",

@@ -3,7 +3,7 @@
   image: "/assets/images/mfm_80px_high.png"
 
 - name: "Abi Morris"
-  shows: [ELS]
+  shows: [ELS, MMM]
   image: "/assets/images/presenters/abi_morris.jpg"
 
 - name: "Alan Roberts"
@@ -58,6 +58,10 @@
   shows: [HMC]
   image:
 
+- name: "Dave Hampton"
+  shows: [ECO]
+  image: "/assets/images/presenters/dave_hampton.jpg"
+
 - name: "David G. Croft"
   shows: [PFM]
   image: "/assets/images/presenters/david_croft.jpg"
@@ -70,18 +74,6 @@
   shows: [DRV, RCS]
   image: "/assets/images/presenters/debbie_baker.jpg"
 
-- name: "Dora Hargitai"
-  shows: []
-  image:
-
-- name: "Toby Brown"
-  shows: [ECO]
-  image:
-
-- name: "Dora Hargitai & Toby Brown"
-  shows: []
-  image: "/assets/images/presenters/dora_&_toby.jpeg"
-
 - name: "Edan Gaskell"
   shows: [AGX]
   image: "/assets/images/presenters/edan_gaskell.jpg"
@@ -89,10 +81,6 @@
 - name: "Emily Guiver"
   shows: [MMM]
   image: "/assets/images/presenters/emily_guiver.jpg"
-
-- name: "Frances Hearne"
-  shows: [MMM]
-  image: "/assets/images/presenters/frances_hearne.jpg"
 
 - name: "Geoff Motley"
   shows: [MMM]
@@ -181,10 +169,6 @@
   shows: [REV]
   image:
 
-- name: "Lisa La Moda"
-  shows: [MMM]
-  image: "/assets/images/presenters/lisa_la_moda.jpg"
-
 - name: "Lizzie Sentance"
   shows: [ELS]
   image:
@@ -217,6 +201,10 @@
   shows: [MMM]
   image: "/assets/images/presenters/mary_flavelle.jpg"
 
+- name: "Mats & Lisa La Moda"
+  shows: [MMM]
+  image: "/assets/images/presenters/mats_&_lisa.jpg"
+
 - name: "Michelle Livings"
   shows: [RCK]
   image: "/assets/images/presenters/michelle_livings.jpg"
@@ -244,10 +232,6 @@
 - name: "Neil Knowles"
   shows: []
   image: "/assets/images/presenters/neil_knowles.jpg"
-
-- name: "Nicky Reeves"
-  shows: [MMM]
-  image:
 
 - name: "Nikky Smart"
   shows: [BRK, NMS]
@@ -316,6 +300,10 @@
 - name: "Sheila Docker"
   shows: [MMM, ZBS]
   image: "/assets/images/presenters/sheila_docker.jpeg"
+
+- name: "Sophia Berman"
+  shows: [MMM]
+  image: "/assets/images/presenters/sophia_berman.jpg"
 
 - name: "Steve Nash"
   shows: []
