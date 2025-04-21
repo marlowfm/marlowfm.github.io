@@ -49,6 +49,7 @@ export const progURLs = {
 	SOM: "/programmes/sound-of-musicals/",
 	XXX: "/",
 	SER: "/programmes/sunday-serenade/",
+	SSD: "/programmes/sunday-shakedown/",
 	SSP: "/programmes/sunday-sports-show/",
 	STM: "/programmes/swing-that-music/",
 	VIN: "/programmes/vinyl-countdown/",

@@ -135,7 +135,7 @@
   image: "/assets/images/presenters/julie_greatwood.jpg"
 
 - name: "Julie Lowry"
-  shows: [RCK]
+  shows: [RCK, SSD]
   image:
 
 - name: "Kelly Saward"
