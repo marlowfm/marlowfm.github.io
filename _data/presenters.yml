@@ -189,10 +189,6 @@
   shows: [MMM]
   image: "/assets/images/presenters/malcolm_parr.jpg"
 
-- name: "Mark Harris"
-  shows: [ZBS]
-  image: "/assets/images/presenters/mark_harris.jpg"
-
 - name: "Mark Robson"
   shows: [SFS]
   image:
@@ -309,8 +305,8 @@
   shows: []
   image: "/assets/images/presenters/steve_nash.jpg"
 
-- name: "Terri Dixon-Prior"
-  shows: [NMS]
+- name: "Stuart Ross"
+  shows: [SOS]
   image:
 
 - name: "Tim Ashburner"
