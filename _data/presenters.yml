@@ -86,6 +86,10 @@
   shows: [MMM]
   image: "/assets/images/presenters/geoff_motley.jpg"
 
+- name: "Glyn Williams"
+  shows: [NSL]
+  image: "/assets/images/presenters/glyn_williams.jpg"
+
 - name: "Graham Duthie"
   shows: [BRK]
   image: "/assets/images/presenters/graham_duthie.jpg"

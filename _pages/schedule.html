@@ -41,22 +41,22 @@ sidebar:
 			". els1 els2 els3 els4 els5 ina acz"
 			"t1300 els1 els2 els3 els4 els5 ina acz"
 			". els1 els2 els3 els4 els5 ina acz"
-			"t1400 hmc zcn bdt zbs juk51 hrt6 sos"
-			". hmc zcn bdt zbs juk51 hrt6 sos"
-			"t1500 ag6 ag7 ag8 ag9 agx hrt6 sos"
-			". ag6 ag7 ag8 ag9 agx hrt6 sos"
+			"t1400 hmc zcn bdt zbs nsl5 ina sos"
+			". hmc zcn bdt zbs nsl5 ina sos"
+			"t1500 ag6 ag7 ag8 ag9 agx nsl6 sos"
+			". ag6 ag7 ag8 ag9 agx nsl6 sos"
 			"t1600 ag6 ag7 ag8 ag9 agx wfs som"
 			". ag6 ag7 ag8 ag9 agx wfs som"
 			"t1700 drv1 drv2 drv3 drv4 drv5 wfs som"
 			". drv1 drv2 drv3 drv4 drv5 wfs som"
-			"t1800 drv1 drv2 drv3 drv4 drv5 qbn eco"
-			". drv1 drv2 drv3 drv4 drv5 qbn eco"
-			"t1900 ote nms rev pfm rck qbn eco"
-			". ote nms rev pfm rck qbn eco"
-			"t2000 ote nms rev pfm rck kev juk71"
-			". ote nms rev pfm rck kev juk71"
-			"t2100 ctc fmt bab sfs rem kev juk71"
-			". ctc fmt bab sfs rem kev juk71"
+			"t1800 drv1 drv2 drv3 drv4 drv5 hrt6 eco"
+			". drv1 drv2 drv3 drv4 drv5 hrt6 eco"
+			"t1900 ote nms rev pfm rck hrt6 eco"
+			". ote nms rev pfm rck hrt6 eco"
+			"t2000 ote nms rev pfm rck kev qbn"
+			". ote nms rev pfm rck kev qbn"
+			"t2100 ctc fmt bab sfs rem kev qbn"
+			". ctc fmt bab sfs rem kev qbn"
 			"t2200 hrt1 fmt bab sfs rem kev rdr"
 			". hrt1 fmt bab sfs rem kev rdr"
 			"t2300 hrt1 juk2 juk3 juk4 rem apz rdr"
@@ -337,20 +337,6 @@ sidebar:
 		color: inherit;
 	}
 
-	.chr7 {
-		grid-area: chr7;
-		padding: 2px;
-		background-color: var(--background-weekend-dark);
-		color: inherit;
-	}
-
-	.chr1 {
-		grid-area: chr1;
-		padding: 2px;
-		background-color: var(--background-weekday-dark);
-		color: inherit;
-	}
-
 	.hmc {
 		grid-area: hmc;
 		padding: 2px;
@@ -379,8 +365,8 @@ sidebar:
 		color: inherit;
 	}
 
-	.chr5 {
-		grid-area: chr5;
+	.nsl5 {
+		grid-area: nsl5;
 		padding: 2px;
 		background-color: var(--background-weekday-dark);
 		color: inherit;
@@ -442,8 +428,8 @@ sidebar:
 		color: inherit;
 	}
 
-	.hrt6 {
-		grid-area: hrt6;
+	.nsl6 {
+		grid-area: nsl6;
 		padding: 2px;
 		background-color: var(--background-weekend-light);
 		color: inherit;
@@ -547,17 +533,10 @@ sidebar:
 		color: inherit;
 	}
 
-	.qbn {
-		grid-area: qbn;
+	.hrt6 {
+		grid-area: hrt6;
 		padding: 2px;
 		background-color: var(--background-weekend-light);
-		color: inherit;
-	}
-
-	.stm {
-		grid-area: stm;
-		padding: 2px;
-		background-color: var(--background-weekend-dark);
 		color: inherit;
 	}
 
@@ -652,6 +631,13 @@ sidebar:
 		color: inherit;
 	}
 
+	.qbn {
+		grid-area: qbn;
+		padding: 2px;
+		background-color: var(--background-weekend-dark);
+		color: inherit;
+	}
+
 	.apz {
 		grid-area: apz;
 		padding: 2px;
@@ -701,13 +687,6 @@ sidebar:
 		color: inherit;
 	}
 
-	.juk51 {
-		grid-area: juk51;
-		padding: 2px;
-		background-color: var(--background-jukebox);
-		color: inherit;
-	}
-
 	.juk6 {
 		grid-area: juk6;
 		padding: 2px;
@@ -717,13 +696,6 @@ sidebar:
 
 	.juk7 {
 		grid-area: juk7;
-		padding: 2px;
-		background-color: var(--background-jukebox);
-		color: inherit;
-	}
-
-	.juk71 {
-		grid-area: juk71;
 		padding: 2px;
 		background-color: var(--background-jukebox);
 		color: inherit;
@@ -816,7 +788,12 @@ sidebar:
 	<a class="zcn" href="/programmes/consumer-show/">THE CONSUMER SHOW</a>
 	<a class="bdt" href="/programmes/vinyl-countdown/">THE BEST DISCO IN TOWN</a>
 	<a class="zbs" href="/programmes/business-show/">THE BUSINESS SHOW</a>
-	<a class="hrt6" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
+	<a class="nsl5" href="/programmes/a-z-of-northern-soul/"
+		>THE A-Z OF NORTHERN SOUL</a
+	>
+	<a class="nsl6" href="/programmes/a-z-of-northern-soul/"
+		>THE A-Z OF NORTHERN SOUL</a
+	>
 	<a class="sos" href="/programmes/stuart-on-sunday/">STUART ON SUNDAY</a>
 	<a class="ag6" href="/programmes/afternoon-gold-60s/">AFTERNOON GOLD 60s</a>
 	<a class="ag7" href="/programmes/afternoon-gold-70s/">AFTERNOON GOLD 70s</a>
@@ -832,7 +809,7 @@ sidebar:
 	<a class="drv3" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="drv4" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="drv5" href="/programmes/drivetime/">DRIVETIME</a>
-	<a class="qbn" href="/programmes/q-burn/">Q-BURN</a>
+	<a class="hrt6" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
 	<a class="eco" href="/programmes/earth-show/">THE EARTH SHOW</a>
 	<a class="ote" href="/programmes/on-the-edge/">ON THE EDGE</a>
 	<a class="ctc" href="/programmes/cover-to-cover/">COVER TO COVER</a>
@@ -852,6 +829,7 @@ sidebar:
 	<a class="kev" href="/programmes/kev-kinch-in-the-house/"
 		>KEV KINCH IN THE HOUSE</a
 	>
+	<a class="qbn" href="/programmes/q-burn/">Q-BURN</a>
 	<a class="apz" href="/programmes/after-party-zone/">THE AFTER PARTY ZONE</a>
 	<a class="rdr" href="/programmes/radio-daze-reggae-show/"
 		>RADIO DAZE REGGAE SHOW</a
@@ -861,8 +839,6 @@ sidebar:
 	<div class="juk3">THE JUKEBOX</div>
 	<div class="juk4">THE JUKEBOX</div>
 	<div class="juk5">THE JUKEBOX</div>
-	<div class="juk51">THE JUKEBOX</div>
 	<div class="juk6">THE JUKEBOX</div>
 	<div class="juk7">THE JUKEBOX</div>
-	<div class="juk71">THE JUKEBOX</div>
 </div>

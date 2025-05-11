@@ -7,6 +7,6 @@ code: INA
 again:
 ---
 
-Every Saturday from midday to 2pm.
+Every Saturday from midday to 3pm.
 
 Great guests. Great banter. Club classics. All with Andy Franklin.

@@ -1,5 +1,6 @@
 export const progURLs = {
 	"80S": "/programmes/80s-revival/",
+	NSL: "/programmes/a-z-of-northern-soul/",
 	APZ: "/programmes/after-party-zone/",
 	AGX: "/programmes/afternoon-gold-greatest-hits/",
 	AG6: "/programmes/afternoon-gold-60s/",
