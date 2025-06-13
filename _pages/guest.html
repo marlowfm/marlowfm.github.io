@@ -1,0 +1,66 @@
+---
+published: true
+layout: single
+classes: wide
+title: "Be our guest!"
+permalink: /guest/
+sidebar:
+  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+---
+
+<p>
+	Would you like to be a guest on one of our programmes? Well, we want to hear
+	from you! We can't offer free advertising for your business, but we'd love to
+	hear your story or pick your brains.
+</p>
+
+<p>
+	If you're interested, please fill out the form below, and we'll get back to
+	you. Interviews can usually be live or pre-recorded, in the studio or on Zoom.
+</p>
+
+<form id="form">
+	<label for="name">Your name</label>
+	<input type="text" id="name" maxlength="50" required />
+	<label for="email">Your email address</label>
+	<input type="email" id="email" maxlength="75" required />
+	<label for="phone">Your phone number</label>
+	<input type="text" id="phone" maxlength="50" required />
+	<label for="show">The programme you're interested in, if you know</label>
+	<input type="text" id="show" maxlength="50" />
+	<label for="message">Why you'd make a great guest!</label>
+	<textarea
+		id="message"
+		rows="4"
+		placeholder="Please give as much detail as you can"
+		maxlength="750"
+		required
+	></textarea>
+	<button type="submit" class="btn btn--inverse btn--large">Submit</button>
+</form>
+
+<script defer>
+	document.querySelector("#form").onsubmit = async e => {
+		e.preventDefault();
+		try {
+			await fetch("https://form.marlowfm.co.uk:3011/handle-guest", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name: document.querySelector("#name").value,
+					email: document.querySelector("#email").value,
+					phone: document.querySelector("#phone").value,
+					show: document.querySelector("#show").value,
+					message: document.querySelector("#message").value
+				})
+			});
+			document.querySelector(
+				"#form"
+			).innerHTML = `<p>Thank you for getting in touch.</p>`;
+		} catch (error) {
+			console.error(error);
+		}
+	};
+</script>
