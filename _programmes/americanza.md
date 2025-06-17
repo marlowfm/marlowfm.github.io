@@ -1,5 +1,5 @@
 ---
-lpublished: true
+published: true
 ayout: programme
 title: "Americanza"
 image: /assets/images/icons/ACZ.png
