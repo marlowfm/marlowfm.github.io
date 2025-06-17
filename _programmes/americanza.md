@@ -1,6 +1,6 @@
 ---
 published: true
-ayout: programme
+layout: programme
 title: "Americanza"
 image: /assets/images/icons/ACZ.png
 code: ACZ
