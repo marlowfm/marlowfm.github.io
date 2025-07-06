@@ -11,4 +11,4 @@ Fancy an evening of award-winning food and drink and great music, while helping 
 
 ![Sundowner at the Vineyard]({{ site.url }}{{ site.baseurl }}/assets/images/news/sundowner-at-the-vineyard.png "Sundowner at the Vineyard")
 
-[Find out more and get your tickets here.]({{ site.url }}{{ site.baseurl }}/sundowner)
+Find out more and get your tickets here.
