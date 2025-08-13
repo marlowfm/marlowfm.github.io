@@ -3,8 +3,9 @@ layout: single
 title: "Privacy policy for our mobile apps"
 permalink: /app-privacy-policy/
 sidebar:
-  - text: "**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+  - text: "<a class='btn btn--success btn--large' onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
+
 MarlowFM Limited built the Marlow FM app as a free app. This Service is provided by MarlowFM Limited at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
@@ -23,16 +24,16 @@ We want to inform you that whenever you use our Service, in a case of an error i
 
 Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
 
-This Service does not use these cookies explicitly. However, the app may use third party code and libraries that use cookies to collect information and improve their services. 
+This Service does not use these cookies explicitly. However, the app may use third party code and libraries that use cookies to collect information and improve their services.
 
 **Service providers**
 
 We may employ third-party companies and individuals due to the following reasons:
 
-*   To facilitate our Service;
-*   To provide the Service on our behalf;
-*   To perform Service-related services; or
-*   To assist us in analysing how our Service is used.
+- To facilitate our Service;
+- To provide the Service on our behalf;
+- To perform Service-related services; or
+- To assist us in analysing how our Service is used.
 
 We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
 
