@@ -23,11 +23,11 @@
   image: "/assets/images/presenters/angie_burns.png"
 
 - name: "Beth Morris"
-  shows: [ELS, NMS]
+  shows: []
   image: "/assets/images/presenters/beth_morris.jpg"
 
 - name: "Bridget Biggar"
-  shows: [SOM]
+  shows: []
   image: "/assets/images/presenters/bridget_biggar.jpg"
 
 - name: "Carla Delaney"
@@ -67,7 +67,7 @@
   image: "/assets/images/presenters/david_croft.jpg"
 
 - name: "David Downing"
-  shows: []
+  shows: [FMT]
   image: "/assets/images/presenters/david_downing.jpg"
 
 - name: "Debbie Baker"
@@ -151,11 +151,11 @@
   image: "/assets/images/presenters/kev_kinch.jpg"
 
 - name: "Laura Stevens"
-  shows: [NMS]
+  shows: []
   image:
 
 - name: "Laura Tilbury"
-  shows: [DRV]
+  shows: []
   image: "/assets/images/presenters/laura_tilbury.jpg"
 
 - name: "Laura Webb"
@@ -170,7 +170,7 @@
   image: "/assets/images/presenters/linda_webb.png"
 
 - name: "Lisa BHA"
-  shows: [REV]
+  shows: [RCS]
   image:
 
 - name: "Lizzie Sentance"
@@ -286,11 +286,11 @@
   image: "/assets/images/presenters/ronnie_turner.jpg"
 
 - name: "Sarah C"
-  shows: [REM]
+  shows: []
   image:
 
 - name: "Sarah-Jane Dale"
-  shows: [AG9]
+  shows: [AG9, REV]
   image: "/assets/images/presenters/sarah-jane_dale.jpg"
 
 - name: "Serena Spencer-Jones"
@@ -310,7 +310,7 @@
   image: "/assets/images/presenters/steve_nash.jpg"
 
 - name: "Stuart Ross"
-  shows: [SOS]
+  shows: [BRK, SOS]
   image:
 
 - name: "Tim Ashburner"
@@ -322,7 +322,7 @@
   image:
 
 - name: "Tom Brown"
-  shows: [BRK, NMS]
+  shows: [NMS]
   image:
 
 - name: "Tom Fothergill"
@@ -345,5 +345,5 @@
   shows: [CTC]
   image:
 - name: "Zoë Lister"
-  shows: [DRV]
+  shows: []
   image:
