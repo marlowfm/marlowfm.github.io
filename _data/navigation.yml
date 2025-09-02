@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Quiz Night"
+    url: /quiz/
   - title: "Listen Again"
     url: /listen-again/
   - title: "Hub"
