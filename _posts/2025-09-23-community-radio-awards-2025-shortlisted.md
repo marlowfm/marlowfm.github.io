@@ -11,7 +11,7 @@ We've once again made the shortlists in the [Community Radio Awards](https://com
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/news/community-radio-awards-aiir.png)
 
-Pat Reading is up for _Sage Person of the Year_, and Lizzy Sentance for _Presenter of the Year: Woman_.
+Pat Reading is up for _Sage Person of the Year_, and Lizzie Sentance for _Presenter of the Year: Woman_.
 
 You can [see and listen to our entries here]({{ site.url }}{{ site.baseurl }}/cra2025/).
 
