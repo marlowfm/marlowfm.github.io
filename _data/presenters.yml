@@ -311,7 +311,7 @@
 
 - name: "Stuart Ross"
   shows: [BRK, SOS]
-  image:
+  image: "/assets/images/presenters/stuart_ross.jpg"
 
 - name: "Tim Ashburner"
   shows: []
