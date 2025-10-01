@@ -8,6 +8,8 @@ sidebar:
   - text: "<a class='btn btn--success btn--large' onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
 
+<script src="https://www.paypal.com/sdk/js?client-id=BAAKxN9gge1-2y-k-oJ11Uw3ckMwZu2E3IqQqctlvZV3xBCnx9pdOmH2tHTtHqLLk24RfZDOInIo0AD9c0&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
+
 <img
 	src="{{ site.url }}{{ site.baseurl }}/assets/images/other/hidden-gems-harleyford.jpg"
 	alt="A glittering black tie event at Harleyford Golf Club"
@@ -17,7 +19,7 @@ sidebar:
 <br />
 
 <p>
-	Join us on Saturday 16th November at
+	Join us on Saturday 22nd November at
 	<a href="https://www.harleyfordgolf.co.uk/contact_us" target="_blank"
 		>Harleyford Golf Club</a
 	>
@@ -28,7 +30,7 @@ sidebar:
 	We're staging a glittering black tie dinner, awards ceremony, and party for
 	the unsung heroes of our fantastic community, where we'll reveal the winners
 	of the
-	<a href="{{ site.url }}{{ site.baseurl }}/gems/">Hidden Gems Awards 2024</a>.
+	<a href="{{ site.url }}{{ site.baseurl }}/gems/">Hidden Gems Awards 2025</a>.
 </p>
 
 <p>
@@ -47,7 +49,9 @@ sidebar:
 
 <h2>Menu</h2>
 
-<h3>Starter options</h3>
+<p>Coming soon...</p>
+
+<!--<h3>Starter options</h3>
 
 <ul>
 	<li>
@@ -86,47 +90,15 @@ sidebar:
 	<li>Chef's Crumble of the Day with Hot Custard</li>
 	<li>Butterscotch and Chocolate Cheesecake</li>
 	<li>Passion Fruit and Mango Delice</li>
-</ul>
+</ul>-->
 
 <h2>Tickets</h2>
 
-<form
-	action="https://www.paypal.com/cgi-bin/webscr"
-	method="post"
-	target="_blank"
->
-	<input type="hidden" name="cmd" value="_s-xclick" />
-	<input type="hidden" name="hosted_button_id" value="28NUD4RA26SJ8" />
-	<table>
-		<tr>
-			<td>
-				<input
-					type="hidden"
-					name="on0"
-					value="The full names of you and your party"
-				/>
-				The full names of you and your party
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<textarea
-					name="os0"
-					maxlength="300"
-					cols="20"
-					rows="5"
-					required
-				></textarea>
-			</td>
-		</tr>
-	</table>
-	<input type="hidden" name="currency_code" value="GBP" />
-	<input
-		type="image"
-		src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
-		border="0"
-		name="submit"
-		title="PayPal - The safer, easier way to pay online!"
-		alt="Buy Now"
-	/>
-</form>
+<div id="paypal-container-SSJFSCZMK7U44"></div>
+<script>
+	paypal
+		.HostedButtons({
+			hostedButtonId: "SSJFSCZMK7U44"
+		})
+		.render("#paypal-container-SSJFSCZMK7U44");
+</script>
