@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Hidden Gems"
-    url: /gems/
   - title: "Listen Again"
     url: /listen-again/
   - title: "Hub"
