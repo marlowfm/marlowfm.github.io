@@ -150,8 +150,8 @@
   shows: [APZ, KEV]
   image: "/assets/images/presenters/kev_kinch.jpg"
 
-- name: "Laura Stevens"
-  shows: []
+- name: "Laura Parker"
+  shows: [ZBS]
   image:
 
 - name: "Laura Tilbury"
