@@ -10,6 +10,10 @@
   shows: [ACZ]
   image: "/assets/images/presenters/alan_price-roberts.jpg"
 
+- name: "Ali Buckle"
+  shows: [ELS, NMS]
+  image:
+
 - name: "Andy Franklin"
   shows: [BAB, INA]
   image:
@@ -19,16 +23,8 @@
   image: "/assets/images/presenters/andy_jay.jpg"
 
 - name: "Angie Burns"
-  shows: [AG8, MMM, SOM]
+  shows: [AG8, MMM]
   image: "/assets/images/presenters/angie_burns.png"
-
-- name: "Beth Morris"
-  shows: []
-  image: "/assets/images/presenters/beth_morris.jpg"
-
-- name: "Bridget Biggar"
-  shows: []
-  image: "/assets/images/presenters/bridget_biggar.jpg"
 
 - name: "Carla Delaney"
   shows: [MMM, ZCN]
@@ -42,10 +38,6 @@
   shows: [MMM]
   image: "/assets/images/presenters/chris_zaremba.jpg"
 
-- name: "Chrissy Longley"
-  shows: []
-  image: "/assets/images/presenters/chrissy_longley.jpg"
-
 - name: "Clare Bones"
   shows: [MMM]
   image: "/assets/images/presenters/clare_bones.jpg"
@@ -56,6 +48,10 @@
 
 - name: "Colin Moore"
   shows: [HMC]
+  image:
+
+- name: "DJ Dan"
+  shows: [SOM]
   image:
 
 - name: "Dave Hampton"
@@ -70,9 +66,17 @@
   shows: [FMT]
   image: "/assets/images/presenters/david_downing.jpg"
 
+- name: "David Parsonson"
+  shows: [SOM]
+  image:
+
 - name: "Debbie Baker"
-  shows: [DRV, RCS]
+  shows: [RCS]
   image: "/assets/images/presenters/debbie_baker.jpg"
+
+- name: "Dez Kay"
+  shows: [AGX]
+  image: 
 
 - name: "Edan Gaskell"
   shows: [AGX]
@@ -94,6 +98,10 @@
   shows: [BRK]
   image: "/assets/images/presenters/graham_duthie.jpg"
 
+- name: "Hannah Mathews"
+  shows: [AG9, DRV]
+  image:
+
 - name: "Ian Branch"
   shows: [RCS]
   image:
@@ -113,6 +121,10 @@
 - name: "Jill Hickey"
   shows: [MMM, SOM]
   image: "/assets/images/presenters/jill_hickey.jpg"
+
+- name: "Jo Carter"
+  shows: [SOM]
+  image:
 
 - name: "John Brotherton"
   shows: [YUL]
@@ -162,11 +174,16 @@
   shows: [AG7, DRV]
   image:
 
+- name: "Leander Laurence-Thompson"
+  shows: [SOM]
+  image:
+
 - name: "Lily Birch"
   shows: [CTC]
   image:
+
 - name: "Linda Webb"
-  shows: [MMM]
+  shows: [MMM, SOM]
   image: "/assets/images/presenters/linda_webb.png"
 
 - name: "Lisa BHA"
@@ -225,14 +242,6 @@
   shows: [HRT]
   image: "/assets/images/presenters/mike_read.jpg"
 
-- name: "Mike Sharp"
-  shows: []
-  image: "/assets/images/presenters/mike_sharp.png"
-
-- name: "Neil Knowles"
-  shows: []
-  image: "/assets/images/presenters/neil_knowles.jpg"
-
 - name: "Nikky Smart"
   shows: [BRK, NMS]
   image:
@@ -245,21 +254,9 @@
   shows: [BRK]
   image: "/assets/images/presenters/pat_reading.jpg"
 
-- name: "Paul Englezos"
-  shows: []
-  image: "/assets/images/presenters/paul_englezos.jpg"
-
-- name: "Paul Goodwin"
-  shows: []
-  image: "/assets/images/presenters/paul_goodwin.jpg"
-
 - name: "Paul Mansell"
   shows: [ELS, PFM, RDR, WFS]
   image: "/assets/images/presenters/paul_mansell.jpg"
-
-- name: "Paul Minkkinen"
-  shows: []
-  image: "/assets/images/presenters/paul_minkkinen.png"
 
 - name: "Pauline Howe-Davies"
   shows: []
@@ -268,10 +265,6 @@
 - name: "Mike Bayless & Pauline Howe-Davies"
   shows: []
   image: "/assets/images/presenters/mike_&_pauline.jpg"
-
-- name: "Piers Burnell"
-  shows: []
-  image: "/assets/images/presenters/piers_burnell.jpeg"
 
 - name: "Rhidian Jones"
   shows: [MMM]
@@ -285,12 +278,8 @@
   shows: [REM]
   image: "/assets/images/presenters/ronnie_turner.jpg"
 
-- name: "Sarah C"
-  shows: []
-  image:
-
 - name: "Sarah-Jane Dale"
-  shows: [AG9, REV]
+  shows: [REV]
   image: "/assets/images/presenters/sarah-jane_dale.jpg"
 
 - name: "Serena Spencer-Jones"
@@ -304,10 +293,6 @@
 - name: "Sophia Berman"
   shows: [MMM]
   image: "/assets/images/presenters/sophia_berman.jpg"
-
-- name: "Steve Nash"
-  shows: []
-  image: "/assets/images/presenters/steve_nash.jpg"
 
 - name: "Stuart Ross"
   shows: [BRK, SOS]
@@ -343,7 +328,4 @@
 
 - name: "Yasmin Mills"
   shows: [CTC]
-  image:
-- name: "Zoë Lister"
-  shows: []
   image:
