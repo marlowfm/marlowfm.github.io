@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Vaasu"
+    url: /vaasu/
   - title: "Listen Again"
     url: /listen-again/
   - title: "Hub"
