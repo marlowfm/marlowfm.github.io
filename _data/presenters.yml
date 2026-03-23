@@ -30,6 +30,10 @@
   shows: [MMM, ZCN]
   image: "/assets/images/presenters/carla_delaney.jpg"
 
+- name: "Catherine Legerton"
+  shows: [CTC]
+  image:
+
 - name: "Chris Tandy"
   shows: [MMM]
   image:
@@ -76,7 +80,7 @@
 
 - name: "Dez Kay"
   shows: [AGX]
-  image: 
+  image:
 
 - name: "Edan Gaskell"
   shows: [AGX]
@@ -176,10 +180,6 @@
 
 - name: "Leander Laurence-Thompson"
   shows: [SOM]
-  image:
-
-- name: "Lily Birch"
-  shows: [CTC]
   image:
 
 - name: "Linda Webb"
@@ -326,6 +326,6 @@
   shows: [MMM]
   image: "/assets/images/presenters/vonnie_&_dan.jpg"
 
-- name: "Yasmin Mills"
+- name: "Yazmin Sadik"
   shows: [CTC]
   image:
