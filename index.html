@@ -9,20 +9,20 @@ sidebar:
 ---
 
 <style>
-	#banner-donate,
-	#banner-wall {
+	#banner-green,
+	#banner-red {
 		color: white;
 		text-decoration: none;
 	}
 
-	#banner-donate > p {
+	#banner-green > p {
 		padding: 1%;
 		background-color: green;
 		font-weight: bold;
 		font-size: 1em;
 	}
 
-	#banner-wall > p {
+	#banner-red > p {
 		padding: 1%;
 		background-color: #bc4a3c;
 		font-weight: bold;
@@ -71,10 +71,10 @@ sidebar:
 		document.querySelector("#current-show").innerHTML = `On now: ${
 			data.currentCode !== "AUT"
 				? '<a href="' +
-				  progURLs[data.currentCode] +
-				  '"><strong>' +
-				  data.currentShow +
-				  "</strong></a>"
+					progURLs[data.currentCode] +
+					'"><strong>' +
+					data.currentShow +
+					"</strong></a>"
 				: "<strong>" + data.currentShow + "</strong>"
 		}${
 			data.currentWith ? " with <strong>" + data.currentWith + "</strong>" : ""
@@ -85,10 +85,10 @@ sidebar:
 		document.querySelector("#next-show").innerHTML = `At ${data.nextStart}: ${
 			data.nextCode !== "AUT"
 				? '<a href="' +
-				  progURLs[data.nextCode] +
-				  '"><strong>' +
-				  data.nextShow +
-				  "</strong></a>"
+					progURLs[data.nextCode] +
+					'"><strong>' +
+					data.nextShow +
+					"</strong></a>"
 				: "<strong>" + data.nextShow + "</strong>"
 		}${data.nextWith ? " with <strong>" + data.nextWith + "</strong>" : ""}`;
 		data.nextPublic
@@ -120,13 +120,17 @@ sidebar:
 	};
 </script>
 
-<!--<a id="banner-donate" href="/donate"
+<!--<a id="banner-green" href="/donate"
 	><p>Our brand new studios are looking great - but you can still help</p></a
->
-
-<a id="banner-wall" href="/wall"
-	><p>Did you buy a brick? Find your name in the virtual wall!</p></a
 >-->
+
+<a id="banner-red" href=""
+	><p>
+		There are some issues with our FM service at the moment - we're on the
+		case!<br />In the meantime, you can listen here, on your smart speaker, or
+		on our app.
+	</p></a
+>
 
 <div id="now-and-next">
 	<div id="current-show"></div>
