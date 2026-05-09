@@ -4,9 +4,14 @@ layout: single
 title: "The Hogfather - a Marlow FM fundraiser"
 permalink: /hogfather/
 sidebar:
-  - text: "<a class='btn btn--success btn--large' onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
+- text: "<a class='btn btn--success btn--large'
+	onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN
+	LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
 975<br>call: 01628 488 975<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
 ---
+<script
+	src="https://www.paypal.com/sdk/js?client-id=BAAKxN9gge1-2y-k-oJ11Uw3ckMwZu2E3IqQqctlvZV3xBCnx9pdOmH2tHTtHqLLk24RfZDOInIo0AD9c0&components=hosted-buttons&disable-funding=venmo&currency=GBP">
+</script>
 
 <p>
 	Fancy an afternoon of fantastic food and drink and great music, while helping
@@ -26,9 +31,17 @@ sidebar:
 	<li>All profits go to Marlow FM</li>
 	<li>
 		From 1pm to 9pm at
-		<a href="https://oakengrovevineyard.co.uk/" target="_blank"
-			>Oaken Grove Vineyard</a
-		>, Benhams Lane, Fawley, RG9 6JG
+		<a href="https://oakengrovevineyard.co.uk/" target="_blank">Oaken Grove Vineyard</a>, Benhams Lane, Fawley, RG9
+		6JG
 	</li>
 	<li>Please bring your payment receipt with you</li>
 </ul>
+
+<br>
+
+<div id="paypal-container-ENZYLP2AMK7CS"></div>
+<script>
+	paypal.HostedButtons({
+		hostedButtonId: "ENZYLP2AMK7CS",
+	}).render("#paypal-container-ENZYLP2AMK7CS")
+</script>

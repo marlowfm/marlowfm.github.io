@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "The Hogfather"
+    url: /hogfather/
   - title: "Listen Again"
     url: /listen-again/
   - title: "Hub"
