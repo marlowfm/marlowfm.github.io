@@ -16,8 +16,18 @@ Michael, our dear colleague and friend, died on 9th September 2024. He was a fou
 
 You'll be able to hear Michael on Marlow FM every weekday from 9am to 10am next week and the week after, and every Sunday night from 10pm for the next few weeks. You'll also be able to [Listen Again]({{ site.url }}{{ site.baseurl }}/listen-again/) (the shows will appear under 'Special Programme').
 
-We entered Michael's popular _Marlow Memories_ programme into the 2025 Community Radio Awards. [You can listen to the entry here.](https://soundcloud.com/graham-duthie/voices-of-the-community-award-2025-marlow-memories){:target="\_blank"}
+We entered Michael's popular _Marlow Memories_ programme into the 2025 Community Radio Awards. You can listen to the entry below.
 
+<iframe
+		width="100%"
+		height="166"
+		scrolling="no"
+		frameborder="no"
+		allow="autoplay"
+		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2129592153&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+	></iframe>
+
+<br>
 We hope you enjoy hearing the special sound of Michael Eagleton once again, and encourage you to visit the exhibition\*.
 
 There'll also be a jazz evening in memory of Michael at Court Garden House on Saturday 18th July, with music by top jazz musicians _Five-Way Split_. Tickets go on sale soon.
