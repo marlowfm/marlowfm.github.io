@@ -30,7 +30,7 @@ We entered Michael's popular _Marlow Memories_ programme into the 2025 Community
 <br>
 We hope you enjoy hearing the special sound of Michael Eagleton once again, and encourage you to visit the exhibition\*.
 
-There'll also be a jazz evening in memory of Michael at Court Garden House on Saturday 18th July, with music by top jazz musicians _Five-Way Split_. Tickets go on sale soon.
+There'll also be a jazz evening in memory of Michael at Court Garden House on Saturday 18th July, with music by top jazz musicians _Five-Way Split_. [Tickets go on sale on 1st June.](https://www.tickettailor.com/events/thejazzexperience){:target="\_blank"}
 
 Michael chose not to have a funeral or memorial service, so this exhibition and concert will be the first chance that people in Marlow have to come together and celebrate Michael's life. We all hope it'll be a fitting tribute.
 
