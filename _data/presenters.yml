@@ -214,10 +214,6 @@
   shows: [SFS]
   image:
 
-- name: "Mary Flavelle"
-  shows: [MMM]
-  image: "/assets/images/presenters/mary_flavelle.jpg"
-
 - name: "Mats & Lisa La Moda"
   shows: [MMM]
   image: "/assets/images/presenters/mats_&_lisa.jpg"
