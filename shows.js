@@ -32,6 +32,7 @@ export const progURLs = {
 	INA: "/programmes/in-the-afternoon/",
 	KEV: "/programmes/kev-kinch-in-the-house/",
 	MEM: "/programmes/marlow-memories/",
+	MEL: "/programmes/marlows-mellow-mondays/",
 	MTM: "/programmes/more-than-madness/",
 	BOX: "/programmes/music-box/",
 	NMS: "/programmes/new-music-show/",

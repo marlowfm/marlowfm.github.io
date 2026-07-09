@@ -159,7 +159,7 @@
   image:
 
 - name: "Kelly Saward"
-  shows: [DRV, MMM]
+  shows: [DRV, MEL, MMM]
   image: "/assets/images/presenters/kelly_saward.jpg"
 
 - name: "Kev Kinch"
