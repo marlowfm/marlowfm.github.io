@@ -156,7 +156,7 @@
 
 - name: "Julie Lowry"
   shows: [RCK, SSD]
-  image:
+  image: "/assets/images/presenters/julie_lowry.jpg"
 
 - name: "Kelly Saward"
   shows: [DRV, MEL, MMM]
@@ -219,7 +219,7 @@
   image: "/assets/images/presenters/mats_&_lisa.jpg"
 
 - name: "Michelle Livings"
-  shows: [RCK]
+  shows: []
   image: "/assets/images/presenters/michelle_livings.jpg"
 
 - name: "Mike Agate"
