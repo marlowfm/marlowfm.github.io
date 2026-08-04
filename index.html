@@ -2,10 +2,14 @@
 layout: home
 classes: wide
 header:
-  image: /assets/images/marlow-bridge-1280x178.jpg
-  caption: "Photo credit: [**Ashley Buttle**](https://creativecommons.org/licenses/by/2.0/)"
+image: /assets/images/marlow-bridge-1280x178.jpg
+caption: "Photo credit: [**Ashley Buttle**](https://creativecommons.org/licenses/by/2.0/)"
 sidebar:
-  - text: "<a class='btn btn--success btn--large' onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975 975<br>call: 01628 488 975<br><br>Great Marlow School, Bobmore Lane, Marlow, Bucks, SL7 1JE<br><br>[DONATE](/donate/){: .btn .btn--info .btn--large}"
+- text: "<a class='btn btn--success btn--large'
+	onclick='window.open(`/listen-live/`, `marlow-fm-stream`,`width=625,height=250`); return false;'>LISTEN
+	LIVE</a><br><br>**Contact the studio**<br>[studio@marlowfm.co.uk](mailto:studio@marlowfm.co.uk)<br>text: 07900 975
+975<br>call: 01628 488 975<br><br>Great Marlow School, Bobmore Lane, Marlow, Bucks, SL7 1JE<br><br>[DONATE](/donate/){:
+.btn .btn--info .btn--large}"
 ---
 
 <style>
@@ -15,14 +19,14 @@ sidebar:
 		text-decoration: none;
 	}
 
-	#banner-green > p {
+	#banner-green>p {
 		padding: 1%;
 		background-color: green;
 		font-weight: bold;
 		font-size: 1em;
 	}
 
-	#banner-red > p {
+	#banner-red>p {
 		padding: 1%;
 		background-color: #bc4a3c;
 		font-weight: bold;
@@ -59,7 +63,7 @@ sidebar:
 </style>
 
 <script type="module" defer>
-	import { progURLs } from "/shows.js";
+	import {progURLs} from "/shows.js";
 	let artist = "",
 		title = "",
 		coverArtURL = "";
@@ -68,29 +72,26 @@ sidebar:
 	);
 	eventSource1.onmessage = e => {
 		const data = JSON.parse(e.data);
-		document.querySelector("#current-show").innerHTML = `On now: ${
-			data.currentCode !== "AUT"
+		document.querySelector("#current-show").innerHTML = `On now: ${data.currentCode !== "AUT"
 				? '<a href="' +
-					progURLs[data.currentCode] +
-					'"><strong>' +
-					data.currentShow +
-					"</strong></a>"
+				progURLs[data.currentCode] +
+				'"><strong>' +
+				data.currentShow +
+				"</strong></a>"
 				: "<strong>" + data.currentShow + "</strong>"
-		}${
-			data.currentWith ? " with <strong>" + data.currentWith + "</strong>" : ""
-		}`;
+			}${data.currentWith ? " with <strong>" + data.currentWith + "</strong>" : ""
+			}`;
 		data.currentPublic
 			? (document.querySelector("#current-info").innerHTML = data.currentPublic)
 			: (document.querySelector("#current-info").innerHTML = "");
-		document.querySelector("#next-show").innerHTML = `At ${data.nextStart}: ${
-			data.nextCode !== "AUT"
+		document.querySelector("#next-show").innerHTML = `At ${data.nextStart}: ${data.nextCode !== "AUT"
 				? '<a href="' +
-					progURLs[data.nextCode] +
-					'"><strong>' +
-					data.nextShow +
-					"</strong></a>"
+				progURLs[data.nextCode] +
+				'"><strong>' +
+				data.nextShow +
+				"</strong></a>"
 				: "<strong>" + data.nextShow + "</strong>"
-		}${data.nextWith ? " with <strong>" + data.nextWith + "</strong>" : ""}`;
+			}${data.nextWith ? " with <strong>" + data.nextWith + "</strong>" : ""}`;
 		data.nextPublic
 			? (document.querySelector("#next-info").innerHTML = data.nextPublic)
 			: (document.querySelector("#next-info").innerHTML = "");
@@ -124,9 +125,9 @@ sidebar:
 	><p>A marketing message goes here</p></a
 >-->
 
-<!--<a id="banner-red" href=""
-	><p>An emergency message goes here</p></a
->-->
+<a id="banner-red" href=""
+	><p>There are some issues with our FM service at the moment - we're on the case!<br />In the meantime, you can listen here, on your smart speaker, or on our app.</p></a
+>
 
 <div id="now-and-next">
 	<div id="current-show"></div>
