@@ -238,6 +238,10 @@
   shows: [HRT]
   image: "/assets/images/presenters/mike_read.jpg"
 
+- name: "Moira Jobson"
+  shows: [WLB]
+  image:
+
 - name: "Nikky Smart"
   shows: [BRK, NMS]
   image:

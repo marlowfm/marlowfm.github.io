@@ -56,6 +56,7 @@ export const progURLs = {
 	SSP: "/programmes/sunday-sports-show/",
 	STM: "/programmes/swing-that-music/",
 	VIN: "/programmes/vinyl-countdown/",
+	WLB: "/programmes/what-lies-beneath/",
 	WFS: "/programmes/world-folk-show/",
 	BAB: "/programmes/your-classic-rnb-show/"
 };
