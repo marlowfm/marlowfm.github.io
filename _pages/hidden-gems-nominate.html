@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: single
 classes: wide
 title: "Help us find Marlow's Hidden Gems!"
@@ -19,23 +19,23 @@ sidebar:
 <p>
 	Hidden Gems is back! It's Marlow FM's celebration of local people, businesses,
 	and organisations. We want to recognise the Hidden Gems in our wonderful town
-	and need YOU to nominate the very best in 11 categories.
+	and need YOU to nominate the very best in nine categories.
 </p>
 
 <p>
 	After you've made your nominations, we'll draw up a shortlist of nominees for
 	each category, and then ask you to get voting. The winners will be announced
-	at a glittering black tie event at Harleyford Golf Club on Saturday 22nd
+	at a glittering black tie event at Harleyford Golf Club on Saturday 21st
 	November.
-	<a href="{{ site.url }}{{ site.baseurl }}/tickets/"
+	<!--<a href="{{ site.url }}{{ site.baseurl }}/tickets/"
 		>You can get your tickets right now!</a
-	>
+	>-->Tickets will be available soon.
 </p>
 
 <p>
-	Please fill in and submit the form below by the end of Monday 20th October.
-	You can make as many nominations as you want, in as many categories as you
-	want. <i>Remember you're just nominating at this stage, not voting.</i>
+	Please fill in and submit the form below by 5pm on Friday 23th October. You
+	can make as many nominations as you want, in as many categories as you want.
+	<i>Remember you're just nominating at this stage, not voting.</i>
 </p>
 
 <p>
@@ -75,15 +75,15 @@ sidebar:
 				"Who's the best for a cup of tea, mug of coffee, loaded hot chocolate?"
 		},
 		{
-			long: "Best Pub",
-			short: "pub",
-			description:
-				"Where do you go for the best pint, entertainment, atmosphere?"
-		},
-		{
 			long: "Best Breakfast",
 			short: "breakfast",
 			description: "Full English or smashed avocado - who does it the best?"
+		},
+		{
+			long: "Best Sports Club",
+			short: "club",
+			description:
+				"Whatever your sport, there's a club for it - which is the best?"
 		},
 		{
 			long: "Best Event",
@@ -92,34 +92,22 @@ sidebar:
 				"Marlow has a busy social calendar - what's the best thing you go to?"
 		},
 		{
-			long: "Best Night Out",
-			short: "night",
+			long: "Best Independent Small Business",
+			short: "business",
 			description:
-				"Craft beers, flights of wine, cocktails - Marlow has it all. Where's the best place to go?"
+				"Celebrating the massive effort required to run a successful small-scale enterprise. (The business must be fully independent - not part of a national chain or a corporate franchise - and mustn't employ more than 20 people)"
 		},
 		{
-			long: "Best Sports Club",
-			short: "sports",
+			long: "Best Customer Service - Retail",
+			short: "retail",
 			description:
-				"Whatever your sport, there's a club for it - which is the best?"
+				"Who stands out for making visitors feel welcome the moment they step through the door? (Individual or business)"
 		},
 		{
-			long: "Best Therapist",
-			short: "therapist",
+			long: "Best Customer Service - Hospitality",
+			short: "hospitality",
 			description:
-				"Hair, nails, health, beauty - who do you go to to feel great?"
-		},
-		{
-			long: "Best Teacher",
-			short: "teacher",
-			description:
-				"We have such amazing teachers - who has the passion for inspiring their students and colleagues?"
-		},
-		{
-			long: "Best Local Producer",
-			short: "producer",
-			description:
-				"We've got local cheese, beer, fizz, and so much more - who's the best?"
+				"Who stands out for delivering the best service with your pint or your fries? (Individual or business)"
 		},
 		{
 			long: "Services to Charity",
@@ -155,36 +143,53 @@ sidebar:
 			shortToDescriptionObject[document.querySelector("#categories").value];
 	};
 
+	let isSubmitting = false;
+
 	document.querySelector("#form").onsubmit = async e => {
 		e.preventDefault();
+		if (isSubmitting) return;
+
+		isSubmitting = true;
+		document.querySelector("#submit-button").disabled = true;
 		try {
-			await fetch("https://form.marlowfm.co.uk:3011/create-nomination", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({
-					name: document.querySelector("#name").value,
-					email: document.querySelector("#email").value,
-					category: document.querySelector("#categories").value,
-					nomination: document.querySelector("#nomination").value,
-					marketing: document.querySelector("#marketing").checked
-				})
-			});
+			const response = await fetch(
+				"https://form.marlowfm.co.uk:3011/create-nomination",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						name: document.querySelector("#name").value,
+						email: document.querySelector("#email").value,
+						category: document.querySelector("#categories").value,
+						nomination: document.querySelector("#nomination").value,
+						marketing: document.querySelector("#marketing").checked
+					})
+				}
+			);
+			if (!response.ok) {
+				throw new Error(`Nomination request failed: ${response.status}`);
+			}
 			document.querySelector("#submit-button").innerText =
 				"NOMINATION SUBMITTED";
-			document.querySelector(
-				"#thanks"
-			).innerHTML = `<p>Thank you for submitting a nomination for '${
-				shortToLongObject[document.querySelector("#categories").value]
-			}'.</p>`;
+			document.querySelector("#thanks").innerHTML =
+				`<p>Thank you for submitting a nomination for '${
+					shortToLongObject[document.querySelector("#categories").value]
+				}'.</p>`;
 			setTimeout(() => {
 				document.querySelector("#nomination").value = "";
 				document.querySelector("#submit-button").innerText =
 					"Submit your nomination";
+				document.querySelector("#submit-button").disabled = false;
+				isSubmitting = false;
 			}, 2000);
 		} catch (error) {
 			console.error(error);
+			isSubmitting = false;
+			document.querySelector("#submit-button").disabled = false;
+			document.querySelector("#thanks").innerHTML =
+				"<p>We couldn't submit your nomination. Please try again.</p>";
 		}
 	};
 </script>
