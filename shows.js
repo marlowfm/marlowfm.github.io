@@ -41,6 +41,7 @@ export const progURLs = {
 	PFM: "/programmes/pirate-fm/",
 	QBN: "/programmes/q-burn/",
 	RDR: "/programmes/radio-daze-reggae-show/",
+	RES: "/programmes/radio-ecoshock/",
 	REE: "/programmes/reel-music/",
 	REM: "/programmes/residency-essential-mix/",
 	RCS: "/programmes/retro-chart-show/",

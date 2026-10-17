@@ -1,10 +1,10 @@
 ---
-published: true
+published: false
 layout: programme
 title: "The Earth Show (previously The Eco Show)"
 image:
 fb_group: "https://www.facebook.com/groups/theecoshow"
-instagram: 
+instagram:
 code: ECO
 again:
 ---

@@ -10,6 +10,10 @@
   shows: [ACZ]
   image: "/assets/images/presenters/alan_price-roberts.jpg"
 
+- name: "Alex Smith"
+  shows: [RES]
+  image: "/assets/images/presenters/alex_smith.jpg"
+
 - name: "Ali Buckle"
   shows: [ELS, NMS]
   image:

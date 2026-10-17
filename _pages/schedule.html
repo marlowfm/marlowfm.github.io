@@ -49,16 +49,16 @@ sidebar:
 			". ag6 ag7 ag8 ag9 agx wfs som"
 			"t1700 drv1 drv2 drv3 drv4 drv5 wfs som"
 			". drv1 drv2 drv3 drv4 drv5 wfs som"
-			"t1800 drv1 drv2 drv3 drv4 drv5 hrt eco"
-			". drv1 drv2 drv3 drv4 drv5 hrt eco"
-			"t1900 ote nms rev pfm rck hrt eco"
-			". ote nms rev pfm rck hrt eco"
+			"t1800 drv1 drv2 drv3 drv4 drv5 hrt bab"
+			". drv1 drv2 drv3 drv4 drv5 hrt bab"
+			"t1900 ote nms rev pfm rck hrt bab"
+			". ote nms rev pfm rck hrt bab"
 			"t2000 ote nms rev pfm rck kev qbn"
 			". ote nms rev pfm rck kev qbn"
-			"t2100 ctc fmt bab sfs rem kev qbn"
-			". ctc fmt bab sfs rem kev qbn"
-			"t2200 mel fmt bab sfs rem kev rdr"
-			". mel fmt bab sfs rem kev rdr"
+			"t2100 ctc fmt res sfs rem kev qbn"
+			". ctc fmt res sfs rem kev qbn"
+			"t2200 mel fmt vin2 sfs rem kev rdr"
+			". mel fmt vin2 sfs rem kev rdr"
 			"t2300 juk1 juk2 juk3 juk4 rem apz rdr"
 			". juk1 juk2 juk3 juk4 rem apz rdr"
 			"t0000 juk1 juk2 juk3 juk4 juk5 apz juk7"
@@ -582,10 +582,17 @@ sidebar:
 		color: inherit;
 	}
 
-	.bab {
-		grid-area: bab;
+	.res {
+		grid-area: res;
 		padding: 2px;
 		background-color: var(--background-weeknight-light);
+		color: inherit;
+	}
+
+	.vin2 {
+		grid-area: vin2;
+		padding: 2px;
+		background-color: var(--background-weeknight-dark);
 		color: inherit;
 	}
 
@@ -624,8 +631,8 @@ sidebar:
 		color: inherit;
 	}
 
-	.eco {
-		grid-area: eco;
+	.bab {
+		grid-area: bab;
 		padding: 2px;
 		background-color: var(--background-weekend-light);
 		color: inherit;
@@ -808,7 +815,9 @@ sidebar:
 	<a class="drv4" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="drv5" href="/programmes/drivetime/">DRIVETIME</a>
 	<a class="hrt" href="/programmes/heritage-chart/">THE HERITAGE CHART</a>
-	<a class="eco" href="/programmes/earth-show/">THE EARTH SHOW</a>
+	<a class="bab" href="/programmes/your-classic-rnb-show/"
+		>YOUR CLASSIC RnB SHOW</a
+	>
 	<a class="ote" href="/programmes/on-the-edge/">ON THE EDGE</a>
 	<a class="ctc" href="/programmes/cover-to-cover/">COVER TO COVER</a>
 	<a class="mel" href="/programmes/marlows-mellow-mondays/"
@@ -817,9 +826,8 @@ sidebar:
 	<a class="nms" href="/programmes/new-music-show/">THE NEW MUSIC SHOW</a>
 	<a class="fmt" href="/programmes/faith-matters/">FAITH MATTERS</a>
 	<a class="rev" href="/programmes/revival/">REVIVAL!</a>
-	<a class="bab" href="/programmes/your-classic-rnb-show/"
-		>YOUR CLASSIC RnB SHOW</a
-	>
+	<a class="res" href="/programmes/radio-ecoshock/">RADIO ECOSHOCK</a>
+	<a class="vin2" href="/programmes/vinyl-countdown/">THE VINYL COUNTDOWN</a>
 	<a class="pfm" href="/programmes/pirate-fm/">PIRATE FM</a>
 	<a class="sfs" href="/programmes/soul-fusion/">SOUL FUSION</a>
 	<a class="rck" href="/programmes/rock-show/">THE ROCK SHOW</a>
