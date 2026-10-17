@@ -2,11 +2,11 @@
 published: true
 layout: programme
 title: "Your Classic RnB Show"
-image: /assets/images/icons/BAB.jpeg
+image:
 code: BAB
 again:
 ---
 
-Every Wednesday from 9pm to 11pm.
+Every Sunday from 6pm to 8pm.
 
 Great guests. Great banter. Club classics. All with Andy Franklin.
