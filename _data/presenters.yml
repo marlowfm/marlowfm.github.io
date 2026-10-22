@@ -278,6 +278,10 @@
   shows: [DRV, RCS]
   image:
 
+- name: "Rob Ross"
+  shows: [AG6, TCH, ELS]
+  image:
+
 - name: "Ronnie Turner"
   shows: [REM]
   image: "/assets/images/presenters/ronnie_turner.jpg"
