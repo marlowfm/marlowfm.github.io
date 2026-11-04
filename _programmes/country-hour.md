@@ -2,7 +2,7 @@
 published: true
 layout: programme
 title: "The Country Hour"
-image:
+image: /assets/images/icons/TCH.png
 code: TCH
 again:
 ---
