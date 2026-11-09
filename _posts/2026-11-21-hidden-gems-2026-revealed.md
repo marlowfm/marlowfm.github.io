@@ -20,8 +20,8 @@ Congratulations to the winners below, but also to every person, business, and or
 - **Best Independent Small Business** - Chives
 - **Best Customer Service - Hospitality** - The Barn Club
 - **Best Customer Service - Retail** - The Meat Hook of Marlow
-- **Services to Charity** - ???
-- **Services to the Community** - ???
+- **Services to Charity** - Marlow Community Against Cancer
+- **Services to the Community** - Paul Ross and Paul Merchant
 
 More than 6,600 votes were cast when we announced the shortlists of nominees, after the public put forward nominations for each category.
 
