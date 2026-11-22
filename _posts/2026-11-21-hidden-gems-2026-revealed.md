@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Marlow's 2026 Hidden Gems revealed
-date: 2026-11-21 23:59
+date: 2026-11-21 23:00
 categories: news
 header:
   teaser: /assets/images/logos/hidden-gems-2026-logo.jpg
